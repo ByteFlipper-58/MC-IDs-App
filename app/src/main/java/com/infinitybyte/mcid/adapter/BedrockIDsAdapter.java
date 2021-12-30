@@ -15,14 +15,14 @@ import com.firebase.ui.firestore.FirestoreRecyclerOptions;
 import com.infinitybyte.mcid.R;
 import com.infinitybyte.mcid.model.IDsModel;
 
-public class BedrockIDsAdapter extends FirestoreRecyclerAdapter<IDsModel, BedrockIDsAdapter.holder> {
+public class BedrockIDsAdapter extends FirestoreRecyclerAdapter<IDsModel, BedrockIDsAdapter.BedrockIDsHolder> {
 
-    public BedrockIDsAdapter(@NonNull FirestoreRecyclerOptions<IDsModel> options) {
+    public BedrockIDsAdapter(FirestoreRecyclerOptions<IDsModel> options) {
         super(options);
     }
 
     @Override
-    protected void onBindViewHolder(@NonNull BedrockIDsAdapter.holder holder, int position, @NonNull IDsModel model) {
+    protected void onBindViewHolder(@NonNull BedrockIDsHolder holder, int position, @NonNull IDsModel model) {
         holder.item_name.setText(model.getItem_name());
         holder.item_stroke_id.setText(model.getItem_stroke_id());
         holder.item_number_id.setText(model.getItem_number_id());
@@ -34,17 +34,17 @@ public class BedrockIDsAdapter extends FirestoreRecyclerAdapter<IDsModel, Bedroc
 
     @NonNull
     @Override
-    public holder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.small_item, parent, false);
-        return new BedrockIDsAdapter.holder(view);
+    public BedrockIDsHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.small_item, parent, false);
+        return new BedrockIDsAdapter.BedrockIDsHolder(v);
     }
 
-    public class holder extends RecyclerView.ViewHolder {
+    public class BedrockIDsHolder extends RecyclerView.ViewHolder {
 
         ImageView item_image;
         TextView item_name, item_stroke_id, item_number_id;
 
-        public holder(@NonNull View itemView) {
+        public BedrockIDsHolder(@NonNull View itemView) {
             super(itemView);
             item_image = itemView.findViewById(R.id.item_image);
             item_name = itemView.findViewById(R.id.item_name);
