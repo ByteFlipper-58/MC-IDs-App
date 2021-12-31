@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">MCBE ID</string>
+
+    <string-array name="item_name">
+        <item>Stone</item>
+        <item>Sand</item>
+    </string-array>
+
+    <string-array name="item_stroke_id">
+        <item>minecraft:stone</item>
+        <item>minecraft:sand</item>
+    </string-array>
+
+    <string-array name="item_number_id">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
 </resources>
