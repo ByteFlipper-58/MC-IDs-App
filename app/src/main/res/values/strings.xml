@@ -11,8 +11,8 @@
         <item>minecraft:sand</item>
     </string-array>
 
-    <string-array name="item_number_id">
-        <item>1</item>
-        <item>2</item>
+    <string-array name="item_image">
+        <item>stone/stone</item>
+        <item>sand</item>
     </string-array>
 </resources>

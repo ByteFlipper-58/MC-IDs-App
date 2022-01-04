@@ -2,6 +2,7 @@ package com.infinitybyte.mcid;
 
 import android.content.Context;
 import android.graphics.Bitmap;
+import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,10 +19,9 @@ import java.util.ArrayList;
 public class BedrockIDsAdapter extends RecyclerView.Adapter<BedrockIDsAdapter.BedrockIDsHolder> {
 
     Context context;
-    String data1[], data2[];
-    Bitmap images[];
+    String data1[], data2[], images[];
 
-    public BedrockIDsAdapter(Context ct, String item_name[], String item_stroke_id[], Bitmap item_image[]) {
+    public BedrockIDsAdapter(Context ct, String item_name[], String item_stroke_id[], String item_image[]) {
         context = ct;
         data1 = item_name;
         data2 = item_stroke_id;
@@ -42,10 +42,8 @@ public class BedrockIDsAdapter extends RecyclerView.Adapter<BedrockIDsAdapter.Be
         holder.item_stroke_id.setText(data2[position]);
 
         Glide.with(holder.item_image)
-                .load(images[position])
+                .load(Uri.parse("file:///android_asset/" + images[position] + ".png"))
                 .into(holder.item_image);
-
-        holder.item_image.setImageBitmap(images[position]);
     }
 
     @Override
