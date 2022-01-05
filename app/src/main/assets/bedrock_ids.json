@@ -1,0 +1,10 @@
+{
+  "items": [
+    {
+      "item_image": "stone/stone",
+      "item_name": "stone",
+      "item_stroke_id": "minecraft:stone",
+      "item_number_id": "1"
+    }
+  ]
+}

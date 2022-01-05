@@ -32,23 +32,9 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
-    RecyclerView recyclerView;
-
-    private String item_image[], item_name[], item_stroke_id[];
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        recyclerView = findViewById(R.id.recview);
-
-        item_image = getResources().getStringArray(R.array.item_image);
-        item_name = getResources().getStringArray(R.array.item_name);
-        item_stroke_id = getResources().getStringArray(R.array.item_stroke_id);
-
-        BedrockIDsAdapter adapter = new BedrockIDsAdapter(this, item_name, item_stroke_id, item_image);
-        recyclerView.setAdapter(adapter);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
     }
 }
