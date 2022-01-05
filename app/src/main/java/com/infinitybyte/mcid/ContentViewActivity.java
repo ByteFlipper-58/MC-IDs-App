@@ -23,7 +23,7 @@ public class ContentViewActivity extends AppCompatActivity {
     private RecyclerView mRecyclerView;
     private List<Object> viewItems = new ArrayList<>();
 
-    private RecyclerView.Adapter mAdapter;
+    private RecyclerView.Adapter adapter;
     private RecyclerView.LayoutManager layoutManager;
 
     private static final String TAG = "ContentView";
@@ -34,19 +34,11 @@ public class ContentViewActivity extends AppCompatActivity {
         setContentView(R.layout.activity_content_view);
 
         mRecyclerView = (RecyclerView) findViewById(R.id.recview);
-
-
-        // use this setting to improve performance if you know that changes
-        // in content do not change the layout size of the RecyclerView
         mRecyclerView.setHasFixedSize(true);
-
-        // use a linear layout manager
         layoutManager = new LinearLayoutManager(this);
         mRecyclerView.setLayoutManager(layoutManager);
-
-        // specify an adapter (see also next example)
-        mAdapter = new JsonAdapter(this, viewItems);
-        mRecyclerView.setAdapter(mAdapter);
+        adapter = new JsonAdapter(this, viewItems);
+        mRecyclerView.setAdapter(adapter);
 
         addItemsFromJSON();
     }
@@ -55,8 +47,6 @@ public class ContentViewActivity extends AppCompatActivity {
         try {
 
             String bedrock_ids = readJSONDataFromFile();
-            //JSONArray jsonArray = new JSONArray(bedrock_ids);
-
             JSONObject jsonObject = new JSONObject(bedrock_ids);
             JSONArray jsonArray = jsonObject.getJSONArray("items");
 
@@ -84,7 +74,6 @@ public class ContentViewActivity extends AppCompatActivity {
         StringBuilder builder = new StringBuilder();
 
         try {
-
             String jsonString = null;
             inputStream = getAssets().open("bedrock_ids.json");
             BufferedReader bufferedReader = new BufferedReader(

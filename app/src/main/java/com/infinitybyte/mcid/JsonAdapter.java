@@ -44,9 +44,7 @@ public class JsonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
         switch (i) {
             case TYPE:
-
             default:
-
                 View layoutView = LayoutInflater.from(viewGroup.getContext()).inflate(
                         R.layout.small_item, viewGroup, false);
 
@@ -65,14 +63,14 @@ public class JsonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
             default:
 
                 ItemViewHolder itemViewHolder = (ItemViewHolder) viewHolder;
-                IDsModel holidays = (IDsModel) listRecyclerItem.get(i);
+                IDsModel itemInfo = (IDsModel) listRecyclerItem.get(i);
 
-                itemViewHolder.item_name.setText(holidays.getItem_name());
-                itemViewHolder.item_stroke_id.setText(holidays.getItem_stroke_id());
-                itemViewHolder.item_number_id.setText(holidays.getItem_number_id());
+                itemViewHolder.item_name.setText(itemInfo.getItem_name());
+                itemViewHolder.item_stroke_id.setText(itemInfo.getItem_stroke_id());
+                itemViewHolder.item_number_id.setText(itemInfo.getItem_number_id());
 
                 Glide.with(itemViewHolder.item_image)
-                        .load(Uri.parse("file:///android_asset/images/" + holidays.getItem_image() + ".png"))
+                        .load(Uri.parse("file:///android_asset/images/" + itemInfo.getItem_image() + ".png"))
                         .into(itemViewHolder.item_image);
         }
 
