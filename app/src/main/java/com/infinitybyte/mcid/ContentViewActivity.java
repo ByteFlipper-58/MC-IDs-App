@@ -17,8 +17,12 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
 public class ContentViewActivity extends AppCompatActivity {
+
+    private String locale = Locale.getDefault().getLanguage();
+    private String item_locale_name = "null";
 
     private RecyclerView mRecyclerView;
     private List<Object> viewItems = new ArrayList<>();
@@ -40,6 +44,12 @@ public class ContentViewActivity extends AppCompatActivity {
         adapter = new JsonAdapter(this, viewItems);
         mRecyclerView.setAdapter(adapter);
 
+        if (locale.equals("ru") || locale.equals("uk") || locale.equals("be")) {
+            item_locale_name = "ru";
+        } else {
+            item_locale_name = "en";
+        }
+
         addItemsFromJSON();
     }
 
@@ -55,12 +65,13 @@ public class ContentViewActivity extends AppCompatActivity {
                 JSONObject itemObj = jsonArray.getJSONObject(i);
 
                 String item_image = itemObj.getString("item_image");
-                String item_name = itemObj.getString("item_name");
+                //String item_name = itemObj.getString("item_name");
+                String item_name = itemObj.getJSONObject("item_name").getString(item_locale_name);
                 String item_stroke_id = itemObj.getString("item_stroke_id");
                 String item_number_id = itemObj.getString("item_number_id");
 
-                IDsModel holidays = new IDsModel(item_image, item_name, item_stroke_id, item_number_id);
-                viewItems.add(holidays);
+                IDsModel itemInfo = new IDsModel(item_image, item_name, item_stroke_id, item_number_id);
+                viewItems.add(itemInfo);
             }
 
         } catch (JSONException | IOException e) {
