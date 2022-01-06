@@ -16,6 +16,8 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Locale;
 
@@ -25,7 +27,7 @@ public class ContentViewActivity extends AppCompatActivity {
     private String item_locale_name = "null";
 
     private RecyclerView mRecyclerView;
-    private List<Object> viewItems = new ArrayList<>();
+    private List<IDsModel> viewItems = new ArrayList<>();
 
     private RecyclerView.Adapter adapter;
     private RecyclerView.LayoutManager layoutManager;
@@ -73,6 +75,19 @@ public class ContentViewActivity extends AppCompatActivity {
                 IDsModel itemInfo = new IDsModel(item_image, item_name, item_stroke_id, item_number_id);
                 viewItems.add(itemInfo);
             }
+
+            Collections.sort(viewItems, new Comparator<IDsModel>(){
+                public int compare(IDsModel obj1, IDsModel obj2) {
+                    // ## Ascending order
+                    //return obj1.getItem_number_id().compareToIgnoreCase(obj2.getItem_number_id()); // To compare string values
+                    // return Integer.valueOf(obj1.getItem_number_id()).compareTo(obj2.getItem_number_id()); // To compare integer values
+
+                    // ## Descending order
+                    return obj2.getItem_number_id().compareToIgnoreCase(obj1.getItem_number_id()); // To compare string values
+                    // return Integer.valueOf(obj2.getId()).compareTo(obj1.getId()); // To compare integer values
+                }
+            });
+
 
         } catch (JSONException | IOException e) {
             Log.d(TAG, "addItemsFromJSON: ", e);

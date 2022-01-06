@@ -18,9 +18,9 @@ import java.util.List;
 public class JsonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     private static final int TYPE = 1;
     private final Context context;
-    private final List<Object> listRecyclerItem;
+    private final List<IDsModel> listRecyclerItem;
 
-    public JsonAdapter(Context context, List<Object> listRecyclerItem) {
+    public JsonAdapter(Context context, List<IDsModel> listRecyclerItem) {
         this.context = context;
         this.listRecyclerItem = listRecyclerItem;
     }
