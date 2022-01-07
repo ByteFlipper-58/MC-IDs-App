@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.MCBEID" parent="Theme.Material3.DynamicColors.DayNight">
+    <style name="Theme.MCBEID" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">#ff6750a4</item>
         <item name="colorPrimaryVariant">#ff6750a4</item>

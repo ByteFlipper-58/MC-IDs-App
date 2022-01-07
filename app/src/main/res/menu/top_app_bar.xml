@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/filter_and_sort"
+        android:title="Filter and Sort"
+        android:icon="@drawable/ic_baseline_filter_list_24"
+        app:showAsAction="ifRoom" />
+</menu>

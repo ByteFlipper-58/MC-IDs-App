@@ -35,6 +35,42 @@
       },
       "item_stroke_id": "minecraft:diorite",
       "item_number_id": "1:3"
+    },
+    {
+      "item_image": "stone/polished_granite",
+      "item_name": {
+        "ru": "Полированный Гранит",
+        "en": "Polished Granite"
+      },
+      "item_stroke_id": "minecraft:polished_granite",
+      "item_number_id": "1:2"
+    },
+    {
+      "item_image": "stone/diorite",
+      "item_name": {
+        "ru": "Диорит",
+        "en": "Diorite"
+      },
+      "item_stroke_id": "minecraft:diorite",
+      "item_number_id": "1:3"
+    },
+    {
+      "item_image": "stone/polished_granite",
+      "item_name": {
+        "ru": "Полированный Гранит",
+        "en": "Polished Granite"
+      },
+      "item_stroke_id": "minecraft:polished_granite",
+      "item_number_id": "1:2"
+    },
+    {
+      "item_image": "stone/diorite",
+      "item_name": {
+        "ru": "Диорит",
+        "en": "Diorite"
+      },
+      "item_stroke_id": "minecraft:diorite",
+      "item_number_id": "1:3"
     }
   ],
   "effects": [

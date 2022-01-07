@@ -1,9 +1,9 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.MCBEID" parent="Theme.Material3.DynamicColors.DayNight">
+    <style name="Theme.MCBEID" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">#ffd0bcff</item>
-        <item name="colorPrimaryVariant">#ffd0bcff</item>
+        <item name="colorPrimaryVariant">#ff4a4458</item>
         <item name="colorOnPrimary">#ff381e72</item>
         <item name="colorPrimaryContainer">#ff4f378b</item>
         <item name="colorOnPrimaryContainer">#ffeaddff</item>
