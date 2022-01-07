@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="16dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Отображать:"
+            android:textSize="21sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checkedButton="@id/rd_view_id_items_and_blocks">
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/rd_view_id_items_and_blocks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ID Блоков и Предметов"
+                android:textSize="18sp" />
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/rd_view_id_effects"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ID Эффектов"
+                android:textSize="18sp" />
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/rd_view_id_mobs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ID Мобов"
+                android:textSize="18sp" />
+        </RadioGroup>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Сортировать по:"
+            android:textSize="21sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/sort"
+                style="@style/Widget.Material3.Button.ElevatedButton.Icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Возрастанию"
+                android:layout_margin="8dp"
+                app:icon="@drawable/ic_baseline_keyboard_arrow_up_24" />
+
+            <Button
+                android:id="@+id/sortt"
+                style="@style/Widget.Material3.Button.ElevatedButton.Icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="Убыванию"
+                app:icon="@drawable/ic_baseline_keyboard_arrow_down_24" />
+        </LinearLayout>
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
