@@ -73,7 +73,6 @@ public class JsonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
                         .load(Uri.parse("file:///android_asset/images/" + itemInfo.getItem_image() + ".png"))
                         .into(itemViewHolder.item_image);
         }
-
     }
 
     @Override
