@@ -32,21 +32,11 @@
             android:textAllCaps="false"/>
 
         <TextView
-            android:id="@+id/item_stroke_id_text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingStart="8dp"
-            android:layout_toEndOf="@id/item_image"
-            android:layout_below="@id/item_name"
-            android:text="Stroke ID: "
-            android:textSize="18sp"
-            android:textAllCaps="false"/>
-
-        <TextView
             android:id="@+id/item_stroke_id"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_toEndOf="@id/item_stroke_id_text"
+            android:paddingStart="8dp"
+            android:layout_toEndOf="@id/item_image"
             android:layout_below="@id/item_name"
             android:text="minecraft:cow"
             android:textSize="18sp"
@@ -58,8 +48,8 @@
             android:layout_height="wrap_content"
             android:paddingStart="8dp"
             android:layout_toEndOf="@id/item_image"
-            android:layout_below="@id/item_stroke_id_text"
-            android:text="Number ID: "
+            android:layout_below="@id/item_stroke_id"
+            android:text="ID: "
             android:textSize="18sp"
             android:textAllCaps="false"/>
 
@@ -68,7 +58,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_toEndOf="@id/item_number_id_text"
-            android:layout_below="@id/item_stroke_id_text"
+            android:layout_below="@id/item_stroke_id"
             android:text="69"
             android:textSize="18sp"
             android:textAllCaps="false"/>

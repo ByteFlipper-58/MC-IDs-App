@@ -1,11 +1,18 @@
 package com.infinitybyte.mcid;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.view.MenuItem;
+
+import com.google.android.material.appbar.MaterialToolbar;
+import com.google.android.material.bottomsheet.BottomSheetDialog;
+import com.google.android.material.button.MaterialButton;
+import com.google.android.material.radiobutton.MaterialRadioButton;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -32,12 +39,16 @@ public class ContentViewActivity extends AppCompatActivity {
     private RecyclerView.Adapter adapter;
     private RecyclerView.LayoutManager layoutManager;
 
+    private MaterialToolbar toolbar;
+
     private static final String TAG = "ContentView";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_content_view);
+
+        toolbar = findViewById(R.id.toolbar);
 
         mRecyclerView = (RecyclerView) findViewById(R.id.recview);
         mRecyclerView.setHasFixedSize(true);
@@ -52,7 +63,32 @@ public class ContentViewActivity extends AppCompatActivity {
             item_locale_name = "en";
         }
 
+        toolbar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
+            @Override
+            public boolean onMenuItemClick(MenuItem item) {
+                switch (item.getItemId()) {
+                    case R.id.filter_and_sort:
+                        filter_and_sort();
+                }
+                return true;
+            }
+        });
+
         addItemsFromJSON();
+    }
+
+    private void filter_and_sort() {
+        final BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(this, R.style.BottomSheetDialog);
+        bottomSheetDialog.setContentView(R.layout.filter_and_sort_settings_layout);
+
+        MaterialRadioButton show_item_and_block_id = bottomSheetDialog.findViewById(R.id.rd_view_id_items_and_blocks);
+        MaterialRadioButton show_effects_id = bottomSheetDialog.findViewById(R.id.rd_view_id_items_and_blocks);
+        MaterialRadioButton show_mobs_id = bottomSheetDialog.findViewById(R.id.rd_view_id_mobs);
+        MaterialButton sort_by_ascending = bottomSheetDialog.findViewById(R.id.sort_by_ascending);
+        MaterialButton sort_by_descending = bottomSheetDialog.findViewById(R.id.sort_by_descending);
+
+        bottomSheetDialog.setCancelable(false);
+        bottomSheetDialog.show();
     }
 
     private void addItemsFromJSON() {
