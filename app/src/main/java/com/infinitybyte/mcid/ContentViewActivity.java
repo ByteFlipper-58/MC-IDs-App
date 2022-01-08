@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
+import android.view.View;
 
 import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
@@ -32,6 +33,9 @@ public class ContentViewActivity extends AppCompatActivity {
 
     private String locale = Locale.getDefault().getLanguage();
     private String item_locale_name = "null";
+
+    private static final int ID_TYPE = 0;
+    private static final int SORTING_TYPE = 1;
 
     private RecyclerView mRecyclerView;
     private List<IDsModel> viewItems = new ArrayList<>();
@@ -68,7 +72,7 @@ public class ContentViewActivity extends AppCompatActivity {
             public boolean onMenuItemClick(MenuItem item) {
                 switch (item.getItemId()) {
                     case R.id.filter_and_sort:
-                        filter_and_sort();
+                        filterAndSortBottomSheetDialog();
                 }
                 return true;
             }
@@ -77,7 +81,7 @@ public class ContentViewActivity extends AppCompatActivity {
         addItemsFromJSON();
     }
 
-    private void filter_and_sort() {
+    private void filterAndSortBottomSheetDialog() {
         final BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(this, R.style.BottomSheetDialog);
         bottomSheetDialog.setContentView(R.layout.filter_and_sort_settings_layout);
 
@@ -87,7 +91,35 @@ public class ContentViewActivity extends AppCompatActivity {
         MaterialButton sort_by_ascending = bottomSheetDialog.findViewById(R.id.sort_by_ascending);
         MaterialButton sort_by_descending = bottomSheetDialog.findViewById(R.id.sort_by_descending);
 
-        bottomSheetDialog.setCancelable(false);
+        show_item_and_block_id.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //
+            }
+        });
+
+        show_effects_id.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //
+            }
+        });
+
+        show_mobs_id.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //
+            }
+        });
+
+        show_mobs_id.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //
+            }
+        });
+
+        bottomSheetDialog.setCancelable(true);
         bottomSheetDialog.show();
     }
 
@@ -96,7 +128,17 @@ public class ContentViewActivity extends AppCompatActivity {
 
             String bedrock_ids = readJSONDataFromFile();
             JSONObject jsonObject = new JSONObject(bedrock_ids);
-            JSONArray jsonArray = jsonObject.getJSONArray("items");
+            JSONArray jsonArray;
+
+            if (ID_TYPE == 0) {
+                jsonArray = jsonObject.getJSONArray("items");
+            } else if (ID_TYPE == 1) {
+                jsonArray = jsonObject.getJSONArray("effects");
+            } else if (ID_TYPE == 2) {
+                jsonArray = jsonObject.getJSONArray("mobs");
+            } else {
+                jsonArray = jsonObject.getJSONArray("items");
+            }
 
             for (int i = 0; i < jsonArray.length(); ++i) {
 
@@ -114,12 +156,19 @@ public class ContentViewActivity extends AppCompatActivity {
 
             Collections.sort(viewItems, new Comparator<IDsModel>(){
                 public int compare(IDsModel obj1, IDsModel obj2) {
+                    if (SORTING_TYPE == 0) {
+                        //по возростанию (string)
+                        return obj1.getItem_number_id().compareToIgnoreCase(obj2.getItem_number_id());
+                    } else {
+                        //по убыванию (string)
+                        return obj2.getItem_number_id().compareToIgnoreCase(obj1.getItem_number_id());
+                    }
                     // ## Ascending order
                     //return obj1.getItem_number_id().compareToIgnoreCase(obj2.getItem_number_id()); // To compare string values
                     // return Integer.valueOf(obj1.getItem_number_id()).compareTo(obj2.getItem_number_id()); // To compare integer values
 
                     // ## Descending order
-                    return obj2.getItem_number_id().compareToIgnoreCase(obj1.getItem_number_id()); // To compare string values
+                    // return obj2.getItem_number_id().compareToIgnoreCase(obj1.getItem_number_id()); // To compare string values
                     // return Integer.valueOf(obj2.getId()).compareTo(obj1.getId()); // To compare integer values
                 }
             });
