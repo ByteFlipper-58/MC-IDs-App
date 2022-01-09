@@ -13,11 +13,14 @@ import android.view.View;
 import android.view.ViewTreeObserver;
 import android.widget.ProgressBar;
 import android.widget.RadioGroup;
+import android.widget.ToggleButton;
 
 import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.google.android.material.button.MaterialButton;
+import com.google.android.material.button.MaterialButtonToggleGroup;
 import com.google.android.material.radiobutton.MaterialRadioButton;
+import com.infinitybyte.mcid.api.SettingsMain;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -35,11 +38,10 @@ import java.util.Locale;
 
 public class ContentViewActivity extends AppCompatActivity {
 
+    private SettingsMain settings;
+
     private String locale = Locale.getDefault().getLanguage();
     private String item_locale_name = "null";
-
-    private static int ID_TYPE = 0;
-    private static final int SORTING_TYPE = 1;
 
     private RecyclerView mRecyclerView;
     private List<IDsModel> viewItems = new ArrayList<>();
@@ -58,6 +60,8 @@ public class ContentViewActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         SplashScreen splashScreen = SplashScreen.installSplashScreen(this);
         setContentView(R.layout.activity_content_view);
+
+        settings = new SettingsMain(this);
 
         toolbar = findViewById(R.id.toolbar);
 
@@ -93,26 +97,59 @@ public class ContentViewActivity extends AppCompatActivity {
         bottomSheetDialog.setContentView(R.layout.filter_and_sort_settings_layout);
 
         RadioGroup rg_view_ids = bottomSheetDialog.findViewById(R.id.rg_view_ids);
-        MaterialButton sort_by_ascending = bottomSheetDialog.findViewById(R.id.sort_by_ascending);
-        MaterialButton sort_by_descending = bottomSheetDialog.findViewById(R.id.sort_by_descending);
+        MaterialButtonToggleGroup tg_btn_sort_by = bottomSheetDialog.findViewById(R.id.tg_btn_sort_by);
+        MaterialButton btn_enter_filters = bottomSheetDialog.findViewById(R.id.btn_enter_filters);
 
         rg_view_ids.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 switch (checkedId) {
                     case R.id.rd_view_id_items_and_blocks:
-                        ID_TYPE = 0;
-                        //bottomSheetDialog.dismiss();
+                        settings.setShowIdType("items");
                         break;
                     case R.id.rd_view_id_effects:
-                        ID_TYPE = 1;
-                        //bottomSheetDialog.dismiss();
+                        settings.setShowIdType("effects");
                         break;
                     case R.id.rd_view_id_mobs:
-                        ID_TYPE = 2;
-                        //bottomSheetDialog.dismiss();
+                        settings.setShowIdType("mobs");
                         break;
                 }
+            }
+        });
+
+        tg_btn_sort_by.addOnButtonCheckedListener(new MaterialButtonToggleGroup.OnButtonCheckedListener() {
+            @Override
+            public void onButtonChecked(MaterialButtonToggleGroup group, int checkedId, boolean isChecked) {
+                if (isChecked) {
+                    if (checkedId == R.id.sort_by_ascending) {
+                        settings.setSortBy("ascending");
+                        tg_btn_sort_by.uncheck(R.id.sort_by_descending);
+                    } else if (checkedId == R.id.sort_by_descending) {
+                        settings.setSortBy("descending");
+                        tg_btn_sort_by.uncheck(R.id.sort_by_ascending);
+                    }
+                }
+            }
+        });
+
+        if (settings.getShowIdType() == "items") {
+            rg_view_ids.check(R.id.rd_view_id_items_and_blocks);
+        } else if (settings.getShowIdType() == "effects") {
+            rg_view_ids.check(R.id.rd_view_id_effects);
+        } else if (settings.getShowIdType() == "mobs") {
+            rg_view_ids.check(R.id.rd_view_id_mobs);
+        }
+
+        if (settings.getSortBy() == "ascending") {
+            tg_btn_sort_by.check(R.id.sort_by_ascending);
+        } else if (settings.getSortBy() == "descending") {
+            tg_btn_sort_by.check(R.id.sort_by_descending);
+        }
+
+        btn_enter_filters.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                recreate();
             }
         });
 
@@ -124,7 +161,7 @@ public class ContentViewActivity extends AppCompatActivity {
         try {
             String bedrock_ids = readJSONDataFromFile();
             JSONObject jsonObject = new JSONObject(bedrock_ids);
-            JSONArray jsonArray = jsonObject.getJSONArray("items");
+            JSONArray jsonArray = jsonObject.getJSONArray(settings.getShowIdType());
 
             for (int i = 0; i < jsonArray.length(); ++i) {
 
@@ -142,7 +179,11 @@ public class ContentViewActivity extends AppCompatActivity {
             Collections.sort(viewItems, new Comparator<IDsModel>(){
                 public int compare(IDsModel obj1, IDsModel obj2) {
 
-                    return obj1.getItem_number_id().compareToIgnoreCase(obj2.getItem_number_id());
+                    if (settings.getSortBy() == "ascending") {
+                        return obj1.getItem_number_id().compareToIgnoreCase(obj2.getItem_number_id());
+                    } else {
+                        return obj2.getItem_number_id().compareToIgnoreCase(obj1.getItem_number_id());
+                    }
 
                     // ## Ascending order
                     //return obj1.getItem_number_id().compareToIgnoreCase(obj2.getItem_number_id()); // To compare string values
