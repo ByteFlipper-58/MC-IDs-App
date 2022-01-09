@@ -75,13 +75,148 @@
   ],
   "effects": [
     {
-      "item_image": "effects/bad_omen",
+      "item_image": "effects/speed",
       "item_name": {
-        "ru": "Дурное Знамение",
-        "en": "Bad Omen"
+        "ru": "Скорость",
+        "en": "Speed"
       },
-      "item_stroke_id": "minecraft:bad_omen",
-      "item_number_id": "31"
+      "item_stroke_id": "minecraft:speed",
+      "item_number_id": "1"
+    },
+    {
+      "item_image": "effects/slowness",
+      "item_name": {
+        "ru": "Замедление",
+        "en": "Slowness"
+      },
+      "item_stroke_id": "minecraft:slowness",
+      "item_number_id": "2"
+    },
+    {
+      "item_image": "effects/haste",
+      "item_name": {
+        "ru": "Проворность",
+        "en": "Haste"
+      },
+      "item_stroke_id": "minecraft:haste",
+      "item_number_id": "3"
+    },
+    {
+      "item_image": "effects/mining_fatigue",
+      "item_name": {
+        "ru": "Усталость",
+        "en": "Mining Fatigue"
+      },
+      "item_stroke_id": "minecraft:mining_fatigue",
+      "item_number_id": "4"
+    },
+    {
+      "item_image": "effects/strength",
+      "item_name": {
+        "ru": "Сила",
+        "en": "Strength"
+      },
+      "item_stroke_id": "minecraft:strength",
+      "item_number_id": "5"
+    },
+    {
+      "item_image": "effects/instant_health",
+      "item_name": {
+        "ru": "Сила",
+        "en": "Instant Health"
+      },
+      "item_stroke_id": "minecraft:instant_health",
+      "item_number_id": "6"
+    },
+    {
+      "item_image": "effects/instant_damage",
+      "item_name": {
+        "ru": "Моментальный Урон",
+        "en": "Instant Damage"
+      },
+      "item_stroke_id": "minecraft:instant_damage",
+      "item_number_id": "7"
+    },
+    {
+      "item_image": "effects/jump_boost",
+      "item_name": {
+        "ru": "Прыгучесть",
+        "en": "Jump Boost"
+      },
+      "item_stroke_id": "minecraft:jump_boost",
+      "item_number_id": "8"
+    },
+    {
+      "item_image": "effects/nausea",
+      "item_name": {
+        "ru": "Тошнота",
+        "en": "Nausea"
+      },
+      "item_stroke_id": "minecraft:nausea",
+      "item_number_id": "9"
+    },
+    {
+      "item_image": "effects/regeneration",
+      "item_name": {
+        "ru": "Регенерация",
+        "en": "Regeneration"
+      },
+      "item_stroke_id": "minecraft:regeneration",
+      "item_number_id": "10"
+    },
+    {
+      "item_image": "effects/resistance",
+      "item_name": {
+        "ru": "Сопротивление",
+        "en": "Resistance"
+      },
+      "item_stroke_id": "minecraft:resistance",
+      "item_number_id": "11"
+    },
+    {
+      "item_image": "effects/fire_resistance",
+      "item_name": {
+        "ru": "Огнестройкость",
+        "en": "Fire Resistance"
+      },
+      "item_stroke_id": "minecraft:fire_resistance",
+      "item_number_id": "12"
+    },
+    {
+      "item_image": "effects/water_breathing",
+      "item_name": {
+        "ru": "Подводное Дыхание",
+        "en": "Water Breathing"
+      },
+      "item_stroke_id": "minecraft:water_breathing",
+      "item_number_id": "13"
+    },
+    {
+      "item_image": "effects/invisibility",
+      "item_name": {
+        "ru": "Невидимость",
+        "en": "Invisibility"
+      },
+      "item_stroke_id": "minecraft:invisibility",
+      "item_number_id": "14"
+    },
+    {
+      "item_image": "effects/blindness",
+      "item_name": {
+        "ru": "Слепота",
+        "en": "Blindness"
+      },
+      "item_stroke_id": "minecraft:blindness",
+      "item_number_id": "15"
+    },
+    {
+      "item_image": "effects/night_vision",
+      "item_name": {
+        "ru": "Ночное Виденье",
+        "en": "Night Vision"
+      },
+      "item_stroke_id": "minecraft:night_vision",
+      "item_number_id": "16"
     },
     {
       "item_image": "effects/hunger",
@@ -93,22 +228,121 @@
       "item_number_id": "17"
     },
     {
+      "item_image": "effects/weakness",
+      "item_name": {
+        "ru": "Слабость",
+        "en": "Weakness"
+      },
+      "item_stroke_id": "minecraft:weakness",
+      "item_number_id": "18"
+    },
+    {
+      "item_image": "effects/poison",
+      "item_name": {
+        "ru": "Отравление",
+        "en": "Poison"
+      },
+      "item_stroke_id": "minecraft:poison",
+      "item_number_id": "19"
+    },
+    {
+      "item_image": "effects/wither",
+      "item_name": {
+        "ru": "Иссушение",
+        "en": "Wither"
+      },
+      "item_stroke_id": "minecraft:wither",
+      "item_number_id": "20"
+    },
+    {
+      "item_image": "effects/health_boost",
+      "item_name": {
+        "ru": "Прилив Здоровья",
+        "en": "Health Boost"
+      },
+      "item_stroke_id": "minecraft:health_boost",
+      "item_number_id": "21"
+    },
+    {
+      "item_image": "effects/absorption",
+      "item_name": {
+        "ru": "Поглощение",
+        "en": "Absorption"
+      },
+      "item_stroke_id": "minecraft:absorption",
+      "item_number_id": "22"
+    },
+    {
+      "item_image": "effects/saturation",
+      "item_name": {
+        "ru": "Насыщение",
+        "en": "Saturation"
+      },
+      "item_stroke_id": "minecraft:saturation",
+      "item_number_id": "23"
+    },
+    {
+      "item_image": "effects/levitation",
+      "item_name": {
+        "ru": "Левитация",
+        "en": "Levitation"
+      },
+      "item_stroke_id": "minecraft:levitation",
+      "item_number_id": "25"
+    },
+    {
+      "item_image": "effects/slow_falling",
+      "item_name": {
+        "ru": "Медленное Падение",
+        "en": "Slow Falling"
+      },
+      "item_stroke_id": "minecraft:slow_falling",
+      "item_number_id": "28"
+    },
+    {
+      "item_image": "effects/conduit_power",
+      "item_name": {
+        "ru": "Морская Сила",
+        "en": "Conduit Power"
+      },
+      "item_stroke_id": "minecraft:conduit_power",
+      "item_number_id": "29"
+    },
+    {
       "item_image": "effects/dolphins_grace",
       "item_name": {
         "ru": "Грация Дельфина",
-        "en": "Dolphin Grace"
+        "en": "Dolphins Grace"
       },
-      "item_stroke_id": "minecraft:dolphin_grace",
+      "item_stroke_id": "minecraft:dolphins_grace",
       "item_number_id": "30"
     },
     {
-      "item_image": "effects/jump_boost",
+      "item_image": "effects/dolphins_grace",
       "item_name": {
-        "ru": "Прыгучесть",
-        "en": "Jump Boost"
+        "ru": "Грация Дельфина",
+        "en": "Dolphins Grace"
       },
-      "item_stroke_id": "minecraft:jump_boost",
-      "item_number_id": "8"
+      "item_stroke_id": "minecraft:dolphins_grace",
+      "item_number_id": "30"
+    },
+    {
+      "item_image": "effects/bad_omen",
+      "item_name": {
+        "ru": "Дурное Знамение",
+        "en": "Bad Omen"
+      },
+      "item_stroke_id": "minecraft:bad_omen",
+      "item_number_id": "31"
+    },
+    {
+      "item_image": "effects/hero_of_the_village",
+      "item_name": {
+        "ru": "Герой Деревни",
+        "en": "Hero Of The Village"
+      },
+      "item_stroke_id": "minecraft:hero_of_the_village",
+      "item_number_id": "32"
     }
   ],
   "mobs": [
