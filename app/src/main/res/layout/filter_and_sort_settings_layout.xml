@@ -36,6 +36,7 @@
             android:textStyle="bold" />
 
         <RadioGroup
+            android:id="@+id/rg_view_ids"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:checkedButton="@id/rd_view_id_items_and_blocks">
