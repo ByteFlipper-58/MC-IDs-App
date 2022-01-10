@@ -122,7 +122,7 @@
     {
       "item_image": "effects/instant_health",
       "item_name": {
-        "ru": "Сила",
+        "ru": "Исцеление",
         "en": "Instant Health"
       },
       "item_stroke_id": "minecraft:instant_health",

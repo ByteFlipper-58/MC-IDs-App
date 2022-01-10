@@ -142,14 +142,16 @@ public class ContentViewActivity extends AppCompatActivity {
 
         if (settings.getSortBy() == "ascending") {
             tg_btn_sort_by.check(R.id.sort_by_ascending);
-        } else if (settings.getSortBy() == "descending") {
+        } else {
             tg_btn_sort_by.check(R.id.sort_by_descending);
         }
 
         btn_enter_filters.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                recreate();
+                bottomSheetDialog.dismiss();
+                addItemsFromJSON();
+                adapter.notifyDataSetChanged();
             }
         });
 
@@ -159,6 +161,7 @@ public class ContentViewActivity extends AppCompatActivity {
 
     private void addItemsFromJSON() {
         try {
+            viewItems.clear();
             String bedrock_ids = readJSONDataFromFile();
             JSONObject jsonObject = new JSONObject(bedrock_ids);
             JSONArray jsonArray = jsonObject.getJSONArray(settings.getShowIdType());
@@ -176,24 +179,10 @@ public class ContentViewActivity extends AppCompatActivity {
                 viewItems.add(itemInfo);
             }
 
-            Collections.sort(viewItems, new Comparator<IDsModel>(){
-                public int compare(IDsModel obj1, IDsModel obj2) {
+            if (settings.getSortBy() == "descending") {
+                Collections.reverse(viewItems);
+            }
 
-                    if (settings.getSortBy() == "ascending") {
-                        return obj1.getItem_number_id().compareToIgnoreCase(obj2.getItem_number_id());
-                    } else {
-                        return obj2.getItem_number_id().compareToIgnoreCase(obj1.getItem_number_id());
-                    }
-
-                    // ## Ascending order
-                    //return obj1.getItem_number_id().compareToIgnoreCase(obj2.getItem_number_id()); // To compare string values
-                    // return Integer.valueOf(obj1.getItem_number_id()).compareTo(obj2.getItem_number_id()); // To compare integer values
-
-                    // ## Descending order
-                    // return obj2.getItem_number_id().compareToIgnoreCase(obj1.getItem_number_id()); // To compare string values
-                    // return Integer.valueOf(obj2.getId()).compareTo(obj1.getId()); // To compare integer values
-                }
-            });
         } catch (JSONException | IOException e) {
             Log.d(TAG, "addItemsFromJSON: ", e);
         }
