@@ -16,7 +16,7 @@
         <com.google.android.material.textview.MaterialTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Фильтрация и Сортировка"
+            android:text="@string/filtering_and_sort"
             android:textSize="21sp"
             android:textStyle="bold"
             android:gravity="center_horizontal"/>
@@ -31,7 +31,7 @@
         <com.google.android.material.textview.MaterialTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Отображать:"
+            android:text="@string/display"
             android:textSize="21sp"
             android:textStyle="bold" />
 
@@ -45,21 +45,21 @@
                 android:id="@+id/rd_view_id_items_and_blocks"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="ID Блоков и Предметов"
+                android:text="@string/block_and_item_id"
                 android:textSize="18sp" />
 
             <com.google.android.material.radiobutton.MaterialRadioButton
                 android:id="@+id/rd_view_id_effects"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="ID Эффектов"
+                android:text="@string/effects_id"
                 android:textSize="18sp" />
 
             <com.google.android.material.radiobutton.MaterialRadioButton
                 android:id="@+id/rd_view_id_mobs"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="ID Мобов"
+                android:text="@string/mobs_id"
                 android:textSize="18sp" />
         </RadioGroup>
 
@@ -73,7 +73,7 @@
         <com.google.android.material.textview.MaterialTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Сортировать по:"
+            android:text="@string/sort_by"
             android:textSize="21sp"
             android:textStyle="bold" />
 
@@ -87,7 +87,7 @@
                 android:id="@+id/sort_by_ascending"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Возрастанию"
+                android:text="@string/ascending"
                 app:icon="@drawable/ic_baseline_keyboard_arrow_up_24"
                 style="?attr/materialButtonOutlinedStyle"/>
 
@@ -95,7 +95,7 @@
                 android:id="@+id/sort_by_descending"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Убыванию"
+                android:text="@string/descending"
                 app:icon="@drawable/ic_baseline_keyboard_arrow_down_24"
                 style="?attr/materialButtonOutlinedStyle"/>
         </com.google.android.material.button.MaterialButtonToggleGroup>
@@ -112,7 +112,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:text="Применить фильтры"
+            android:text="@string/apply_filters"
             style="?attr/materialButtonOutlinedStyle"/>
     </LinearLayout>
 

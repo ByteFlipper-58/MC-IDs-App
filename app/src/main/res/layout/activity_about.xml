@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AboutActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="0dp"
+            app:titleCentered="true"
+            app:title="@string/app_name"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.google.android.material.card.MaterialCardView
+                style="@style/Theme.MCBEID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="4dp"
+                app:cardCornerRadius="16dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="8dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/logo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:scaleType="centerCrop"
+                            android:scaleX="1.2"
+                            android:scaleY="1.2"
+                            android:src="@mipmap/ic_launcher_foreground" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/app_name_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="26dp"
+                            android:layout_toEndOf="@id/logo"
+                            android:text="@string/app_name"
+                            android:textSize="24sp"
+                            android:textStyle="bold" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/logo"
+                            android:layout_below="@id/app_name_text"
+                            android:text="@string/infinity_byte"
+                            android:textSize="16sp"/>
+
+                    </RelativeLayout>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/app_version"
+                        style="@style/Widget.MaterialComponents.Button.TextButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Version: 1.0.7 (8)"
+                        android:textSize="16sp"
+                        android:textAlignment="viewStart"
+                        android:textAllCaps="false"
+                        app:icon="@drawable/ic_baseline_info_24"
+                        app:iconGravity="start"
+                        app:iconPadding="16dp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/changelog"
+                        style="@style/Widget.MaterialComponents.Button.TextButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/changelog"
+                        android:textSize="16sp"
+                        android:textAlignment="viewStart"
+                        android:textAllCaps="false"
+                        android:textColor="#FF0000"
+                        app:icon="@drawable/ic_baseline_update_24"
+                        app:iconGravity="start"
+                        app:iconPadding="16dp"
+                        app:iconTint="#FF0000"/>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/source_code"
+                        style="@style/Widget.MaterialComponents.Button.TextButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/source_code"
+                        android:textSize="16sp"
+                        android:textAlignment="viewStart"
+                        android:textAllCaps="false"
+                        app:icon="@drawable/ic_baseline_code_24"
+                        app:iconGravity="start"
+                        app:iconPadding="16dp"/>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/privacy_policy"
+                        style="@style/Widget.MaterialComponents.Button.TextButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/privacy_policy"
+                        android:textSize="16sp"
+                        android:textAlignment="viewStart"
+                        android:textAllCaps="false"
+                        app:icon="@drawable/ic_baseline_privacy_tip_24"
+                        app:iconGravity="start"
+                        app:iconPadding="16dp"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                style="@style/Theme.MCBEID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="4dp"
+                app:cardCornerRadius="16dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="8dp">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="12dp"
+                        android:text="@string/feedback"
+                        android:textSize="21sp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/email"
+                        style="@style/Widget.MaterialComponents.Button.TextButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/email"
+                        android:textAlignment="viewStart"
+                        android:textAllCaps="false"
+                        app:icon="@drawable/ic_baseline_alternate_email_24"
+                        app:iconGravity="start"
+                        app:iconPadding="16dp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/vk_infinity_byte"
+                        style="@style/Widget.MaterialComponents.Button.TextButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/infinity_byte"
+                        android:textAlignment="viewStart"
+                        android:textAllCaps="false"
+                        app:icon="@drawable/ic_baseline_public_24"
+                        app:iconGravity="start"
+                        app:iconPadding="16dp"/>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/rate_review"
+                        style="@style/Widget.MaterialComponents.Button.TextButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/rate_review"
+                        android:textAlignment="viewStart"
+                        android:textAllCaps="false"
+                        app:icon="@drawable/ic_baseline_rate_review_24"
+                        app:iconGravity="start"
+                        app:iconPadding="16dp"/>
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

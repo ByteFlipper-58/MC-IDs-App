@@ -3,7 +3,13 @@
 
     <item
         android:id="@+id/filter_and_sort"
-        android:title="Filter and Sort"
+        android:title="@string/filtering_and_sort"
         android:icon="@drawable/ic_baseline_filter_list_24"
-        app:showAsAction="ifRoom" />
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/about_app"
+        android:title="About"
+        android:icon="@drawable/ic_baseline_info_24"
+        app:showAsAction="ifRoom"/>
 </menu>

@@ -49,7 +49,7 @@
             android:paddingStart="8dp"
             android:layout_toEndOf="@id/item_image"
             android:layout_below="@id/item_stroke_id"
-            android:text="ID: "
+            android:text="@string/id"
             android:textSize="18sp"
             android:textAllCaps="false"/>
 

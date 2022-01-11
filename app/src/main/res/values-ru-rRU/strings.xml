@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_version">Версия</string>
+    <string name="source_code">Исходной Код</string>
+    <string name="other_apps">Другие Приложения</string>
+    <string name="rate_review">Оставить Отзыв</string>
+    <string name="changelog">Чейнджлог</string>
+    <string name="feedback">Обратная Связь</string>
+    <string name="privacy_policy">Политика Приватности</string>
+    <string name="vk_infinity_byte">ВКонтакте InfinityByte</string>
+    <string name="vk_mod_company">ВКонтакте ModCompany</string>
+    <string name="filtering_and_sort">Фильтрация и Сортировка</string>
+    <string name="display">Отображать</string>
+    <string name="block_and_item_id">ID Блоков и Предметов</string>
+    <string name="effects_id">ID Эффектов</string>
+    <string name="mobs_id">ID Мобов</string>
+    <string name="sort_by">Сортировать по</string>
+    <string name="ascending">Возрастанию</string>
+    <string name="descending">Убыванию</string>
+    <string name="apply_filters">Применить Фильтры</string>
+    <string name="coming_soon">Скоро</string>
+</resources>

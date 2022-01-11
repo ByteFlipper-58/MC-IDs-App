@@ -6,6 +6,7 @@ import androidx.core.splashscreen.SplashScreen;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
@@ -84,6 +85,9 @@ public class ContentViewActivity extends AppCompatActivity {
                 switch (item.getItemId()) {
                     case R.id.filter_and_sort:
                         filterAndSortBottomSheetDialog();
+                    case R.id.about_app:
+                        Intent intent = new Intent(ContentViewActivity.this, AboutActivity.class);
+                        startActivity(intent);
                 }
                 return true;
             }

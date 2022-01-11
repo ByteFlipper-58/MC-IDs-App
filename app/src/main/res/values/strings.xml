@@ -1,5 +1,37 @@
 <resources>
-    <string name="app_name">MCBE ID</string>
+    <string name="app_name" translatable="false">Minecraft IDs</string>
+    <string name="infinity_byte" translatable="false">InfinityByte</string>
 
-    <string name="action_search">Search</string>
+    <string name="app_version">Version</string>
+    <string name="source_code">Source Code</string>
+    <string name="other_apps">Other Apps</string>
+    <string name="rate_review">Rate Review</string>
+    <string name="changelog">Changelog</string>
+    <string name="feedback">Feedback</string>
+    <string name="coming_soon">Coming Soon</string>
+    <string name="email" translatable="false">E-Mail</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="vk_infinity_byte">VK InfinityByte</string>
+    <string name="vk_mod_company">VK ModCompany</string>
+
+    <!--Filtering and Sort-->
+    <string name="filtering_and_sort">Filtering and Sort</string>
+    <string name="display">Display</string>
+    <string name="block_and_item_id">Blocks and Items ID</string>
+    <string name="effects_id">Effects ID</string>
+    <string name="mobs_id">Mobs ID</string>
+    <string name="sort_by">Sort By</string>
+    <string name="ascending">Ascending</string>
+    <string name="descending">Descending</string>
+    <string name="apply_filters">Apply Filters</string>
+
+    <!-- URLs-->
+    <string name="source_code_url" translatable="false">https://github.com/IbremMiner837/MC-IDs-App</string>
+    <string name="other_apps_url" translatable="false">https://play.google.com/store/apps/dev?id=8551876312630719902</string>
+    <string name="privacy_policy_url" translatable="false">https://vk.com/@infinitybyte-mc-ids-privacy-policy</string>
+    <string name="infinity_byte_vk_group_url" translatable="false">https://vk.com/infinitybyte</string>
+    <string name="mod_company_vk_group_url" translatable="false">https://vk.com/modcompanype</string>
+
+    <!--Translatable False-->
+    <string name="id" translatable="false">ID: </string>
 </resources>
