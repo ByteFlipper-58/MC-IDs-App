@@ -12,6 +12,7 @@ import android.widget.Toast;
 
 import com.google.android.material.button.MaterialButton;
 import com.infinitybyte.mcid.api.ChromeCustomTabAPI;
+import com.infinitybyte.mcid.models.UpdateHistoryModel;
 
 public class AboutActivity extends AppCompatActivity {
 
@@ -53,8 +54,8 @@ public class AboutActivity extends AppCompatActivity {
         changelog.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(AboutActivity.this, getString(R.string.coming_soon) + "...", Toast.LENGTH_SHORT).show();
-
+                Intent intent = new Intent(AboutActivity.this, UpdateHistoryActivity.class);
+                startActivity(intent);
             }
         });
 

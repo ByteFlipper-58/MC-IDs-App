@@ -1,4 +1,4 @@
-package com.infinitybyte.mcid;
+package com.infinitybyte.mcid.models;
 
 public class IDsModel {
     String item_image, item_name, item_stroke_id, item_number_id;

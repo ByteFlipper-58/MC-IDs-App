@@ -1,4 +1,4 @@
-package com.infinitybyte.mcid;
+package com.infinitybyte.mcid.adapters;
 
 import android.content.Context;
 import android.net.Uri;
@@ -12,6 +12,8 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.infinitybyte.mcid.R;
+import com.infinitybyte.mcid.models.IDsModel;
 
 import java.util.List;
 

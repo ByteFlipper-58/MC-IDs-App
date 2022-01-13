@@ -18,7 +18,7 @@
             android:layout_height="wrap_content"
             android:elevation="0dp"
             app:titleCentered="true"
-            app:title="@string/app_name"/>
+            app:title="@string/about"/>
 
     </com.google.android.material.appbar.AppBarLayout>
 
@@ -101,11 +101,9 @@
                         android:textSize="16sp"
                         android:textAlignment="viewStart"
                         android:textAllCaps="false"
-                        android:textColor="#FF0000"
                         app:icon="@drawable/ic_baseline_update_24"
                         app:iconGravity="start"
-                        app:iconPadding="16dp"
-                        app:iconTint="#FF0000"/>
+                        app:iconPadding="16dp"/>
 
                     <com.google.android.material.button.MaterialButton
                         android:id="@+id/source_code"

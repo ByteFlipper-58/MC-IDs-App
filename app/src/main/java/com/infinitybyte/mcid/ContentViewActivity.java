@@ -11,17 +11,16 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewTreeObserver;
 import android.widget.ProgressBar;
 import android.widget.RadioGroup;
-import android.widget.ToggleButton;
 
 import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.button.MaterialButtonToggleGroup;
-import com.google.android.material.radiobutton.MaterialRadioButton;
+import com.infinitybyte.mcid.adapters.JsonAdapter;
 import com.infinitybyte.mcid.api.SettingsMain;
+import com.infinitybyte.mcid.models.IDsModel;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -33,7 +32,6 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
 import java.util.Locale;
 
@@ -51,8 +49,6 @@ public class ContentViewActivity extends AppCompatActivity {
     private RecyclerView.LayoutManager layoutManager;
 
     private MaterialToolbar toolbar;
-
-    ProgressBar progressBar;
 
     private static final String TAG = "ContentView";
 
@@ -85,9 +81,11 @@ public class ContentViewActivity extends AppCompatActivity {
                 switch (item.getItemId()) {
                     case R.id.filter_and_sort:
                         filterAndSortBottomSheetDialog();
+                        break;
                     case R.id.about_app:
                         Intent intent = new Intent(ContentViewActivity.this, AboutActivity.class);
                         startActivity(intent);
+                        break;
                 }
                 return true;
             }

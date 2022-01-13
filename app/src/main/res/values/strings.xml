@@ -2,6 +2,7 @@
     <string name="app_name" translatable="false">Minecraft IDs</string>
     <string name="infinity_byte" translatable="false">InfinityByte</string>
 
+    <string name="about">About</string>
     <string name="app_version">Version</string>
     <string name="source_code">Source Code</string>
     <string name="other_apps">Other Apps</string>
