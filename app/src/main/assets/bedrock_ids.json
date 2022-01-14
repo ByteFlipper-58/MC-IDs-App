@@ -37,40 +37,472 @@
       "item_number_id": "1:3"
     },
     {
-      "item_image": "stone/polished_granite",
+      "item_image": "stone/polished_diorite",
       "item_name": {
-        "ru": "Полированный Гранит",
-        "en": "Polished Granite"
+        "ru": "Полированный Диорит",
+        "en": "Polished Diorite"
       },
-      "item_stroke_id": "minecraft:polished_granite",
-      "item_number_id": "1:2"
+      "item_stroke_id": "minecraft:polished_diorite",
+      "item_number_id": "1:4"
     },
     {
-      "item_image": "stone/diorite",
+      "item_image": "stone/andesite",
       "item_name": {
-        "ru": "Диорит",
-        "en": "Diorite"
+        "ru": "Андезит",
+        "en": "Andesite"
       },
-      "item_stroke_id": "minecraft:diorite",
-      "item_number_id": "1:3"
+      "item_stroke_id": "minecraft:andesite",
+      "item_number_id": "1:5"
     },
     {
-      "item_image": "stone/polished_granite",
+      "item_image": "stone/polished_andesite",
       "item_name": {
-        "ru": "Полированный Гранит",
-        "en": "Polished Granite"
+        "ru": "Полированный Андезит",
+        "en": "Polished Andesite"
       },
-      "item_stroke_id": "minecraft:polished_granite",
-      "item_number_id": "1:2"
+      "item_stroke_id": "minecraft:polished_andesite",
+      "item_number_id": "1:6"
     },
     {
-      "item_image": "stone/diorite",
+      "item_image": "grass_block",
       "item_name": {
-        "ru": "Диорит",
-        "en": "Diorite"
+        "ru": "Дерн",
+        "en": "Grass Block"
       },
-      "item_stroke_id": "minecraft:diorite",
-      "item_number_id": "1:3"
+      "item_stroke_id": "minecraft:grass_block",
+      "item_number_id": "2"
+    },
+    {
+      "item_image": "dirt",
+      "item_name": {
+        "ru": "Земля",
+        "en": "Dirt"
+      },
+      "item_stroke_id": "minecraft:dirt",
+      "item_number_id": "3"
+    },
+    {
+      "item_image": "coarse_dirt",
+      "item_name": {
+        "ru": "Каменистая Земля",
+        "en": "Coarse Dirt"
+      },
+      "item_stroke_id": "minecraft:coarse_dirt",
+      "item_number_id": "3:1"
+    },
+    {
+      "item_image": "podzol",
+      "item_name": {
+        "ru": "Подзол",
+        "en": "Podzol"
+      },
+      "item_stroke_id": "minecraft:podzol",
+      "item_number_id": "3:2 | 243"
+    },
+    {
+      "item_image": "stone/cobblestone",
+      "item_name": {
+        "ru": "Булыжник",
+        "en": "Cobblestone"
+      },
+      "item_stroke_id": "minecraft:cobblestone",
+      "item_number_id": "4"
+    },
+    {
+      "item_image": "wood/oak/oak_planks",
+      "item_name": {
+        "ru": "Дубовые Доски",
+        "en": "Oak Planks"
+      },
+      "item_stroke_id": "minecraft:oak_planks",
+      "item_number_id": "5"
+    },
+    {
+      "item_image": "wood/spruce/spruce_planks",
+      "item_name": {
+        "ru": "Еловые Доски",
+        "en": "Spruce Planks"
+      },
+      "item_stroke_id": "minecraft:spruce_planks",
+      "item_number_id": "5:1"
+    },
+    {
+      "item_image": "wood/birch/birch_planks",
+      "item_name": {
+        "ru": "Березовые Доски",
+        "en": "Birch Planks"
+      },
+      "item_stroke_id": "minecraft:birch_planks",
+      "item_number_id": "5:2"
+    },
+    {
+      "item_image": "wood/jungle/jungle_planks",
+      "item_name": {
+        "ru": "Доски из Тропического Дерева",
+        "en": "Jungle Planks"
+      },
+      "item_stroke_id": "minecraft:jungle_planks",
+      "item_number_id": "5:3"
+    },
+    {
+      "item_image": "wood/acacia/acacia_planks",
+      "item_name": {
+        "ru": "Акациевые Доски",
+        "en": "Acacia Planks"
+      },
+      "item_stroke_id": "minecraft:acacia_planks",
+      "item_number_id": "5:4"
+    },
+    {
+      "item_image": "wood/dark_oak/dark_oak_planks",
+      "item_name": {
+        "ru": "Доски из Темного Дуба",
+        "en": "Dark Oak Planks"
+      },
+      "item_stroke_id": "minecraft:dark_oak_planks",
+      "item_number_id": "5:5"
+    },
+    {
+      "item_image": "wood/oak/oak_sapling",
+      "item_name": {
+        "ru": "Саженец Дуба",
+        "en": "Oak Sapling"
+      },
+      "item_stroke_id": "minecraft:oak_sapling",
+      "item_number_id": "6"
+    },
+    {
+      "item_image": "wood/spruce/spruce_sapling",
+      "item_name": {
+        "ru": "Еловый Саженец",
+        "en": "Spruce Sapling"
+      },
+      "item_stroke_id": "minecraft:spruce_sapling",
+      "item_number_id": "6:1"
+    },
+    {
+      "item_image": "wood/birch/birch_sapling",
+      "item_name": {
+        "ru": "Саженец Березы",
+        "en": "Birch Sapling"
+      },
+      "item_stroke_id": "minecraft:birch_sapling",
+      "item_number_id": "6:2"
+    },
+    {
+      "item_image": "wood/oak/oak_sapling",
+      "item_name": {
+        "ru": "Саженец Тропического Дерева",
+        "en": "Jungle Sapling"
+      },
+      "item_stroke_id": "minecraft:jungle_sapling",
+      "item_number_id": "6:3"
+    },
+    {
+      "item_image": "wood/acacia/acacia_sapling",
+      "item_name": {
+        "ru": "Саженец Акации",
+        "en": "Acacia Sapling"
+      },
+      "item_stroke_id": "minecraft:acacia_sapling",
+      "item_number_id": "6:4"
+    },
+    {
+      "item_image": "wood/dark_oak/dark_oak_sapling",
+      "item_name": {
+        "ru": "Сажанец Темного Дуба",
+        "en": "Dark Oak Sapling"
+      },
+      "item_stroke_id": "minecraft:dark_oak_sapling",
+      "item_number_id": "6:5"
+    },
+    {
+      "item_image": "stone/bedrock",
+      "item_name": {
+        "ru": "Бедрок",
+        "en": "Bedrock"
+      },
+      "item_stroke_id": "minecraft:bedrock",
+      "item_number_id": "7"
+    },
+    {
+      "item_image": "water",
+      "item_name": {
+        "ru": "Вода",
+        "en": "Water"
+      },
+      "item_stroke_id": "minecraft:water",
+      "item_number_id": "8|9"
+    },
+    {
+      "item_image": "lava",
+      "item_name": {
+        "ru": "Лава",
+        "en": "Lava"
+      },
+      "item_stroke_id": "minecraft:lava",
+      "item_number_id": "10|11"
+    },
+    {
+      "item_image": "sand",
+      "item_name": {
+        "ru": "Песок",
+        "en": "Sand"
+      },
+      "item_stroke_id": "minecraft:sand",
+      "item_number_id": "12"
+    },
+    {
+      "item_image": "red_sand",
+      "item_name": {
+        "ru": "Красный Песок",
+        "en": "Red Sand"
+      },
+      "item_stroke_id": "minecraft:red_sand",
+      "item_number_id": "12:1"
+    },
+    {
+      "item_image": "gravel",
+      "item_name": {
+        "ru": "Гравий",
+        "en": "Gravel"
+      },
+      "item_stroke_id": "minecraft:gravel",
+      "item_number_id": "13"
+    },
+    {
+      "item_image": "ores/gold_ore",
+      "item_name": {
+        "ru": "Золотая Руда",
+        "en": "Gold Ore"
+      },
+      "item_stroke_id": "minecraft:gold_ore",
+      "item_number_id": "14"
+    },
+    {
+      "item_image": "ores/iron_ore",
+      "item_name": {
+        "ru": "Железная Руда",
+        "en": "Iron Ore"
+      },
+      "item_stroke_id": "minecraft:iron_ore",
+      "item_number_id": "15"
+    },
+    {
+      "item_image": "ores/coal_ore",
+      "item_name": {
+        "ru": "Угольная Руда",
+        "en": "Coal Ore"
+      },
+      "item_stroke_id": "minecraft:coal_ore",
+      "item_number_id": "16"
+    },
+    {
+      "item_image": "wood/oak/oak_log",
+      "item_name": {
+        "ru": "Дубовое Бревно",
+        "en": "Oak Log"
+      },
+      "item_stroke_id": "minecraft:oak_log",
+      "item_number_id": "17"
+    },
+    {
+      "item_image": "wood/spruce/spruce_log",
+      "item_name": {
+        "ru": "Еловое Бревно",
+        "en": "Spruce Log"
+      },
+      "item_stroke_id": "minecraft:spruce_log",
+      "item_number_id": "17:1"
+    },
+    {
+      "item_image": "wood/birch/birch_log",
+      "item_name": {
+        "ru": "Березовое Бревно",
+        "en": "Birch Log"
+      },
+      "item_stroke_id": "minecraft:birch_log",
+      "item_number_id": "17:2"
+    },
+    {
+      "item_image": "wood/jungle/jungle_log",
+      "item_name": {
+        "ru": "Бревно Тропического Дерева",
+        "en": "Jungle Log"
+      },
+      "item_stroke_id": "minecraft:jungle_log",
+      "item_number_id": "17:3"
+    },
+    {
+      "item_image": "wood/acacia/acacia_log",
+      "item_name": {
+        "ru": "Акациевое Бревно",
+        "en": "Acacia Log"
+      },
+      "item_stroke_id": "minecraft:acacia_log",
+      "item_number_id": "17:4"
+    },
+    {
+      "item_image": "wood/dark_oak/dark_oak_log",
+      "item_name": {
+        "ru": "Бревно Темного Дуба",
+        "en": "Dark Oak Log"
+      },
+      "item_stroke_id": "minecraft:dark_oak_log",
+      "item_number_id": "17:5"
+    },
+    {
+      "item_image": "wood/oak/oak_leaves",
+      "item_name": {
+        "ru": "Дубовые Листья",
+        "en": "Oak Leaves"
+      },
+      "item_stroke_id": "minecraft:oak_leaves",
+      "item_number_id": "18"
+    },
+    {
+      "item_image": "wood/spruce/spruce_leaves",
+      "item_name": {
+        "ru": "Хвоя",
+        "en": "Spruce Leaves"
+      },
+      "item_stroke_id": "minecraft:spruce_leaves",
+      "item_number_id": "18:1"
+    },
+    {
+      "item_image": "wood/birch/birch_leaves",
+      "item_name": {
+        "ru": "Березовые Листья",
+        "en": "Birch Leaves"
+      },
+      "item_stroke_id": "minecraft:birch_leaves",
+      "item_number_id": "18:2"
+    },
+    {
+      "item_image": "wood/jungle/jungle_leaves",
+      "item_name": {
+        "ru": "Листья Тропического Дерева",
+        "en": "Jungle Leaves"
+      },
+      "item_stroke_id": "minecraft:jungle_leaves",
+      "item_number_id": "18:3"
+    },
+    {
+      "item_image": "wood/acacia/acacia_leaves",
+      "item_name": {
+        "ru": "Акациевые Листья",
+        "en": "Acacia Leaves"
+      },
+      "item_stroke_id": "minecraft:acacia_leaves",
+      "item_number_id": "18:4"
+    },
+    {
+      "item_image": "wood/dark_oak/dark_oak_leaves",
+      "item_name": {
+        "ru": "Листья Темного Дуба",
+        "en": "Dark Oak Leaves"
+      },
+      "item_stroke_id": "minecraft:dark_oak_leaves",
+      "item_number_id": "18:5"
+    },
+    {
+      "item_image": "sponge",
+      "item_name": {
+        "ru": "Губка",
+        "en": "Sponge"
+      },
+      "item_stroke_id": "minecraft:sponge",
+      "item_number_id": "19"
+    },
+    {
+      "item_image": "wet_sponge",
+      "item_name": {
+        "ru": "Мокрая Губка",
+        "en": "Wet Sponge"
+      },
+      "item_stroke_id": "minecraft:wet_sponge",
+      "item_number_id": "19:1"
+    },
+    {
+      "item_image": "glass/glass",
+      "item_name": {
+        "ru": "Стекло",
+        "en": "Glass"
+      },
+      "item_stroke_id": "minecraft:glass",
+      "item_number_id": "20"
+    },
+    {
+      "item_image": "ores/lapis_ore",
+      "item_name": {
+        "ru": "Лазуритовая Руда",
+        "en": "Lapis Ore"
+      },
+      "item_stroke_id": "minecraft:lapis_ore",
+      "item_number_id": "21"
+    },
+    {
+      "item_image": "ores/lapis_block",
+      "item_name": {
+        "ru": "Лазуритовый Блок",
+        "en": "Lapis Block"
+      },
+      "item_stroke_id": "minecraft:lapis_block",
+      "item_number_id": "22"
+    },
+    {
+      "item_image": "sandstone",
+      "item_name": {
+        "ru": "Песчаник",
+        "en": "Sandstone"
+      },
+      "item_stroke_id": "minecraft:sandstone",
+      "item_number_id": "24"
+    },
+    {
+      "item_image": "chiseled_sandstone",
+      "item_name": {
+        "ru": "Резной Песчаник",
+        "en": "Chiseled Sandstone"
+      },
+      "item_stroke_id": "minecraft:chiseled_sandstone",
+      "item_number_id": "24:1"
+    },
+    {
+      "item_image": "cut_sandstone",
+      "item_name": {
+        "ru": "Пиленый Песчаник",
+        "en": "Cut Sandstone"
+      },
+      "item_stroke_id": "minecraft:sandstone",
+      "item_number_id": "24:2"
+    },
+    {
+      "item_image": "powered_rail",
+      "item_name": {
+        "ru": "Энергорельсы",
+        "en": "Powered Rail"
+      },
+      "item_stroke_id": "minecraft:powered_rail",
+      "item_number_id": "27"
+    },
+    {
+      "item_image": "detector_rail",
+      "item_name": {
+        "ru": "Рельсы с Датчиком",
+        "en": "Detector Rail"
+      },
+      "item_stroke_id": "minecraft:detector_rail",
+      "item_number_id": "28"
+    },
+    {
+      "item_image": "cobweb",
+      "item_name": {
+        "ru": "Паутина",
+        "en": "Cobweb"
+      },
+      "item_stroke_id": "minecraft:cobweb",
+      "item_number_id": ""
     }
   ],
   "effects": [
