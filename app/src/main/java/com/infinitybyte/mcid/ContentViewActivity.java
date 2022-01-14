@@ -144,7 +144,7 @@ public class ContentViewActivity extends AppCompatActivity {
 
         if (settings.getSortBy() == "ascending") {
             tg_btn_sort_by.check(R.id.sort_by_ascending);
-        } else {
+        } else if (settings.getSortBy() == "descending"){
             tg_btn_sort_by.check(R.id.sort_by_descending);
         }
 

@@ -347,40 +347,552 @@
   ],
   "mobs": [
     {
-      "item_image": "mobs/icons/zombie_mob",
-      "item_name": {
-        "ru": "Зомби",
-        "en": "Zombie"
-      },
-      "item_stroke_id": "minecraft:zombie",
-      "item_number_id": "N/A"
-    },
-    {
       "item_image": "mobs/icons/bat_mob",
       "item_name": {
         "ru": "Летучая Мышь",
         "en": "Bat"
       },
       "item_stroke_id": "minecraft:bat",
-      "item_number_id": "N/A"
+      "item_number_id": "null"
     },
     {
-      "item_image": "mobs/icons/blaze_mob",
+      "item_image": "mobs/icons/cat_mob",
       "item_name": {
-        "ru": "Ифрит",
-        "en": "Blaze"
+        "ru": "Кошка",
+        "en": "Cat"
       },
-      "item_stroke_id": "minecraft:blaze",
-      "item_number_id": "N/A"
+      "item_stroke_id": "minecraft:cat",
+      "item_number_id": "null"
     },
     {
+      "item_image": "mobs/icons/chicken_mob",
+      "item_name": {
+        "ru": "Курица",
+        "en": "Chicken"
+      },
+      "item_stroke_id": "minecraft:chicken",
+      "item_number_id": "null"
+    },
+    {
+      "item_image": "mobs/icons/cod_mob",
+      "item_name": {
+        "ru": "Треска",
+        "en": "Cod"
+      },
+      "item_stroke_id": "minecraft:cod",
+      "item_number_id": "null"
+    },{
+      "item_image": "mobs/icons/cow_mob",
+      "item_name": {
+        "ru": "Корова",
+        "en": "Cow"
+      },
+      "item_stroke_id": "minecraft:cow",
+      "item_number_id": "null"
+    },{
+      "item_image": "mobs/icons/donkey_mob",
+      "item_name": {
+        "ru": "Осел",
+        "en": "Donkey"
+      },
+      "item_stroke_id": "minecraft:donkey",
+      "item_number_id": "null"
+    },{
+      "item_image": "mobs/icons/fox_mob",
+      "item_name": {
+        "ru": "Лиса",
+        "en": "Fox"
+      },
+      "item_stroke_id": "minecraft:fox",
+      "item_number_id": "null"
+    },{
+      "item_image": "mobs/icons/horse_mob",
+      "item_name": {
+        "ru": "Лошадь",
+        "en": "Horse"
+      },
+      "item_stroke_id": "minecraft:horse",
+      "item_number_id": "null"
+    },{
+      "item_image": "mobs/icons/mooshroom_mob",
+      "item_name": {
+        "ru": "Грибная Корова",
+        "en": "Mooshroom"
+      },
+      "item_stroke_id": "minecraftmooshroom:",
+      "item_number_id": "null"
+    },{
+      "item_image": "mobs/icons/mule_mob",
+      "item_name": {
+        "ru": "Мул",
+        "en": "Mule"
+      },
+      "item_stroke_id": "minecraft:mule",
+      "item_number_id": "null"
+    },{
+      "item_image": "mobs/icons/ocelot_mob",
+      "item_name": {
+        "ru": "Оцелот",
+        "en": "Ocelot"
+      },
+      "item_stroke_id": "minecraft:ocelot",
+      "item_number_id": "null"
+    },{
+      "item_image": "mobs/icons/parrot_mob",
+      "item_name": {
+        "ru": "Попугай",
+        "en": "Parrot"
+      },
+      "item_stroke_id": "minecraft:parrot",
+      "item_number_id": "null"
+    },{
+      "item_image": "mobs/icons/pig_mob",
+      "item_name": {
+        "ru": "Свинья",
+        "en": "Pig"
+      },
+      "item_stroke_id": "minecraft:pig",
+      "item_number_id": "null"
+    },{
+      "item_image": "mobs/icons/rabbit_mob",
+      "item_name": {
+        "ru": "Кролик",
+        "en": "Rabbit"
+      },
+      "item_stroke_id": "minecraft:rabbit",
+      "item_number_id": "null"
+    },{
+      "item_image": "mobs/icons/salmon_mob",
+      "item_name": {
+        "ru": "Лосось",
+        "en": "Salmon"
+      },
+      "item_stroke_id": "minecraft:salmon",
+      "item_number_id": "null"
+    },{
+      "item_image": "mobs/icons/sheep_mob",
+      "item_name": {
+        "ru": "Овца",
+        "en": "Sheep"
+      },
+      "item_stroke_id": "minecraft:sheep",
+      "item_number_id": "null"
+    },{
+      "item_image": "mobs/icons/squid_mob",
+      "item_name": {
+        "ru": "Спрут",
+        "en": "Squid"
+      },
+      "item_stroke_id": "minecraft:squid",
+      "item_number_id": "null"
+    },{
+      "item_image": "mobs/icons/tropical_fish_mob",
+      "item_name": {
+        "ru": "Тропическая Рыба",
+        "en": "Tropical Fish"
+      },
+      "item_stroke_id": "minecraft:tropical_fish",
+      "item_number_id": "null"
+    },{
+      "item_image": "mobs/icons/turtle_mob",
+      "item_name": {
+        "ru": "Черепаха",
+        "en": "Turtle"
+      },
+      "item_stroke_id": "minecraft:turtle",
+      "item_number_id": "null"
+    },{
+      "item_image": "mobs/icons/villager_mob",
+      "item_name": {
+        "ru": "Житель",
+        "en": "Villager"
+      },
+      "item_stroke_id": "minecraft:villager",
+      "item_number_id": "null"
+    },{
+      "item_image": "mobs/icons/wandering_trader_mob",
+      "item_name": {
+        "ru": "Странствующий Торговец",
+        "en": "Wandering Trader"
+      },
+      "item_stroke_id": "minecraft:wandering_trader",
+      "item_number_id": "null"
+    },{
+      "item_image": "mobs/icons/pufferfish_mob",
+      "item_name": {
+        "ru": "Иглобрюх",
+        "en": "Pufferfish"
+      },
+      "item_stroke_id": "minecraft:pufferfish",
+      "item_number_id": "null"
+    },{
+      "item_image": "mobs/icons/dolphin_mob",
+      "item_name": {
+        "ru": "Дельфин",
+        "en": "Dolphin"
+      },
+      "item_stroke_id": "minecraft:dolphin",
+      "item_number_id": "null"
+    },{
+      "item_image": "mobs/icons/llama_mob",
+      "item_name": {
+        "ru": "Лама",
+        "en": "Llama"
+      },
+      "item_stroke_id": "minecraft:llama",
+      "item_number_id": "null"
+    },{
+      "item_image": "mobs/icons/panda_mob",
+      "item_name": {
+        "ru": "Панда",
+        "en": "Panda"
+      },
+      "item_stroke_id": "minecraft:panda",
+      "item_number_id": "null"
+    },{
+      "item_image": "mobs/icons/polar_bear_mob",
+      "item_name": {
+        "ru": "Белый Медведь",
+        "en": "Polar Bear"
+      },
+      "item_stroke_id": "minecraft:polar_bear",
+      "item_number_id": "null"
+    },{
+      "item_image": "mobs/icons/wolf_mob",
+      "item_name": {
+        "ru": "Волк",
+        "en": "Wolf"
+      },
+      "item_stroke_id": "minecraft:wolf",
+      "item_number_id": "null"
+    },{
       "item_image": "mobs/icons/bee_mob",
       "item_name": {
         "ru": "Пчела",
         "en": "Bee"
       },
       "item_stroke_id": "minecraft:bee",
-      "item_number_id": "N/A"
+      "item_number_id": "null"
+    },{
+      "item_image": "mobs/icons/cafe_spider_mob",
+      "item_name": {
+        "ru": "Пещерный Паук",
+        "en": "Cave Spider"
+      },
+      "item_stroke_id": "minecraft:cave_spider",
+      "item_number_id": "null"
+    },{
+      "item_image": "mobs/icons/enderman_mob",
+      "item_name": {
+        "ru": "Эндермен",
+        "en": "Enderman"
+      },
+      "item_stroke_id": "minecraft:enderman",
+      "item_number_id": "null"
+    },{
+      "item_image": "mobs/icons/spider_mob",
+      "item_name": {
+        "ru": "Паук",
+        "en": "Spider"
+      },
+      "item_stroke_id": "minecraft:spider",
+      "item_number_id": "null"
+    },{
+      "item_image": "mobs/icons/blaze_mob",
+      "item_name": {
+        "ru": "Ифрит",
+        "en": "Blaze"
+      },
+      "item_stroke_id": "minecraft:blaze",
+      "item_number_id": "null"
+    },{
+      "item_image": "mobs/icons/creeper_mob",
+      "item_name": {
+        "ru": "Крипер",
+        "en": "Creeper"
+      },
+      "item_stroke_id": "minecraft:creeper",
+      "item_number_id": "null"
+    },{
+      "item_image": "mobs/icons/drowned_mob",
+      "item_name": {
+        "ru": "Утопленник",
+        "en": "Drowned"
+      },
+      "item_stroke_id": "minecraft:drowned",
+      "item_number_id": "null"
+    },{
+      "item_image": "mobs/icons/elder_guardian_mob",
+      "item_name": {
+        "ru": "Древний Страж",
+        "en": "Elder Guardian"
+      },
+      "item_stroke_id": "minecraft:elder_guardian",
+      "item_number_id": "null"
+    },{
+      "item_image": "mobs/icons/endermite_mob",
+      "item_name": {
+        "ru": "Чешуйница Энда",
+        "en": "Endermite"
+      },
+      "item_stroke_id": "minecraft:endermite",
+      "item_number_id": "null"
+    },{
+      "item_image": "mobs/icons/evoker_mob",
+      "item_name": {
+        "ru": "Вызыватель",
+        "en": "Evoker"
+      },
+      "item_stroke_id": "minecraft:evoker",
+      "item_number_id": "null"
+    },{
+      "item_image": "mobs/icons/ghast_mob",
+      "item_name": {
+        "ru": "Гаст",
+        "en": "Ghast"
+      },
+      "item_stroke_id": "minecraft:ghast",
+      "item_number_id": "null"
+    },{
+      "item_image": "mobs/icons/guardian_mob",
+      "item_name": {
+        "ru": "Страж",
+        "en": "Guardian"
+      },
+      "item_stroke_id": "minecraft:guardian",
+      "item_number_id": "null"
+    },{
+      "item_image": "mobs/icons/husk_mob",
+      "item_name": {
+        "ru": "Кадавр",
+        "en": "Husk"
+      },
+      "item_stroke_id": "minecraft:husk",
+      "item_number_id": "null"
+    },{
+      "item_image": "mobs/icons/magma_cube_mob",
+      "item_name": {
+        "ru": "Лавовый Куб",
+        "en": "Magma Cube"
+      },
+      "item_stroke_id": "minecraft:magma_cube",
+      "item_number_id": "null"
+    },{
+      "item_image": "mobs/icons/phantom_mob",
+      "item_name": {
+        "ru": "Фантом",
+        "en": "Phantom"
+      },
+      "item_stroke_id": "minecraft:phantom",
+      "item_number_id": "null"
+    },{
+      "item_image": "mobs/icons/pillager_mob",
+      "item_name": {
+        "ru": "Разбойник",
+        "en": "Pillager"
+      },
+      "item_stroke_id": "minecraft:pillager",
+      "item_number_id": "null"
+    },{
+      "item_image": "mobs/icons/ravager_mob",
+      "item_name": {
+        "ru": "Разоритель",
+        "en": "Ravager"
+      },
+      "item_stroke_id": "minecraft:ravager",
+      "item_number_id": "null"
+    },{
+      "item_image": "mobs/icons/shulker_mob",
+      "item_name": {
+        "ru": "Шалкер",
+        "en": "Shulker"
+      },
+      "item_stroke_id": "minecraft:shulker",
+      "item_number_id": "null"
+    },{
+      "item_image": "mobs/icons/silverfish_mob",
+      "item_name": {
+        "ru": "Чешуйница",
+        "en": "Silverfish"
+      },
+      "item_stroke_id": "minecraft:silverfish",
+      "item_number_id": "null"
+    },{
+      "item_image": "mobs/icons/skeleton_mob",
+      "item_name": {
+        "ru": "Скелет",
+        "en": "Skeleton"
+      },
+      "item_stroke_id": "minecraft:skeleton",
+      "item_number_id": "null"
+    },{
+      "item_image": "mobs/icons/slime_mob",
+      "item_name": {
+        "ru": "Слизень",
+        "en": "Slime"
+      },
+      "item_stroke_id": "minecraft:slime",
+      "item_number_id": "null"
+    },{
+      "item_image": "mobs/icons/stray_mob",
+      "item_name": {
+        "ru": "Зимогор",
+        "en": "Stray"
+      },
+      "item_stroke_id": "minecraft:stray",
+      "item_number_id": "null"
+    },{
+      "item_image": "mobs/icons/vex_mob",
+      "item_name": {
+        "ru": "Досаждатель",
+        "en": "Vex"
+      },
+      "item_stroke_id": "minecraft:vex",
+      "item_number_id": "null"
+    },{
+      "item_image": "mobs/icons/vindicator_mob",
+      "item_name": {
+        "ru": "Поборник",
+        "en": "Vindicator"
+      },
+      "item_stroke_id": "minecraft:vindicator",
+      "item_number_id": "null"
+    },{
+      "item_image": "mobs/icons/witch_mob",
+      "item_name": {
+        "ru": "Ведьма",
+        "en": "Witch"
+      },
+      "item_stroke_id": "minecraft:witch",
+      "item_number_id": "null"
+    },{
+      "item_image": "mobs/icons/wither_skeleton_mob",
+      "item_name": {
+        "ru": "Скелет-Иссушитель",
+        "en": "Wither-Skeleton"
+      },
+      "item_stroke_id": "minecraft:wither_skeleton",
+      "item_number_id": "null"
+    },{
+      "item_image": "mobs/icons/zombie_mob",
+      "item_name": {
+        "ru": "Зомби",
+        "en": "Zombie"
+      },
+      "item_stroke_id": "minecraft:zombie",
+      "item_number_id": "null"
+    },{
+      "item_image": "mobs/icons/zombie_villager_mob",
+      "item_name": {
+        "ru": "Зомби-Житель",
+        "en": "Zombie-Villager"
+      },
+      "item_stroke_id": "minecraft:zombie_villager",
+      "item_number_id": "null"
+    },{
+      "item_image": "mobs/icons/snow_golem_mob",
+      "item_name": {
+        "ru": "Снежный Голем",
+        "en": "Snow Golem"
+      },
+      "item_stroke_id": "minecraft:snow_golem",
+      "item_number_id": "null"
+    },{
+      "item_image": "mobs/icons/iron_golem_mob",
+      "item_name": {
+        "ru": "Железный Голем",
+        "en": "Iron Golem"
+      },
+      "item_stroke_id": "minecraft:iron_golem",
+      "item_number_id": "null"
+    },{
+      "item_image": "mobs/icons/ender_dragon_mob",
+      "item_name": {
+        "ru": "Дракон Края",
+        "en": "Ender Dragon"
+      },
+      "item_stroke_id": "minecraft:ender_dragon",
+      "item_number_id": "null"
+    },{
+      "item_image": "mobs/icons/wither_mob",
+      "item_name": {
+        "ru": "Иссушитель",
+        "en": "Wither"
+      },
+      "item_stroke_id": "minecraft:wither",
+      "item_number_id": "null"
+    },{
+      "item_image": "mobs/icons/zoglin_mob",
+      "item_name": {
+        "ru": "Зоглин",
+        "en": "Zoglin"
+      },
+      "item_stroke_id": "minecraft:zoglin",
+      "item_number_id": "null"
+    },{
+      "item_image": "mobs/icons/hoglin_mob",
+      "item_name": {
+        "ru": "Хоглин",
+        "en": "Hoglin"
+      },
+      "item_stroke_id": "minecraft:hoglin",
+      "item_number_id": "null"
+    },{
+      "item_image": "mobs/icons/strider_mob",
+      "item_name": {
+        "ru": "Страйдер",
+        "en": "Strider"
+      },
+      "item_stroke_id": "minecraft:strider",
+      "item_number_id": "null"
+    },{
+      "item_image": "mobs/icons/piglin_mob",
+      "item_name": {
+        "ru": "Пиглин",
+        "en": "Piglin"
+      },
+      "item_stroke_id": "minecraft:piglin",
+      "item_number_id": "null"
+    },{
+      "item_image": "mobs/icons/zombified_piglin_mob",
+      "item_name": {
+        "ru": "Зомбированный Пиглин",
+        "en": "Zombified Piglin"
+      },
+      "item_stroke_id": "minecraft:zombified_piglin",
+      "item_number_id": "null"
+    },{
+      "item_image": "mobs/icons/piglin_brute_mob",
+      "item_name": {
+        "ru": "Брутальный Пиглин",
+        "en": "Piglin Brute"
+      },
+      "item_stroke_id": "minecraft:piglin_brute",
+      "item_number_id": "null"
+    },{
+      "item_image": "mobs/icons/goat_mob",
+      "item_name": {
+        "ru": "Козел",
+        "en": "Goat"
+      },
+      "item_stroke_id": "minecraft:goat",
+      "item_number_id": "null"
+    },{
+      "item_image": "mobs/icons/axolotl_mob",
+      "item_name": {
+        "ru": "Аксолотль",
+        "en": "Axolotl"
+      },
+      "item_stroke_id": "minecraft:axolotl",
+      "item_number_id": "null"
+    },{
+      "item_image": "mobs/icons/glow_squid_mob",
+      "item_name": {
+        "ru": "Светящийся Спрут",
+        "en": "Glow Squid"
+      },
+      "item_stroke_id": "minecraft:glow_squid",
+      "item_number_id": "null"
     }
   ]
 }
