@@ -2,6 +2,13 @@
   "UpdateHistory": [
     {
       "changelog": {
+        "ru": "1. Добавлены все ID мобов\n2. Добавлены ID предметов и блоков от 1 до 30",
+        "en": "1. Added all IDs of Mobs\n2. Added IDs of items and blocks from 1 to 30"
+      },
+      "version": "1.0.3 Beta (5)"
+    },
+    {
+      "changelog": {
         "ru": "Начало Открытого Бета Тестирования!",
         "en": "Start of Open Beta Testing!"
       },
