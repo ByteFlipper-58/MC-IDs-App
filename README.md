@@ -1,8 +1,6 @@
 # Minecraft ID's for blocks, items, etc.
 
-<img style="border-radius:20%" height="70px" width="70px" src="./img/logo.png"/>
-<a href='https://play.google.com/store/apps/details?id=com.infinitybyte.mcid&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
-<img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' height="80px"/></a>
+<img height="70px" width="70px" src="./img/logo.png"/> <a href='https://play.google.com/store/apps/details?id=com.infinitybyte.mcid&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='./img/gp_link' height="80px"/></a>
 
 ## To-do list:
 
