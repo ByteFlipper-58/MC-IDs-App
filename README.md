@@ -42,6 +42,8 @@ ___
 
 - [ModCompany VK](https://vk.com/modcompanype)
 
+___
+
 ### All content rights reserved by Mojang Studios
 
 This application was not developed by Mojang AB, and we are not affiliated with this company in any way! The Minecraft
