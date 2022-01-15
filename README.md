@@ -6,10 +6,7 @@ ___
 
 ## Screenshots
 
-<img height="300px" src="./img/screenshots/1.png"/>
-<img height="300px" src="./img/screenshots/2.png"/>
-<img height="300px" src="./img/screenshots/3.png"/>
-<img height="300px" src="./img/screenshots/4.png"/>
+<img height="300px" src="./img/screenshots/1.png"/> <img height="300px" src="./img/screenshots/2.png"/> <img height="300px" src="./img/screenshots/3.png"/> <img height="300px" src="./img/screenshots/4.png"/>
 
 ## To-do list:
 
