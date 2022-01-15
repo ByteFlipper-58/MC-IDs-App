@@ -15,4 +15,4 @@
 ## Credits
 
 * App development - [Ibragim](https://github.com/IbremMiner837)
-* Beautiful README.md - [Kirbo](https://github.com/Kirbo) (:D)
+* Beautiful [README.md](README.md) - [Kirbo](https://github.com/Kirbo) (Recursion :D)
