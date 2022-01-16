@@ -34,7 +34,7 @@ ___
 ## Credits
 
 * App development - [Ibragim](https://github.com/IbremMiner837)
-* Beautiful [README.md](README.md) - [Kirbo](https://github.com/Kirbo) (Recursion :D)
+* Beautiful [README.md](README.md) - [Kirbo](https://github.com/KirboGames) (Recursion :D)
 
 ## Links
 
