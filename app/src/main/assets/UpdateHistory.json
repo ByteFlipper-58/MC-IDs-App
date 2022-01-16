@@ -2,6 +2,13 @@
   "UpdateHistory": [
     {
       "changelog": {
+        "ru": "1. Добавлено внутренное обновление\n2. Добавлены ID предметов и блоков от 31 до 42",
+        "en": "1. Added In App Update\n2. Added IDs of items and blocks from 31 to 42"
+      },
+      "version": "1.0.4 Beta (6)"
+    },
+    {
+      "changelog": {
         "ru": "1. Добавлены все ID мобов\n2. Добавлены ID предметов и блоков от 1 до 30",
         "en": "1. Added all IDs of Mobs\n2. Added IDs of items and blocks from 1 to 30"
       },

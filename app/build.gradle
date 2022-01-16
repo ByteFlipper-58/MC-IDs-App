@@ -10,23 +10,23 @@ android {
         applicationId "com.infinitybyte.mcid"
         minSdk 23
         targetSdk 31
-        versionCode 5
-        versionName "1.0.3 Beta"
+        versionCode 6
+        versionName "1.0.4 Beta"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
-    android.defaultConfig.ndk.debugSymbolLevel = 'FULL'
+    //android.defaultConfig.ndk.debugSymbolLevel = 'FULL'
 
     buildTypes {
         release {
             // Enables code shrinking, obfuscation, and optimization for only
             // your project's release build type.
-            minifyEnabled true
+            //minifyEnabled true
 
             // Enables resource shrinking, which is performed by the
             // Android Gradle plugin.
-            shrinkResources true
+            //shrinkResources true
 
             // Includes the default ProGuard rules files that are packaged with
             // the Android Gradle plugin. To learn more, go to the section about
@@ -59,6 +59,8 @@ dependencies {
     //Google Play and Google
     implementation 'com.google.android.play:core:1.10.3'
     implementation "androidx.browser:browser:1.4.0"
+
+    implementation 'eu.dkaratzas:android-inapp-update:1.0.5'
 
     //Images
     implementation 'com.github.bumptech.glide:glide:4.12.0'

@@ -18,6 +18,7 @@ import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.button.MaterialButtonToggleGroup;
+import com.google.android.material.snackbar.Snackbar;
 import com.infinitybyte.mcid.adapters.JsonAdapter;
 import com.infinitybyte.mcid.api.SettingsMain;
 import com.infinitybyte.mcid.models.IDsModel;
@@ -35,7 +36,11 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Locale;
 
-public class ContentViewActivity extends AppCompatActivity {
+import eu.dkaratzas.android.inapp.update.Constants;
+import eu.dkaratzas.android.inapp.update.InAppUpdateManager;
+import eu.dkaratzas.android.inapp.update.InAppUpdateStatus;
+
+public class ContentViewActivity extends AppCompatActivity implements InAppUpdateManager.InAppUpdateHandler {
 
     private SettingsMain settings;
 
@@ -51,6 +56,9 @@ public class ContentViewActivity extends AppCompatActivity {
     private MaterialToolbar toolbar;
 
     private static final String TAG = "ContentView";
+
+    private static final int REQ_CODE_VERSION_UPDATE = 99;
+    private InAppUpdateManager inAppUpdateManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -90,6 +98,17 @@ public class ContentViewActivity extends AppCompatActivity {
                 return true;
             }
         });
+
+        inAppUpdateManager = InAppUpdateManager.Builder(this, REQ_CODE_VERSION_UPDATE)
+                .resumeUpdates(true) // Resume the update, if the update was stalled. Default is true
+                .mode(Constants.UpdateMode.FLEXIBLE)
+                // default is false. If is set to true you,
+                // have to manage the user confirmation when
+                // you detect the InstallStatus.DOWNLOADED status,
+                .useCustomNotification(true)
+                .handler(this);
+
+        inAppUpdateManager.checkForAppUpdate();
 
         addItemsFromJSON();
     }
@@ -211,5 +230,32 @@ public class ContentViewActivity extends AppCompatActivity {
             }
         }
         return new String(builder);
+    }
+
+    @Override
+    public void onInAppUpdateError(int code, Throwable error) {
+        //
+    }
+
+    @Override
+    public void onInAppUpdateStatus(InAppUpdateStatus status) {
+        if (status.isDownloaded()) {
+
+            View rootView = getWindow().getDecorView().findViewById(android.R.id.content);
+
+            Snackbar snackbar = Snackbar.make(rootView,
+                    R.string.update_downloaded,
+                    Snackbar.LENGTH_INDEFINITE);
+
+            snackbar.setAction(R.string.restart, view -> {
+
+                // Triggers the completion of the update of the app for the flexible flow.
+                inAppUpdateManager.completeUpdate();
+
+            });
+
+            snackbar.show();
+
+        }
     }
 }

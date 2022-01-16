@@ -12,6 +12,8 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.resource.bitmap.CenterCrop;
+import com.bumptech.glide.request.RequestOptions;
 import com.infinitybyte.mcid.R;
 import com.infinitybyte.mcid.models.IDsModel;
 
@@ -64,6 +66,9 @@ public class JsonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
             case TYPE:
             default:
 
+                RequestOptions requestOptions = new RequestOptions();
+                requestOptions = requestOptions.transforms(new CenterCrop());
+
                 ItemViewHolder itemViewHolder = (ItemViewHolder) viewHolder;
                 IDsModel itemInfo = (IDsModel) listRecyclerItem.get(i);
 
@@ -73,6 +78,7 @@ public class JsonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
                 Glide.with(itemViewHolder.item_image)
                         .load(Uri.parse("file:///android_asset/images/" + itemInfo.getItem_image() + ".png"))
+                        .apply(requestOptions)
                         .into(itemViewHolder.item_image);
         }
     }

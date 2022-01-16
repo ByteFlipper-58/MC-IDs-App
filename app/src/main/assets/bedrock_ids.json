@@ -451,6 +451,15 @@
       "item_number_id": "22"
     },
     {
+      "item_image": "dispenser",
+      "item_name": {
+        "ru": "Раздатчик",
+        "en": "Dispenser"
+      },
+      "item_stroke_id": "minecraft:dispenser",
+      "item_number_id": "23"
+    },
+    {
       "item_image": "sandstone",
       "item_name": {
         "ru": "Песчаник",
@@ -478,6 +487,15 @@
       "item_number_id": "24:2"
     },
     {
+      "item_image": "note_block",
+      "item_name": {
+        "ru": "Нотный Блок",
+        "en": "Note Block"
+      },
+      "item_stroke_id": "minecraft:note_block",
+      "item_number_id": "25"
+    },
+    {
       "item_image": "powered_rail",
       "item_name": {
         "ru": "Энергорельсы",
@@ -496,6 +514,15 @@
       "item_number_id": "28"
     },
     {
+      "item_image": "sticky_piston",
+      "item_name": {
+        "ru": "Липкий Поршень",
+        "en": "Sticky Piston"
+      },
+      "item_stroke_id": "minecraft:",
+      "item_number_id": "29"
+    },
+    {
       "item_image": "cobweb",
       "item_name": {
         "ru": "Паутина",
@@ -503,6 +530,312 @@
       },
       "item_stroke_id": "minecraft:cobweb",
       "item_number_id": "30"
+    },
+    {
+      "item_image": "grass",
+      "item_name": {
+        "ru": "Трава",
+        "en": "Grass"
+      },
+      "item_stroke_id": "minecraft:grass",
+      "item_number_id": "31:1"
+    },
+    {
+      "item_image": "fern",
+      "item_name": {
+        "ru": "Папоротник",
+        "en": "Fern"
+      },
+      "item_stroke_id": "minecraft:fern",
+      "item_number_id": "31:2"
+    },
+    {
+      "item_image": "dead_bush",
+      "item_name": {
+        "ru": "Сухой Куст",
+        "en": "Dead Bush"
+      },
+      "item_stroke_id": "minecraft:dead_bush",
+      "item_number_id": "32"
+    },
+    {
+      "item_image": "piston",
+      "item_name": {
+        "ru": "Поршень",
+        "en": "piston"
+      },
+      "item_stroke_id": "minecraft:piston",
+      "item_number_id": "33"
+    },
+    {
+      "item_image": "white_wool",
+      "item_name": {
+        "ru": "Белая Шерсть",
+        "en": "White Wool"
+      },
+      "item_stroke_id": "minecraft:white_wool",
+      "item_number_id": "35"
+    },
+    {
+      "item_image": "orange_wool",
+      "item_name": {
+        "ru": "Оранжевая Шерсть",
+        "en": "Orange Wool"
+      },
+      "item_stroke_id": "minecraft:orange_wool",
+      "item_number_id": "35:1"
+    },
+    {
+      "item_image": "magenta_wool",
+      "item_name": {
+        "ru": "Пурпурная Шерсть",
+        "en": "Magenta Wool"
+      },
+      "item_stroke_id": "minecraft:magenta_wool",
+      "item_number_id": "35:2"
+    },
+    {
+      "item_image": "light_blue_wool",
+      "item_name": {
+        "ru": "Голубая Шерсть",
+        "en": "Light Blue Wool"
+      },
+      "item_stroke_id": "minecraft:light_blue_wool",
+      "item_number_id": "35:3"
+    },
+    {
+      "item_image": "yellow_wool",
+      "item_name": {
+        "ru": "Желтая Шерсть",
+        "en": "Yellow Wool"
+      },
+      "item_stroke_id": "minecraft:yellow_wool",
+      "item_number_id": "35:4"
+    },
+    {
+      "item_image": "lime_wool",
+      "item_name": {
+        "ru": "Лаймовая Шерсть",
+        "en": "Lime Wool"
+      },
+      "item_stroke_id": "minecraft:lime_wool",
+      "item_number_id": "35:5"
+    },
+    {
+      "item_image": "pink_wool",
+      "item_name": {
+        "ru": "Розовая Шерсть",
+        "en": "Pink Wool"
+      },
+      "item_stroke_id": "minecraft:pink_wool",
+      "item_number_id": "35:6"
+    },
+    {
+      "item_image": "gray_wool",
+      "item_name": {
+        "ru": "Серая Шерсть",
+        "en": "Gray Wool"
+      },
+      "item_stroke_id": "minecraft:gray_wool",
+      "item_number_id": "35:7"
+    },
+    {
+      "item_image": "light_gray_wool",
+      "item_name": {
+        "ru": "Светло-Серая Шерсть",
+        "en": "Light Gray Wool"
+      },
+      "item_stroke_id": "minecraft:light_gray_wool",
+      "item_number_id": "35:8"
+    },
+    {
+      "item_image": "cyan_wool",
+      "item_name": {
+        "ru": "Бирюзовая Шерсть",
+        "en": "Cyan Wool"
+      },
+      "item_stroke_id": "minecraft:cyan_wool",
+      "item_number_id": "35:9"
+    },
+    {
+      "item_image": "purple_wool",
+      "item_name": {
+        "ru": "Фиолетовая Шерсть",
+        "en": "Purple Wool"
+      },
+      "item_stroke_id": "minecraft:purple_wool",
+      "item_number_id": "35:10"
+    },
+    {
+      "item_image": "blue_wool",
+      "item_name": {
+        "ru": "Синяя Шерсть",
+        "en": "Blue Wool"
+      },
+      "item_stroke_id": "minecraft:blue_wool",
+      "item_number_id": "35:11"
+    },
+    {
+      "item_image": "brown_wool",
+      "item_name": {
+        "ru": "Коричневая Шерсть",
+        "en": "Brown Wool"
+      },
+      "item_stroke_id": "minecraft:brown_wool",
+      "item_number_id": "35:12"
+    },
+    {
+      "item_image": "green_wool",
+      "item_name": {
+        "ru": "Зеленая Шерсть",
+        "en": "Green Wool"
+      },
+      "item_stroke_id": "minecraft:green_wool",
+      "item_number_id": "35:13"
+    },
+    {
+      "item_image": "red_wool",
+      "item_name": {
+        "ru": "Красная Шерсть",
+        "en": "Red Wool"
+      },
+      "item_stroke_id": "minecraft:red_wool",
+      "item_number_id": "35:14"
+    },
+    {
+      "item_image": "black_wool",
+      "item_name": {
+        "ru": "Черная Шерсть",
+        "en": "Black Wool"
+      },
+      "item_stroke_id": "minecraft:black_wool",
+      "item_number_id": "35:15"
+    },
+    {
+      "item_image": "dandelion",
+      "item_name": {
+        "ru": "Одуванчик",
+        "en": "Dandelion"
+      },
+      "item_stroke_id": "minecraft:dandelion",
+      "item_number_id": "37"
+    },
+    {
+      "item_image": "poppy",
+      "item_name": {
+        "ru": "Мак",
+        "en": "Poppy"
+      },
+      "item_stroke_id": "minecraft:poppy",
+      "item_number_id": "38"
+    },
+    {
+      "item_image": "blue_orchid",
+      "item_name": {
+        "ru": "Синяя Орхидея",
+        "en": "Blue Orchid"
+      },
+      "item_stroke_id": "minecraft:blue_orchid",
+      "item_number_id": "38:1"
+    },
+    {
+      "item_image": "allium",
+      "item_name": {
+        "ru": "Лук-Батун",
+        "en": "Allium"
+      },
+      "item_stroke_id": "minecraft:allium",
+      "item_number_id": "38:2"
+    },
+    {
+      "item_image": "azure_bluet",
+      "item_name": {
+        "ru": "Хаустония Серая",
+        "en": "Azure Bluet"
+      },
+      "item_stroke_id": "minecraft:azure_bluet",
+      "item_number_id": "38:3"
+    },
+    {
+      "item_image": "red_tulip",
+      "item_name": {
+        "ru": "Красный Тюльпан",
+        "en": "Red Tulip"
+      },
+      "item_stroke_id": "minecraft:red_tulip",
+      "item_number_id": "38:4"
+    },
+    {
+      "item_image": "orange_tulip",
+      "item_name": {
+        "ru": "Оранжевый Тюльпан",
+        "en": "Orange Tulip"
+      },
+      "item_stroke_id": "minecraft:orange_tulip",
+      "item_number_id": "38:5"
+    },
+    {
+      "item_image": "white_tulip",
+      "item_name": {
+        "ru": "Белый Тюльпан",
+        "en": "White Tulip"
+      },
+      "item_stroke_id": "minecraft:white_tulip",
+      "item_number_id": "38:6"
+    },
+    {
+      "item_image": "pink_tulip",
+      "item_name": {
+        "ru": "Розовый Тюльпан",
+        "en": "Pink Tulip"
+      },
+      "item_stroke_id": "minecraft:pink_tulip",
+      "item_number_id": "38:7"
+    },
+    {
+      "item_image": "oxeye_daisy",
+      "item_name": {
+        "ru": "Ромашка",
+        "en": "Oxeye Daisy"
+      },
+      "item_stroke_id": "minecraft:oxeye_daisy",
+      "item_number_id": "38:8"
+    },
+    {
+      "item_image": "food/brown_mushroom",
+      "item_name": {
+        "ru": "Коричневый Гриб",
+        "en": "Brown Mushroom"
+      },
+      "item_stroke_id": "minecraft:brown_mushroom",
+      "item_number_id": "39"
+    },
+    {
+      "item_image": "food/red_mushroom",
+      "item_name": {
+        "ru": "Красный Гриб",
+        "en": "Red Mushroom"
+      },
+      "item_stroke_id": "minecraft:red_mushroom",
+      "item_number_id": "40"
+    },
+    {
+      "item_image": "ores/gold_block",
+      "item_name": {
+        "ru": "Золотой Блок",
+        "en": "Gold Block"
+      },
+      "item_stroke_id": "minecraft:gold_block",
+      "item_number_id": "41"
+    },
+    {
+      "item_image": "ores/iron_block",
+      "item_name": {
+        "ru": "Железный Блок",
+        "en": "Iron Block"
+      },
+      "item_stroke_id": "minecraft:iron_block",
+      "item_number_id": "42"
     }
   ],
   "effects": [

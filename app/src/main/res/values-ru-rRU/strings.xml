@@ -20,4 +20,6 @@
     <string name="apply_filters">Применить Фильтры</string>
     <string name="coming_soon">Скоро</string>
     <string name="about">Об Приложении</string>
+    <string name="update_downloaded">Обновление скачано</string>
+    <string name="restart">Перезайти</string>
 </resources>

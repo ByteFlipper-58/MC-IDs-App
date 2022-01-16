@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name" translatable="false">Minecraft IDs</string>
     <string name="infinity_byte" translatable="false">InfinityByte</string>
+    <string name="update_downloaded">An update has just been downloaded.</string>
+    <string name="restart">Restart</string>
 
     <string name="about">About</string>
     <string name="app_version">Version</string>
