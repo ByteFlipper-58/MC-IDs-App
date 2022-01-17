@@ -81,7 +81,7 @@ public class JsonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
                 itemViewHolder.item_number_id.setText(itemInfo.getItem_number_id());
 
                 Glide.with(itemViewHolder.item_image)
-                        .load(Uri.parse("file:///android_asset/images/" + itemInfo.getItem_image()))
+                        .load(Uri.parse("file:///android_asset/images/" + itemInfo.getItem_image() + ".png"))
                         .apply(requestOptions)
                         .into(itemViewHolder.item_image);
         }

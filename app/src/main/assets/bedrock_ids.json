@@ -836,6 +836,87 @@
       },
       "item_string_id": "minecraft:iron_block",
       "item_number_id": "42"
+    },
+    {
+      "item_image": "bricks",
+      "item_name": {
+        "ru": "Кирпичи",
+        "en": "Bricks"
+      },
+      "item_string_id": "minecraft:bricks",
+      "item_number_id": "45"
+    },
+    {
+      "item_image": "bookshelf",
+      "item_name": {
+        "ru": "Книжная Полка",
+        "en": "Bookshelf"
+      },
+      "item_string_id": "minecraft:bookshelf",
+      "item_number_id": "47"
+    },
+    {
+      "item_image": "stone/mossy_cobblestone",
+      "item_name": {
+        "ru": "Замшелый Булыжник",
+        "en": "Mossy Cobblestone"
+      },
+      "item_string_id": "minecraft:mossy_cobblestone",
+      "item_number_id": "48"
+    },
+    {
+      "item_image": "obsidian",
+      "item_name": {
+        "ru": "Обсидиан",
+        "en": "Obsidian"
+      },
+      "item_string_id": "minecraft:obsidian",
+      "item_number_id": "49"
+    },
+    {
+      "item_image": "torch",
+      "item_name": {
+        "ru": "Факел",
+        "en": "Torch"
+      },
+      "item_string_id": "minecraft:torch",
+      "item_number_id": "50"
+    },
+    {
+      "item_image": "fire",
+      "item_name": {
+        "ru": "Огонь",
+        "en": "Fire"
+      },
+      "item_string_id": "minecraft:fire",
+      "item_number_id": "51"
+    },
+    {
+      "item_image": "spawner",
+      "item_name": {
+        "ru": "Спавнер Мобов",
+        "en": "Spawner"
+      },
+      "item_string_id": "minecraft:spawner",
+      "item_number_id": "52"
+    },
+    {
+      "item_image": "chest",
+      "item_name": {
+        "ru": "Сундук",
+        "en": "Chest"
+      },
+      "item_string_id": "minecraft:chest",
+      "item_number_id": "54"
+    },
+    {
+      "item_image": "redstone_wire",
+      "item_name": {
+        "ru": "Редстоуновый Провод",
+        "en": "Redstone Wire"
+      },
+      "item_string_id": "minecraft:redstone_wire",
+      "item_number_id": "55"
     }
   ],
   "effects": [

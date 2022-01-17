@@ -125,7 +125,7 @@ public class ContentViewActivity extends AppCompatActivity implements InAppUpdat
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 switch (checkedId) {
                     case R.id.rd_view_id_items_and_blocks:
-                        settings.setShowIdType("images/items");
+                        settings.setShowIdType("items");
                         break;
                     case R.id.rd_view_id_effects:
                         settings.setShowIdType("effects");
@@ -152,7 +152,7 @@ public class ContentViewActivity extends AppCompatActivity implements InAppUpdat
             }
         });
 
-        if (settings.getShowIdType() == "images/items") {
+        if (settings.getShowIdType() == "items") {
             rg_view_ids.check(R.id.rd_view_id_items_and_blocks);
         } else if (settings.getShowIdType() == "effects") {
             rg_view_ids.check(R.id.rd_view_id_effects);
@@ -215,7 +215,7 @@ public class ContentViewActivity extends AppCompatActivity implements InAppUpdat
 
         try {
             String jsonString = null;
-            inputStream = getAssets().open("sauw_items_ids.json");
+            inputStream = getAssets().open("bedrock_ids.json");
             BufferedReader bufferedReader = new BufferedReader(
                     new InputStreamReader(inputStream, "UTF-8"));
 
