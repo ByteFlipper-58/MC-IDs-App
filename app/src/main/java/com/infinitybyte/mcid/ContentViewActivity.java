@@ -11,7 +11,6 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.ProgressBar;
 import android.widget.RadioGroup;
 
 import com.google.android.material.appbar.MaterialToolbar;
@@ -126,7 +125,7 @@ public class ContentViewActivity extends AppCompatActivity implements InAppUpdat
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 switch (checkedId) {
                     case R.id.rd_view_id_items_and_blocks:
-                        settings.setShowIdType("items");
+                        settings.setShowIdType("images/items");
                         break;
                     case R.id.rd_view_id_effects:
                         settings.setShowIdType("effects");
@@ -153,7 +152,7 @@ public class ContentViewActivity extends AppCompatActivity implements InAppUpdat
             }
         });
 
-        if (settings.getShowIdType() == "items") {
+        if (settings.getShowIdType() == "images/items") {
             rg_view_ids.check(R.id.rd_view_id_items_and_blocks);
         } else if (settings.getShowIdType() == "effects") {
             rg_view_ids.check(R.id.rd_view_id_effects);
@@ -193,10 +192,10 @@ public class ContentViewActivity extends AppCompatActivity implements InAppUpdat
 
                 String item_image = itemObj.getString("item_image");
                 String item_name = itemObj.getJSONObject("item_name").getString(item_locale_name);
-                String item_stroke_id = itemObj.getString("item_stroke_id");
+                String item_string_id = itemObj.getString("item_string_id");
                 String item_number_id = itemObj.getString("item_number_id");
 
-                IDsModel itemInfo = new IDsModel(item_image, item_name, item_stroke_id, item_number_id);
+                IDsModel itemInfo = new IDsModel(item_image, item_name, item_string_id, item_number_id);
                 viewItems.add(itemInfo);
             }
 
@@ -216,7 +215,7 @@ public class ContentViewActivity extends AppCompatActivity implements InAppUpdat
 
         try {
             String jsonString = null;
-            inputStream = getAssets().open("bedrock_ids.json");
+            inputStream = getAssets().open("sauw_items_ids.json");
             BufferedReader bufferedReader = new BufferedReader(
                     new InputStreamReader(inputStream, "UTF-8"));
 

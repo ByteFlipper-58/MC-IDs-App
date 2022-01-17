@@ -24,6 +24,10 @@ public class JsonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     private final Context context;
     private final List<IDsModel> listRecyclerItem;
 
+    private static final int LIST_ITEM = 0;
+    private static final int GRID_ITEM = 1;
+    boolean isSwitchView = true;
+
     public JsonAdapter(Context context, List<IDsModel> listRecyclerItem) {
         this.context = context;
         this.listRecyclerItem = listRecyclerItem;
@@ -31,13 +35,13 @@ public class JsonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
     public class ItemViewHolder extends RecyclerView.ViewHolder {
 
-        private TextView item_name, item_stroke_id, item_number_id;
+        private TextView item_name, item_string_id, item_number_id;
         private ImageView item_image;
 
         public ItemViewHolder(@NonNull View itemView) {
             super(itemView);
             item_name = (TextView) itemView.findViewById(R.id.item_name);
-            item_stroke_id = (TextView) itemView.findViewById(R.id.item_stroke_id);
+            item_string_id = (TextView) itemView.findViewById(R.id.item_stroke_id);
             item_number_id = (TextView) itemView.findViewById(R.id.item_number_id);
             item_image = (ImageView) itemView.findViewById(R.id.item_image);
         }
@@ -50,7 +54,7 @@ public class JsonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
             case TYPE:
             default:
                 View layoutView = LayoutInflater.from(viewGroup.getContext()).inflate(
-                        R.layout.small_item, viewGroup, false);
+                        R.layout.list_small_item, viewGroup, false);
 
                 return new ItemViewHolder((layoutView));
         }
@@ -73,11 +77,11 @@ public class JsonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
                 IDsModel itemInfo = (IDsModel) listRecyclerItem.get(i);
 
                 itemViewHolder.item_name.setText(itemInfo.getItem_name());
-                itemViewHolder.item_stroke_id.setText(itemInfo.getItem_stroke_id());
+                itemViewHolder.item_string_id.setText(itemInfo.getItem_string_id());
                 itemViewHolder.item_number_id.setText(itemInfo.getItem_number_id());
 
                 Glide.with(itemViewHolder.item_image)
-                        .load(Uri.parse("file:///android_asset/images/" + itemInfo.getItem_image() + ".png"))
+                        .load(Uri.parse("file:///android_asset/images/" + itemInfo.getItem_image()))
                         .apply(requestOptions)
                         .into(itemViewHolder.item_image);
         }
@@ -86,5 +90,19 @@ public class JsonAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     @Override
     public int getItemCount() {
         return listRecyclerItem.size();
+    }
+
+    @Override
+    public int getItemViewType (int position) {
+        if (isSwitchView){
+            return LIST_ITEM;
+        }else{
+            return GRID_ITEM;
+        }
+    }
+
+    public boolean toggleItemViewType () {
+        isSwitchView = !isSwitchView;
+        return isSwitchView;
     }
 }

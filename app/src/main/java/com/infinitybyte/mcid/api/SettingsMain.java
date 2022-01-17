@@ -2,7 +2,6 @@ package com.infinitybyte.mcid.api;
 
 import android.content.Context;
 import android.content.SharedPreferences;
-import android.preference.PreferenceManager;
 
 public class SettingsMain {
     Context context;
@@ -31,7 +30,7 @@ public class SettingsMain {
     }
 
     public String getShowIdType(){
-        return preferences.getString("show_id_type", "items");
+        return preferences.getString("show_id_type", "images/items");
     }
 
     public void setSortBy(String sort_by){
