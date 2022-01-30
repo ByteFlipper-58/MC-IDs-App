@@ -13,6 +13,11 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.RadioGroup;
 
+import com.android.volley.Request;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
 import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.google.android.material.button.MaterialButton;
@@ -109,7 +114,7 @@ public class ContentViewActivity extends AppCompatActivity implements InAppUpdat
 
         inAppUpdateManager.checkForAppUpdate();
 
-        addItemsFromJSON();
+        getDataFromURL();
     }
 
     private void filterAndSortBottomSheetDialog() {
@@ -170,7 +175,7 @@ public class ContentViewActivity extends AppCompatActivity implements InAppUpdat
             @Override
             public void onClick(View v) {
                 bottomSheetDialog.dismiss();
-                addItemsFromJSON();
+                getDataFromURL();
                 adapter.notifyDataSetChanged();
             }
         });
@@ -179,7 +184,7 @@ public class ContentViewActivity extends AppCompatActivity implements InAppUpdat
         bottomSheetDialog.show();
     }
 
-    private void addItemsFromJSON() {
+    /*private void addItemsFromJSON() {
         try {
             viewItems.clear();
             String bedrock_ids = readJSONDataFromFile();
@@ -229,6 +234,52 @@ public class ContentViewActivity extends AppCompatActivity implements InAppUpdat
             }
         }
         return new String(builder);
+    }*/
+
+    private void getDataFromURL() {
+        String url = "https://raw.githubusercontent.com/IbremMiner837/MC-IDs-App/master/app/src/main/assets/bedrock_ids.json";
+
+        StringRequest stringRequest = new StringRequest(Request.Method.GET, url, new Response.Listener<String>() {
+            @Override
+            public void onResponse(String response) {
+                //progressBar.setVisibility(View.GONE);
+                if (response != null) {
+                    Log.e(TAG, "onResponse: " + response);
+                    try {
+                        //JSONArray jsonArray = new JSONArray(response);
+                        viewItems.clear();
+                        JSONObject jsonObject = new JSONObject(response);
+                        JSONArray jsonArray = jsonObject.getJSONArray(settings.getShowIdType());
+                        for (int i = 0; i < jsonArray.length(); i++) {
+
+                            JSONObject itemObj = jsonArray.getJSONObject(i);
+
+                            String item_image = itemObj.getString("item_image");
+                            String item_name = itemObj.getJSONObject("item_name").getString(item_locale_name);
+                            String item_string_id = itemObj.getString("item_string_id");
+                            String item_number_id = itemObj.getString("item_number_id");
+
+                            IDsModel itemInfo = new IDsModel(item_image, item_name, item_string_id, item_number_id);
+                            viewItems.add(itemInfo);
+                        }
+
+                        if (settings.getSortBy() == "descending") {
+                            Collections.reverse(viewItems);
+                        }
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }
+        },
+                new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        //progressBar.setVisibility(View.GONE);
+                        Log.e(TAG, "onResponse: " + error);
+                    }
+                });
+        Volley.newRequestQueue(this).add(stringRequest);
     }
 
     @Override
