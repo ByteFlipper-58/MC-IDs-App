@@ -6,11 +6,13 @@ import androidx.core.splashscreen.SplashScreen;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ProgressBar;
 import android.widget.RadioGroup;
 
 import com.android.volley.Request;
@@ -60,6 +62,8 @@ public class ContentViewActivity extends AppCompatActivity implements InAppUpdat
     private MaterialToolbar toolbar;
 
     private static final String TAG = "ContentView";
+
+    private ProgressBar progressBar;
 
     private static final int REQ_CODE_VERSION_UPDATE = 99;
     private InAppUpdateManager inAppUpdateManager;

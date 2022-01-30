@@ -2,6 +2,13 @@
   "UpdateHistory": [
     {
       "changelog": {
+        "ru": "1. Добавлен парс через URL как временное решение пока не будут добавлены все ID\n- Если ничего нету то примените фильтр :)",
+        "en": "1. As a temporary solution, a parse was added using the URL"
+      },
+      "version": "1.0.5 Beta (7)"
+    },
+    {
+      "changelog": {
         "ru": "1. Добавлено внутренное обновление\n2. Добавлены ID предметов и блоков от 31 до 42",
         "en": "1. Added In App Update\n2. Added IDs of items and blocks from 31 to 42"
       },

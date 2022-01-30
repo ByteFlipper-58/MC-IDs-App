@@ -10,8 +10,8 @@ android {
         applicationId "com.infinitybyte.mcid"
         minSdk 23
         targetSdk 31
-        versionCode 6
-        versionName "1.0.4 Beta"
+        versionCode 7
+        versionName "1.0.5 Beta"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
