@@ -119,22 +119,6 @@ public class ContentViewActivity extends AppCompatActivity implements InAppUpdat
 
         inAppUpdateManager.checkForAppUpdate();
 
-        Settings settings = new Settings();
-
-        try {
-            settings.loadSettings();
-        } catch (JSONException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-        try {
-            settings.saveSettings();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
         getDataFromURL();
     }
 
