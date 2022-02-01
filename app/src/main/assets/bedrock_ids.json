@@ -16,7 +16,7 @@
         "en": "Stone"
       },
       "item_string_id": "minecraft:granite",
-      "item_number_id": "1:1"
+      "item_number_id": 1:1
     },
     {
       "item_image": "stone/polished_granite",
