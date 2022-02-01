@@ -34,6 +34,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -117,6 +118,22 @@ public class ContentViewActivity extends AppCompatActivity implements InAppUpdat
                 .handler(this);
 
         inAppUpdateManager.checkForAppUpdate();
+
+        Settings settings = new Settings();
+
+        try {
+            settings.loadSettings();
+        } catch (JSONException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        try {
+            settings.saveSettings();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
         getDataFromURL();
     }
