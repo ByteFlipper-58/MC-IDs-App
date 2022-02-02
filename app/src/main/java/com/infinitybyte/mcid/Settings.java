@@ -2,12 +2,10 @@ package com.infinitybyte.mcid;
 
 import android.app.Activity;
 import android.content.Context;
-
-import com.google.android.gms.common.internal.safeparcel.SafeParcelable;
-
+import android.widget.Toast;
+import java.util.Map;
 import org.json.JSONException;
 import org.json.JSONObject;
-
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
@@ -20,6 +18,9 @@ import java.io.OutputStreamWriter;
 import java.lang.reflect.Field;
 
 public class Settings {
+	
+	private static final String FILE_NAME = "settings.json";
+
 
     @Parameter(jsonKey = "sorting_type")
     public static String sortingType = "as";
@@ -38,13 +39,33 @@ public class Settings {
                 }
             }
         }
+		
+		FileOutputStream fos = null; 
+		
+		try {
+			fos = ctx.openFileOutput(FILE_NAME, MODE_PRIVATE); 
+			fos.write(settings); 
+			Toast.makeText(ctx, "Saved to " + ctx.getFilesDir() + "/" + FILE_NAME, Toast.LENGTH_LONG).show(); 
+		} catch (FileNotFoundException e) { 
+			e.printStackTrace(); 
+		} catch (IOException e) { 
+			e.printStackTrace(); 
+		} finally { 
+			if (fos != null) { 
+				try { 
+					fos.close(); 
+				} catch (IOException e) { 
+					e.printStackTrace(); 
+				} 
+			} 
+		} 
 
         //File settingsFile = new File(ctx.getFilesDir(), "settings.json");
-        File settingsFile = ctx.getExternalFilesDir("settings.json");
-        FileOutputStream fileOutputStream = new FileOutputStream(settingsFile);
-        OutputStreamWriter outputStreamWriter = new OutputStreamWriter(fileOutputStream);
-        BufferedWriter bufferedWriter = new BufferedWriter(outputStreamWriter);
-        bufferedWriter.write(settings.toString());
+        //File settingsFile = ctx.getExternalFilesDir("settings.json");
+        //FileOutputStream fileOutputStream = new FileOutputStream(settingsFile);
+        //OutputStreamWriter outputStreamWriter = new OutputStreamWriter(fileOutputStream);
+        //BufferedWriter bufferedWriter = new BufferedWriter(outputStreamWriter);
+        //bufferedWriter.write(settings.toString());
 
         //FileHandle settingsFile = Gdx.files.external("S.A.U.W./User/settings.json");
         //settingsFile.writeString(settings.toString(), false);
@@ -71,4 +92,30 @@ public class Settings {
             }
         }
     }
+	
+	/*
+	public void save(View v) { 
+		String text = mEditText.getText().toString(); 
+		FileOutputStream fos = null; 
+		
+		try {
+			fos = openFileOutput(FILE_NAME, MODE_PRIVATE); 
+			fos.write(text.getBytes()); 
+			mEditText.getText().clear(); 
+			Toast.makeText(this, "Saved to " + getFilesDir() + "/" + FILE_NAME, Toast.LENGTH_LONG).show(); 
+		} catch (FileNotFoundException e) { 
+			e.printStackTrace(); 
+		} catch (IOException e) { 
+			e.printStackTrace(); 
+		} finally { 
+			if (fos != null) { 
+				try { 
+					fos.close(); 
+				} catch (IOException e) { 
+					e.printStackTrace(); 
+				} 
+			} 
+		} 
+	}*/
+	
 }
