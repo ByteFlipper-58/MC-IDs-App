@@ -1,32 +1,34 @@
 package com.infinitybyte.mcid;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.splashscreen.SplashScreen;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
+import android.os.Environment;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.RadioGroup;
+import android.widget.Toast;
 
-import com.android.volley.Request;
-import com.android.volley.Response;
-import com.android.volley.VolleyError;
-import com.android.volley.toolbox.StringRequest;
-import com.android.volley.toolbox.Volley;
 import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.button.MaterialButtonToggleGroup;
 import com.google.android.material.snackbar.Snackbar;
 import com.infinitybyte.mcid.adapters.JsonAdapter;
+import com.infinitybyte.mcid.api.ErrorDialogAPI;
 import com.infinitybyte.mcid.api.SettingsMain;
+import com.infinitybyte.mcid.config.Settings;
+import com.infinitybyte.mcid.config.SettingsAssist;
 import com.infinitybyte.mcid.models.IDsModel;
 
 import org.json.JSONArray;
@@ -50,6 +52,7 @@ import eu.dkaratzas.android.inapp.update.InAppUpdateStatus;
 public class ContentViewActivity extends AppCompatActivity implements InAppUpdateManager.InAppUpdateHandler {
 
     private SettingsMain settings;
+    private ErrorDialogAPI errorDialogAPI;
 
     private String locale = Locale.getDefault().getLanguage();
     private String item_locale_name = "null";
@@ -64,18 +67,29 @@ public class ContentViewActivity extends AppCompatActivity implements InAppUpdat
 
     private static final String TAG = "ContentView";
 
-    private ProgressBar progressBar;
-
     private static final int REQ_CODE_VERSION_UPDATE = 99;
     private InAppUpdateManager inAppUpdateManager;
+    private Context context;
 
+    @RequiresApi(api = Build.VERSION_CODES.N)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         SplashScreen splashScreen = SplashScreen.installSplashScreen(this);
         setContentView(R.layout.activity_content_view);
 
-        settings = new SettingsMain(this);
+        errorDialogAPI = new ErrorDialogAPI(this);
+
+        File settingss = new File(Environment.getDataDirectory(), "/" + getPackageName() + "/" + "settings.json");
+
+        try {
+            SettingsAssist.load(settingss, Settings.class);
+        } catch (IOException e) {
+            e.printStackTrace();
+            errorDialogAPI.showErrorDialog(e.toString(), this);
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
 
         toolbar = findViewById(R.id.toolbar);
 
@@ -119,7 +133,7 @@ public class ContentViewActivity extends AppCompatActivity implements InAppUpdat
 
         inAppUpdateManager.checkForAppUpdate();
 
-        getDataFromURL();
+        addItemsFromJSON();
     }
 
     private void filterAndSortBottomSheetDialog() {
@@ -180,7 +194,8 @@ public class ContentViewActivity extends AppCompatActivity implements InAppUpdat
             @Override
             public void onClick(View v) {
                 bottomSheetDialog.dismiss();
-                getDataFromURL();
+                addItemsFromJSON();
+                //getDataFromURL();
                 adapter.notifyDataSetChanged();
             }
         });
@@ -189,7 +204,7 @@ public class ContentViewActivity extends AppCompatActivity implements InAppUpdat
         bottomSheetDialog.show();
     }
 
-    /*private void addItemsFromJSON() {
+    private void addItemsFromJSON() {
         try {
             viewItems.clear();
             String bedrock_ids = readJSONDataFromFile();
@@ -239,9 +254,9 @@ public class ContentViewActivity extends AppCompatActivity implements InAppUpdat
             }
         }
         return new String(builder);
-    }*/
+    }
 
-    private void getDataFromURL() {
+    /*private void getDataFromURL() {
         String url = "https://raw.githubusercontent.com/IbremMiner837/MC-IDs-App/master/app/src/main/assets/bedrock_ids.json";
 
         StringRequest stringRequest = new StringRequest(Request.Method.GET, url, new Response.Listener<String>() {
@@ -285,7 +300,7 @@ public class ContentViewActivity extends AppCompatActivity implements InAppUpdat
                     }
                 });
         Volley.newRequestQueue(this).add(stringRequest);
-    }
+    }*/
 
     @Override
     public void onInAppUpdateError(int code, Throwable error) {

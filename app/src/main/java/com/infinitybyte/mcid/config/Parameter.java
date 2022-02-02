@@ -1,4 +1,4 @@
-package com.infinitybyte.mcid;
+package com.infinitybyte.mcid.config;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
