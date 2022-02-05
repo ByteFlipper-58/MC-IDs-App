@@ -1,23 +1,17 @@
 package com.infinitybyte.mcid;
 
-import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.splashscreen.SplashScreen;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.content.Context;
 import android.content.Intent;
-import android.os.Build;
 import android.os.Bundle;
-import android.os.Environment;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.ProgressBar;
 import android.widget.RadioGroup;
-import android.widget.Toast;
 
 import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
@@ -26,7 +20,6 @@ import com.google.android.material.button.MaterialButtonToggleGroup;
 import com.google.android.material.snackbar.Snackbar;
 import com.infinitybyte.mcid.adapters.JsonAdapter;
 import com.infinitybyte.mcid.api.ErrorDialogAPI;
-import com.infinitybyte.mcid.api.SettingsMain;
 import com.infinitybyte.mcid.config.Settings;
 import com.infinitybyte.mcid.config.SettingsAssist;
 import com.infinitybyte.mcid.models.IDsModel;
@@ -43,19 +36,12 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import java.util.Locale;
 
 import eu.dkaratzas.android.inapp.update.Constants;
 import eu.dkaratzas.android.inapp.update.InAppUpdateManager;
 import eu.dkaratzas.android.inapp.update.InAppUpdateStatus;
 
 public class ContentViewActivity extends AppCompatActivity implements InAppUpdateManager.InAppUpdateHandler {
-
-    private SettingsMain settings;
-    private ErrorDialogAPI errorDialogAPI;
-
-    private String locale = Locale.getDefault().getLanguage();
-    private String item_locale_name = "null";
 
     private RecyclerView mRecyclerView;
     private List<IDsModel> viewItems = new ArrayList<>();
@@ -65,31 +51,24 @@ public class ContentViewActivity extends AppCompatActivity implements InAppUpdat
 
     private MaterialToolbar toolbar;
 
-    private static final String TAG = "ContentView";
-
     private static final int REQ_CODE_VERSION_UPDATE = 99;
     private InAppUpdateManager inAppUpdateManager;
-    private Context context;
 
-    @RequiresApi(api = Build.VERSION_CODES.N)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        File settingsFile = new File(getFilesDir(), "Settings.json");
+
+        if(!settingsFile.exists()) {
+            try {
+                SettingsAssist.save(settingsFile, Settings.class);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+        loadSettings();
         SplashScreen splashScreen = SplashScreen.installSplashScreen(this);
         setContentView(R.layout.activity_content_view);
-
-        errorDialogAPI = new ErrorDialogAPI(this);
-
-        File settingss = new File(Environment.getDataDirectory(), "/" + getPackageName() + "/" + "settings.json");
-
-        try {
-            SettingsAssist.load(settingss, Settings.class);
-        } catch (IOException e) {
-            e.printStackTrace();
-            errorDialogAPI.showErrorDialog(e.toString(), this);
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
 
         toolbar = findViewById(R.id.toolbar);
 
@@ -99,12 +78,6 @@ public class ContentViewActivity extends AppCompatActivity implements InAppUpdat
         mRecyclerView.setLayoutManager(layoutManager);
         adapter = new JsonAdapter(this, viewItems);
         mRecyclerView.setAdapter(adapter);
-
-        if (locale.equals("ru") || locale.equals("uk") || locale.equals("be")) {
-            item_locale_name = "ru";
-        } else {
-            item_locale_name = "en";
-        }
 
         toolbar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
             @Override
@@ -149,13 +122,13 @@ public class ContentViewActivity extends AppCompatActivity implements InAppUpdat
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 switch (checkedId) {
                     case R.id.rd_view_id_items_and_blocks:
-                        settings.setShowIdType("items");
+                        Settings.idCategory = "items";
                         break;
                     case R.id.rd_view_id_effects:
-                        settings.setShowIdType("effects");
+                        Settings.idCategory = "effects";
                         break;
                     case R.id.rd_view_id_mobs:
-                        settings.setShowIdType("mobs");
+                        Settings.idCategory = "mobs";
                         break;
                 }
             }
@@ -166,27 +139,27 @@ public class ContentViewActivity extends AppCompatActivity implements InAppUpdat
             public void onButtonChecked(MaterialButtonToggleGroup group, int checkedId, boolean isChecked) {
                 if (isChecked) {
                     if (checkedId == R.id.sort_by_ascending) {
-                        settings.setSortBy("ascending");
+                        Settings.sortingType = "ascending";
                         tg_btn_sort_by.uncheck(R.id.sort_by_descending);
                     } else if (checkedId == R.id.sort_by_descending) {
-                        settings.setSortBy("descending");
+                        Settings.sortingType = "descending";
                         tg_btn_sort_by.uncheck(R.id.sort_by_ascending);
                     }
                 }
             }
         });
 
-        if (settings.getShowIdType() == "items") {
+        if (Settings.idCategory.equals("items")) {
             rg_view_ids.check(R.id.rd_view_id_items_and_blocks);
-        } else if (settings.getShowIdType() == "effects") {
+        } else if (Settings.idCategory.equals("effects")) {
             rg_view_ids.check(R.id.rd_view_id_effects);
-        } else if (settings.getShowIdType() == "mobs") {
+        } else if (Settings.idCategory.equals("mobs")) {
             rg_view_ids.check(R.id.rd_view_id_mobs);
         }
 
-        if (settings.getSortBy() == "ascending") {
+        if (Settings.sortingType.equals("ascending")) {
             tg_btn_sort_by.check(R.id.sort_by_ascending);
-        } else if (settings.getSortBy() == "descending"){
+        } else if (Settings.sortingType.equals("descending")){
             tg_btn_sort_by.check(R.id.sort_by_descending);
         }
 
@@ -195,7 +168,7 @@ public class ContentViewActivity extends AppCompatActivity implements InAppUpdat
             public void onClick(View v) {
                 bottomSheetDialog.dismiss();
                 addItemsFromJSON();
-                //getDataFromURL();
+                saveSettings();
                 adapter.notifyDataSetChanged();
             }
         });
@@ -209,14 +182,14 @@ public class ContentViewActivity extends AppCompatActivity implements InAppUpdat
             viewItems.clear();
             String bedrock_ids = readJSONDataFromFile();
             JSONObject jsonObject = new JSONObject(bedrock_ids);
-            JSONArray jsonArray = jsonObject.getJSONArray(settings.getShowIdType());
+            JSONArray jsonArray = jsonObject.getJSONArray(Settings.idCategory);
 
             for (int i = 0; i < jsonArray.length(); ++i) {
 
                 JSONObject itemObj = jsonArray.getJSONObject(i);
 
                 String item_image = itemObj.getString("item_image");
-                String item_name = itemObj.getJSONObject("item_name").getString(item_locale_name);
+                String item_name = itemObj.getJSONObject("item_name").getString(Settings.contentLanguage);
                 String item_string_id = itemObj.getString("item_string_id");
                 String item_number_id = itemObj.getString("item_number_id");
 
@@ -224,16 +197,16 @@ public class ContentViewActivity extends AppCompatActivity implements InAppUpdat
                 viewItems.add(itemInfo);
             }
 
-            if (settings.getSortBy() == "descending") {
+            if (Settings.sortingType.equals("descending")) {
                 Collections.reverse(viewItems);
             }
 
         } catch (JSONException | IOException e) {
-            Log.d(TAG, "addItemsFromJSON: ", e);
+            //
         }
     }
 
-    private String readJSONDataFromFile() throws IOException{
+    private String readJSONDataFromFile() throws IOException {
 
         InputStream inputStream = null;
         StringBuilder builder = new StringBuilder();
@@ -256,52 +229,6 @@ public class ContentViewActivity extends AppCompatActivity implements InAppUpdat
         return new String(builder);
     }
 
-    /*private void getDataFromURL() {
-        String url = "https://raw.githubusercontent.com/IbremMiner837/MC-IDs-App/master/app/src/main/assets/bedrock_ids.json";
-
-        StringRequest stringRequest = new StringRequest(Request.Method.GET, url, new Response.Listener<String>() {
-            @Override
-            public void onResponse(String response) {
-                //progressBar.setVisibility(View.GONE);
-                if (response != null) {
-                    Log.e(TAG, "onResponse: " + response);
-                    try {
-                        //JSONArray jsonArray = new JSONArray(response);
-                        viewItems.clear();
-                        JSONObject jsonObject = new JSONObject(response);
-                        JSONArray jsonArray = jsonObject.getJSONArray(settings.getShowIdType());
-                        for (int i = 0; i < jsonArray.length(); i++) {
-
-                            JSONObject itemObj = jsonArray.getJSONObject(i);
-
-                            String item_image = itemObj.getString("item_image");
-                            String item_name = itemObj.getJSONObject("item_name").getString(item_locale_name);
-                            String item_string_id = itemObj.getString("item_string_id");
-                            String item_number_id = itemObj.getString("item_number_id");
-
-                            IDsModel itemInfo = new IDsModel(item_image, item_name, item_string_id, item_number_id);
-                            viewItems.add(itemInfo);
-                        }
-
-                        if (settings.getSortBy() == "descending") {
-                            Collections.reverse(viewItems);
-                        }
-                    } catch (JSONException e) {
-                        e.printStackTrace();
-                    }
-                }
-            }
-        },
-                new Response.ErrorListener() {
-                    @Override
-                    public void onErrorResponse(VolleyError error) {
-                        //progressBar.setVisibility(View.GONE);
-                        Log.e(TAG, "onResponse: " + error);
-                    }
-                });
-        Volley.newRequestQueue(this).add(stringRequest);
-    }*/
-
     @Override
     public void onInAppUpdateError(int code, Throwable error) {
         //
@@ -318,14 +245,30 @@ public class ContentViewActivity extends AppCompatActivity implements InAppUpdat
                     Snackbar.LENGTH_INDEFINITE);
 
             snackbar.setAction(R.string.restart, view -> {
-
                 // Triggers the completion of the update of the app for the flexible flow.
                 inAppUpdateManager.completeUpdate();
-
             });
-
             snackbar.show();
+        }
+    }
 
+    public void saveSettings() {
+        File settingsFile = new File(getFilesDir(), "Settings.json");
+
+        try {
+            SettingsAssist.save(settingsFile, Settings.class);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void loadSettings() {
+        File settingsFile = new File(getFilesDir(), "Settings.json");
+
+        try {
+            SettingsAssist.load(settingsFile, Settings.class);
+        } catch (IOException | JSONException e) {
+            e.printStackTrace();
         }
     }
 }
