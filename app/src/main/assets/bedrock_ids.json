@@ -1,1744 +1,1754 @@
 {
-  "items": [
-    {
-      "item_image": "stone/stone",
-      "item_name": {
-        "ru": "Камень",
-        "en": "Stone"
-      },
-      "item_string_id": "minecraft:stone",
-      "item_number_id": "1"
-    },
-    {
-      "item_image": "stone/granite",
-      "item_name": {
-        "ru": "Гранит",
-        "en": "Stone"
-      },
-      "item_string_id": "minecraft:granite",
-      "item_number_id": "1:1"
-    },
-    {
-      "item_image": "stone/polished_granite",
-      "item_name": {
-        "ru": "Полированный Гранит",
-        "en": "Polished Granite"
-      },
-      "item_string_id": "minecraft:polished_granite",
-      "item_number_id": "1:2"
-    },
-    {
-      "item_image": "stone/diorite",
-      "item_name": {
-        "ru": "Диорит",
-        "en": "Diorite"
-      },
-      "item_string_id": "minecraft:diorite",
-      "item_number_id": "1:3"
-    },
-    {
-      "item_image": "stone/polished_diorite",
-      "item_name": {
-        "ru": "Полированный Диорит",
-        "en": "Polished Diorite"
-      },
-      "item_string_id": "minecraft:polished_diorite",
-      "item_number_id": "1:4"
-    },
-    {
-      "item_image": "stone/andesite",
-      "item_name": {
-        "ru": "Андезит",
-        "en": "Andesite"
-      },
-      "item_string_id": "minecraft:andesite",
-      "item_number_id": "1:5"
-    },
-    {
-      "item_image": "stone/polished_andesite",
-      "item_name": {
-        "ru": "Полированный Андезит",
-        "en": "Polished Andesite"
-      },
-      "item_string_id": "minecraft:polished_andesite",
-      "item_number_id": "1:6"
-    },
-    {
-      "item_image": "grass_block",
-      "item_name": {
-        "ru": "Дерн",
-        "en": "Grass Block"
-      },
-      "item_string_id": "minecraft:grass_block",
-      "item_number_id": "2"
-    },
-    {
-      "item_image": "dirt",
-      "item_name": {
-        "ru": "Земля",
-        "en": "Dirt"
-      },
-      "item_string_id": "minecraft:dirt",
-      "item_number_id": "3"
-    },
-    {
-      "item_image": "coarse_dirt",
-      "item_name": {
-        "ru": "Каменистая Земля",
-        "en": "Coarse Dirt"
-      },
-      "item_string_id": "minecraft:coarse_dirt",
-      "item_number_id": "3:1"
-    },
-    {
-      "item_image": "podzol",
-      "item_name": {
-        "ru": "Подзол",
-        "en": "Podzol"
-      },
-      "item_string_id": "minecraft:podzol",
-      "item_number_id": "3:2 | 243"
-    },
-    {
-      "item_image": "stone/cobblestone",
-      "item_name": {
-        "ru": "Булыжник",
-        "en": "Cobblestone"
-      },
-      "item_string_id": "minecraft:cobblestone",
-      "item_number_id": "4"
-    },
-    {
-      "item_image": "wood/oak/oak_planks",
-      "item_name": {
-        "ru": "Дубовые Доски",
-        "en": "Oak Planks"
-      },
-      "item_string_id": "minecraft:oak_planks",
-      "item_number_id": "5"
-    },
-    {
-      "item_image": "wood/spruce/spruce_planks",
-      "item_name": {
-        "ru": "Еловые Доски",
-        "en": "Spruce Planks"
-      },
-      "item_string_id": "minecraft:spruce_planks",
-      "item_number_id": "5:1"
-    },
-    {
-      "item_image": "wood/birch/birch_planks",
-      "item_name": {
-        "ru": "Березовые Доски",
-        "en": "Birch Planks"
-      },
-      "item_string_id": "minecraft:birch_planks",
-      "item_number_id": "5:2"
-    },
-    {
-      "item_image": "wood/jungle/jungle_planks",
-      "item_name": {
-        "ru": "Доски из Тропического Дерева",
-        "en": "Jungle Planks"
-      },
-      "item_string_id": "minecraft:jungle_planks",
-      "item_number_id": "5:3"
-    },
-    {
-      "item_image": "wood/acacia/acacia_planks",
-      "item_name": {
-        "ru": "Акациевые Доски",
-        "en": "Acacia Planks"
-      },
-      "item_string_id": "minecraft:acacia_planks",
-      "item_number_id": "5:4"
-    },
-    {
-      "item_image": "wood/dark_oak/dark_oak_planks",
-      "item_name": {
-        "ru": "Доски из Темного Дуба",
-        "en": "Dark Oak Planks"
-      },
-      "item_string_id": "minecraft:dark_oak_planks",
-      "item_number_id": "5:5"
-    },
-    {
-      "item_image": "wood/oak/oak_sapling",
-      "item_name": {
-        "ru": "Саженец Дуба",
-        "en": "Oak Sapling"
-      },
-      "item_string_id": "minecraft:oak_sapling",
-      "item_number_id": "6"
-    },
-    {
-      "item_image": "wood/spruce/spruce_sapling",
-      "item_name": {
-        "ru": "Еловый Саженец",
-        "en": "Spruce Sapling"
-      },
-      "item_string_id": "minecraft:spruce_sapling",
-      "item_number_id": "6:1"
-    },
-    {
-      "item_image": "wood/birch/birch_sapling",
-      "item_name": {
-        "ru": "Саженец Березы",
-        "en": "Birch Sapling"
-      },
-      "item_string_id": "minecraft:birch_sapling",
-      "item_number_id": "6:2"
-    },
-    {
-      "item_image": "wood/oak/oak_sapling",
-      "item_name": {
-        "ru": "Саженец Тропического Дерева",
-        "en": "Jungle Sapling"
-      },
-      "item_string_id": "minecraft:jungle_sapling",
-      "item_number_id": "6:3"
-    },
-    {
-      "item_image": "wood/acacia/acacia_sapling",
-      "item_name": {
-        "ru": "Саженец Акации",
-        "en": "Acacia Sapling"
-      },
-      "item_string_id": "minecraft:acacia_sapling",
-      "item_number_id": "6:4"
-    },
-    {
-      "item_image": "wood/dark_oak/dark_oak_sapling",
-      "item_name": {
-        "ru": "Сажанец Темного Дуба",
-        "en": "Dark Oak Sapling"
-      },
-      "item_string_id": "minecraft:dark_oak_sapling",
-      "item_number_id": "6:5"
-    },
-    {
-      "item_image": "stone/bedrock",
-      "item_name": {
-        "ru": "Бедрок",
-        "en": "Bedrock"
-      },
-      "item_string_id": "minecraft:bedrock",
-      "item_number_id": "7"
-    },
-    {
-      "item_image": "water",
-      "item_name": {
-        "ru": "Вода",
-        "en": "Water"
-      },
-      "item_string_id": "minecraft:water",
-      "item_number_id": "8|9"
-    },
-    {
-      "item_image": "lava",
-      "item_name": {
-        "ru": "Лава",
-        "en": "Lava"
-      },
-      "item_string_id": "minecraft:lava",
-      "item_number_id": "10|11"
-    },
-    {
-      "item_image": "sand",
-      "item_name": {
-        "ru": "Песок",
-        "en": "Sand"
-      },
-      "item_string_id": "minecraft:sand",
-      "item_number_id": "12"
-    },
-    {
-      "item_image": "red_sand",
-      "item_name": {
-        "ru": "Красный Песок",
-        "en": "Red Sand"
-      },
-      "item_string_id": "minecraft:red_sand",
-      "item_number_id": "12:1"
-    },
-    {
-      "item_image": "gravel",
-      "item_name": {
-        "ru": "Гравий",
-        "en": "Gravel"
-      },
-      "item_string_id": "minecraft:gravel",
-      "item_number_id": "13"
-    },
-    {
-      "item_image": "ores/gold_ore",
-      "item_name": {
-        "ru": "Золотая Руда",
-        "en": "Gold Ore"
-      },
-      "item_string_id": "minecraft:gold_ore",
-      "item_number_id": "14"
-    },
-    {
-      "item_image": "ores/iron_ore",
-      "item_name": {
-        "ru": "Железная Руда",
-        "en": "Iron Ore"
-      },
-      "item_string_id": "minecraft:iron_ore",
-      "item_number_id": "15"
-    },
-    {
-      "item_image": "ores/coal_ore",
-      "item_name": {
-        "ru": "Угольная Руда",
-        "en": "Coal Ore"
-      },
-      "item_string_id": "minecraft:coal_ore",
-      "item_number_id": "16"
-    },
-    {
-      "item_image": "wood/oak/oak_log",
-      "item_name": {
-        "ru": "Дубовое Бревно",
-        "en": "Oak Log"
-      },
-      "item_string_id": "minecraft:oak_log",
-      "item_number_id": "17"
-    },
-    {
-      "item_image": "wood/spruce/spruce_log",
-      "item_name": {
-        "ru": "Еловое Бревно",
-        "en": "Spruce Log"
-      },
-      "item_string_id": "minecraft:spruce_log",
-      "item_number_id": "17:1"
-    },
-    {
-      "item_image": "wood/birch/birch_log",
-      "item_name": {
-        "ru": "Березовое Бревно",
-        "en": "Birch Log"
-      },
-      "item_string_id": "minecraft:birch_log",
-      "item_number_id": "17:2"
-    },
-    {
-      "item_image": "wood/jungle/jungle_log",
-      "item_name": {
-        "ru": "Бревно Тропического Дерева",
-        "en": "Jungle Log"
-      },
-      "item_string_id": "minecraft:jungle_log",
-      "item_number_id": "17:3"
-    },
-    {
-      "item_image": "wood/acacia/acacia_log",
-      "item_name": {
-        "ru": "Акациевое Бревно",
-        "en": "Acacia Log"
-      },
-      "item_string_id": "minecraft:acacia_log",
-      "item_number_id": "17:4"
-    },
-    {
-      "item_image": "wood/dark_oak/dark_oak_log",
-      "item_name": {
-        "ru": "Бревно Темного Дуба",
-        "en": "Dark Oak Log"
-      },
-      "item_string_id": "minecraft:dark_oak_log",
-      "item_number_id": "17:5"
-    },
-    {
-      "item_image": "wood/oak/oak_leaves",
-      "item_name": {
-        "ru": "Дубовые Листья",
-        "en": "Oak Leaves"
-      },
-      "item_string_id": "minecraft:oak_leaves",
-      "item_number_id": "18"
-    },
-    {
-      "item_image": "wood/spruce/spruce_leaves",
-      "item_name": {
-        "ru": "Хвоя",
-        "en": "Spruce Leaves"
-      },
-      "item_string_id": "minecraft:spruce_leaves",
-      "item_number_id": "18:1"
-    },
-    {
-      "item_image": "wood/birch/birch_leaves",
-      "item_name": {
-        "ru": "Березовые Листья",
-        "en": "Birch Leaves"
-      },
-      "item_string_id": "minecraft:birch_leaves",
-      "item_number_id": "18:2"
-    },
-    {
-      "item_image": "wood/jungle/jungle_leaves",
-      "item_name": {
-        "ru": "Листья Тропического Дерева",
-        "en": "Jungle Leaves"
-      },
-      "item_string_id": "minecraft:jungle_leaves",
-      "item_number_id": "18:3"
-    },
-    {
-      "item_image": "wood/acacia/acacia_leaves",
-      "item_name": {
-        "ru": "Акациевые Листья",
-        "en": "Acacia Leaves"
-      },
-      "item_string_id": "minecraft:acacia_leaves",
-      "item_number_id": "18:4"
-    },
-    {
-      "item_image": "wood/dark_oak/dark_oak_leaves",
-      "item_name": {
-        "ru": "Листья Темного Дуба",
-        "en": "Dark Oak Leaves"
-      },
-      "item_string_id": "minecraft:dark_oak_leaves",
-      "item_number_id": "18:5"
-    },
-    {
-      "item_image": "sponge",
-      "item_name": {
-        "ru": "Губка",
-        "en": "Sponge"
-      },
-      "item_string_id": "minecraft:sponge",
-      "item_number_id": "19"
-    },
-    {
-      "item_image": "wet_sponge",
-      "item_name": {
-        "ru": "Мокрая Губка",
-        "en": "Wet Sponge"
-      },
-      "item_string_id": "minecraft:wet_sponge",
-      "item_number_id": "19:1"
-    },
-    {
-      "item_image": "glass/glass",
-      "item_name": {
-        "ru": "Стекло",
-        "en": "Glass"
-      },
-      "item_string_id": "minecraft:glass",
-      "item_number_id": "20"
-    },
-    {
-      "item_image": "ores/lapis_ore",
-      "item_name": {
-        "ru": "Лазуритовая Руда",
-        "en": "Lapis Ore"
-      },
-      "item_string_id": "minecraft:lapis_ore",
-      "item_number_id": "21"
-    },
-    {
-      "item_image": "ores/lapis_block",
-      "item_name": {
-        "ru": "Лазуритовый Блок",
-        "en": "Lapis Block"
-      },
-      "item_string_id": "minecraft:lapis_block",
-      "item_number_id": "22"
-    },
-    {
-      "item_image": "dispenser",
-      "item_name": {
-        "ru": "Раздатчик",
-        "en": "Dispenser"
-      },
-      "item_string_id": "minecraft:dispenser",
-      "item_number_id": "23"
-    },
-    {
-      "item_image": "sandstone",
-      "item_name": {
-        "ru": "Песчаник",
-        "en": "Sandstone"
-      },
-      "item_string_id": "minecraft:sandstone",
-      "item_number_id": "24"
-    },
-    {
-      "item_image": "chiseled_sandstone",
-      "item_name": {
-        "ru": "Резной Песчаник",
-        "en": "Chiseled Sandstone"
-      },
-      "item_string_id": "minecraft:chiseled_sandstone",
-      "item_number_id": "24:1"
-    },
-    {
-      "item_image": "cut_sandstone",
-      "item_name": {
-        "ru": "Пиленый Песчаник",
-        "en": "Cut Sandstone"
-      },
-      "item_string_id": "minecraft:sandstone",
-      "item_number_id": "24:2"
-    },
-    {
-      "item_image": "note_block",
-      "item_name": {
-        "ru": "Нотный Блок",
-        "en": "Note Block"
-      },
-      "item_string_id": "minecraft:note_block",
-      "item_number_id": "25"
-    },
-    {
-      "item_image": "powered_rail",
-      "item_name": {
-        "ru": "Энергорельсы",
-        "en": "Powered Rail"
-      },
-      "item_string_id": "minecraft:powered_rail",
-      "item_number_id": "27"
-    },
-    {
-      "item_image": "detector_rail",
-      "item_name": {
-        "ru": "Рельсы с Датчиком",
-        "en": "Detector Rail"
-      },
-      "item_string_id": "minecraft:detector_rail",
-      "item_number_id": "28"
-    },
-    {
-      "item_image": "sticky_piston",
-      "item_name": {
-        "ru": "Липкий Поршень",
-        "en": "Sticky Piston"
-      },
-      "item_string_id": "minecraft:",
-      "item_number_id": "29"
-    },
-    {
-      "item_image": "cobweb",
-      "item_name": {
-        "ru": "Паутина",
-        "en": "Cobweb"
-      },
-      "item_string_id": "minecraft:cobweb",
-      "item_number_id": "30"
-    },
-    {
-      "item_image": "grass",
-      "item_name": {
-        "ru": "Трава",
-        "en": "Grass"
-      },
-      "item_string_id": "minecraft:grass",
-      "item_number_id": "31:1"
-    },
-    {
-      "item_image": "fern",
-      "item_name": {
-        "ru": "Папоротник",
-        "en": "Fern"
-      },
-      "item_string_id": "minecraft:fern",
-      "item_number_id": "31:2"
-    },
-    {
-      "item_image": "dead_bush",
-      "item_name": {
-        "ru": "Сухой Куст",
-        "en": "Dead Bush"
-      },
-      "item_string_id": "minecraft:dead_bush",
-      "item_number_id": "32"
-    },
-    {
-      "item_image": "piston",
-      "item_name": {
-        "ru": "Поршень",
-        "en": "piston"
-      },
-      "item_string_id": "minecraft:piston",
-      "item_number_id": "33"
-    },
-    {
-      "item_image": "white_wool",
-      "item_name": {
-        "ru": "Белая Шерсть",
-        "en": "White Wool"
-      },
-      "item_string_id": "minecraft:white_wool",
-      "item_number_id": "35"
-    },
-    {
-      "item_image": "orange_wool",
-      "item_name": {
-        "ru": "Оранжевая Шерсть",
-        "en": "Orange Wool"
-      },
-      "item_string_id": "minecraft:orange_wool",
-      "item_number_id": "35:1"
-    },
-    {
-      "item_image": "magenta_wool",
-      "item_name": {
-        "ru": "Пурпурная Шерсть",
-        "en": "Magenta Wool"
-      },
-      "item_string_id": "minecraft:magenta_wool",
-      "item_number_id": "35:2"
-    },
-    {
-      "item_image": "light_blue_wool",
-      "item_name": {
-        "ru": "Голубая Шерсть",
-        "en": "Light Blue Wool"
-      },
-      "item_string_id": "minecraft:light_blue_wool",
-      "item_number_id": "35:3"
-    },
-    {
-      "item_image": "yellow_wool",
-      "item_name": {
-        "ru": "Желтая Шерсть",
-        "en": "Yellow Wool"
-      },
-      "item_string_id": "minecraft:yellow_wool",
-      "item_number_id": "35:4"
-    },
-    {
-      "item_image": "lime_wool",
-      "item_name": {
-        "ru": "Лаймовая Шерсть",
-        "en": "Lime Wool"
-      },
-      "item_string_id": "minecraft:lime_wool",
-      "item_number_id": "35:5"
-    },
-    {
-      "item_image": "pink_wool",
-      "item_name": {
-        "ru": "Розовая Шерсть",
-        "en": "Pink Wool"
-      },
-      "item_string_id": "minecraft:pink_wool",
-      "item_number_id": "35:6"
-    },
-    {
-      "item_image": "gray_wool",
-      "item_name": {
-        "ru": "Серая Шерсть",
-        "en": "Gray Wool"
-      },
-      "item_string_id": "minecraft:gray_wool",
-      "item_number_id": "35:7"
-    },
-    {
-      "item_image": "light_gray_wool",
-      "item_name": {
-        "ru": "Светло-Серая Шерсть",
-        "en": "Light Gray Wool"
-      },
-      "item_string_id": "minecraft:light_gray_wool",
-      "item_number_id": "35:8"
-    },
-    {
-      "item_image": "cyan_wool",
-      "item_name": {
-        "ru": "Бирюзовая Шерсть",
-        "en": "Cyan Wool"
-      },
-      "item_string_id": "minecraft:cyan_wool",
-      "item_number_id": "35:9"
-    },
-    {
-      "item_image": "purple_wool",
-      "item_name": {
-        "ru": "Фиолетовая Шерсть",
-        "en": "Purple Wool"
-      },
-      "item_string_id": "minecraft:purple_wool",
-      "item_number_id": "35:10"
-    },
-    {
-      "item_image": "blue_wool",
-      "item_name": {
-        "ru": "Синяя Шерсть",
-        "en": "Blue Wool"
-      },
-      "item_string_id": "minecraft:blue_wool",
-      "item_number_id": "35:11"
-    },
-    {
-      "item_image": "brown_wool",
-      "item_name": {
-        "ru": "Коричневая Шерсть",
-        "en": "Brown Wool"
-      },
-      "item_string_id": "minecraft:brown_wool",
-      "item_number_id": "35:12"
-    },
-    {
-      "item_image": "green_wool",
-      "item_name": {
-        "ru": "Зеленая Шерсть",
-        "en": "Green Wool"
-      },
-      "item_string_id": "minecraft:green_wool",
-      "item_number_id": "35:13"
-    },
-    {
-      "item_image": "red_wool",
-      "item_name": {
-        "ru": "Красная Шерсть",
-        "en": "Red Wool"
-      },
-      "item_string_id": "minecraft:red_wool",
-      "item_number_id": "35:14"
-    },
-    {
-      "item_image": "black_wool",
-      "item_name": {
-        "ru": "Черная Шерсть",
-        "en": "Black Wool"
-      },
-      "item_string_id": "minecraft:black_wool",
-      "item_number_id": "35:15"
-    },
-    {
-      "item_image": "dandelion",
-      "item_name": {
-        "ru": "Одуванчик",
-        "en": "Dandelion"
-      },
-      "item_string_id": "minecraft:dandelion",
-      "item_number_id": "37"
-    },
-    {
-      "item_image": "poppy",
-      "item_name": {
-        "ru": "Мак",
-        "en": "Poppy"
-      },
-      "item_string_id": "minecraft:poppy",
-      "item_number_id": "38"
-    },
-    {
-      "item_image": "blue_orchid",
-      "item_name": {
-        "ru": "Синяя Орхидея",
-        "en": "Blue Orchid"
-      },
-      "item_string_id": "minecraft:blue_orchid",
-      "item_number_id": "38:1"
-    },
-    {
-      "item_image": "allium",
-      "item_name": {
-        "ru": "Лук-Батун",
-        "en": "Allium"
-      },
-      "item_string_id": "minecraft:allium",
-      "item_number_id": "38:2"
-    },
-    {
-      "item_image": "azure_bluet",
-      "item_name": {
-        "ru": "Хаустония Серая",
-        "en": "Azure Bluet"
-      },
-      "item_string_id": "minecraft:azure_bluet",
-      "item_number_id": "38:3"
-    },
-    {
-      "item_image": "red_tulip",
-      "item_name": {
-        "ru": "Красный Тюльпан",
-        "en": "Red Tulip"
-      },
-      "item_string_id": "minecraft:red_tulip",
-      "item_number_id": "38:4"
-    },
-    {
-      "item_image": "orange_tulip",
-      "item_name": {
-        "ru": "Оранжевый Тюльпан",
-        "en": "Orange Tulip"
-      },
-      "item_string_id": "minecraft:orange_tulip",
-      "item_number_id": "38:5"
-    },
-    {
-      "item_image": "white_tulip",
-      "item_name": {
-        "ru": "Белый Тюльпан",
-        "en": "White Tulip"
-      },
-      "item_string_id": "minecraft:white_tulip",
-      "item_number_id": "38:6"
-    },
-    {
-      "item_image": "pink_tulip",
-      "item_name": {
-        "ru": "Розовый Тюльпан",
-        "en": "Pink Tulip"
-      },
-      "item_string_id": "minecraft:pink_tulip",
-      "item_number_id": "38:7"
-    },
-    {
-      "item_image": "oxeye_daisy",
-      "item_name": {
-        "ru": "Ромашка",
-        "en": "Oxeye Daisy"
-      },
-      "item_string_id": "minecraft:oxeye_daisy",
-      "item_number_id": "38:8"
-    },
-    {
-      "item_image": "food/brown_mushroom",
-      "item_name": {
-        "ru": "Коричневый Гриб",
-        "en": "Brown Mushroom"
-      },
-      "item_string_id": "minecraft:brown_mushroom",
-      "item_number_id": "39"
-    },
-    {
-      "item_image": "food/red_mushroom",
-      "item_name": {
-        "ru": "Красный Гриб",
-        "en": "Red Mushroom"
-      },
-      "item_string_id": "minecraft:red_mushroom",
-      "item_number_id": "40"
-    },
-    {
-      "item_image": "ores/gold_block",
-      "item_name": {
-        "ru": "Золотой Блок",
-        "en": "Gold Block"
-      },
-      "item_string_id": "minecraft:gold_block",
-      "item_number_id": "41"
-    },
-    {
-      "item_image": "ores/iron_block",
-      "item_name": {
-        "ru": "Железный Блок",
-        "en": "Iron Block"
-      },
-      "item_string_id": "minecraft:iron_block",
-      "item_number_id": "42"
-    },
-    {
-      "item_image": "bricks",
-      "item_name": {
-        "ru": "Кирпичи",
-        "en": "Bricks"
-      },
-      "item_string_id": "minecraft:bricks",
-      "item_number_id": "45"
-    },
-    {
-      "item_image": "bookshelf",
-      "item_name": {
-        "ru": "Книжная Полка",
-        "en": "Bookshelf"
-      },
-      "item_string_id": "minecraft:bookshelf",
-      "item_number_id": "47"
-    },
-    {
-      "item_image": "stone/mossy_cobblestone",
-      "item_name": {
-        "ru": "Замшелый Булыжник",
-        "en": "Mossy Cobblestone"
-      },
-      "item_string_id": "minecraft:mossy_cobblestone",
-      "item_number_id": "48"
-    },
-    {
-      "item_image": "obsidian",
-      "item_name": {
-        "ru": "Обсидиан",
-        "en": "Obsidian"
-      },
-      "item_string_id": "minecraft:obsidian",
-      "item_number_id": "49"
-    },
-    {
-      "item_image": "torch",
-      "item_name": {
-        "ru": "Факел",
-        "en": "Torch"
-      },
-      "item_string_id": "minecraft:torch",
-      "item_number_id": "50"
-    },
-    {
-      "item_image": "fire",
-      "item_name": {
-        "ru": "Огонь",
-        "en": "Fire"
-      },
-      "item_string_id": "minecraft:fire",
-      "item_number_id": "51"
-    },
-    {
-      "item_image": "spawner",
-      "item_name": {
-        "ru": "Спавнер Мобов",
-        "en": "Spawner"
-      },
-      "item_string_id": "minecraft:spawner",
-      "item_number_id": "52"
-    },
-    {
-      "item_image": "chest",
-      "item_name": {
-        "ru": "Сундук",
-        "en": "Chest"
-      },
-      "item_string_id": "minecraft:chest",
-      "item_number_id": "54"
-    },
-    {
-      "item_image": "redstone_wire",
-      "item_name": {
-        "ru": "Редстоуновый Провод",
-        "en": "Redstone Wire"
-      },
-      "item_string_id": "minecraft:redstone_wire",
-      "item_number_id": "55"
-    }
-  ],
-  "effects": [
-    {
-      "item_image": "effects/speed",
-      "item_name": {
-        "ru": "Скорость",
-        "en": "Speed"
-      },
-      "item_string_id": "minecraft:speed",
-      "item_number_id": "1"
-    },
-    {
-      "item_image": "effects/slowness",
-      "item_name": {
-        "ru": "Замедление",
-        "en": "Slowness"
-      },
-      "item_string_id": "minecraft:slowness",
-      "item_number_id": "2"
-    },
-    {
-      "item_image": "effects/haste",
-      "item_name": {
-        "ru": "Проворность",
-        "en": "Haste"
-      },
-      "item_string_id": "minecraft:haste",
-      "item_number_id": "3"
-    },
-    {
-      "item_image": "effects/mining_fatigue",
-      "item_name": {
-        "ru": "Усталость",
-        "en": "Mining Fatigue"
-      },
-      "item_string_id": "minecraft:mining_fatigue",
-      "item_number_id": "4"
-    },
-    {
-      "item_image": "effects/strength",
-      "item_name": {
-        "ru": "Сила",
-        "en": "Strength"
-      },
-      "item_string_id": "minecraft:strength",
-      "item_number_id": "5"
-    },
-    {
-      "item_image": "effects/instant_health",
-      "item_name": {
-        "ru": "Исцеление",
-        "en": "Instant Health"
-      },
-      "item_string_id": "minecraft:instant_health",
-      "item_number_id": "6"
-    },
-    {
-      "item_image": "effects/instant_damage",
-      "item_name": {
-        "ru": "Моментальный Урон",
-        "en": "Instant Damage"
-      },
-      "item_string_id": "minecraft:instant_damage",
-      "item_number_id": "7"
-    },
-    {
-      "item_image": "effects/jump_boost",
-      "item_name": {
-        "ru": "Прыгучесть",
-        "en": "Jump Boost"
-      },
-      "item_string_id": "minecraft:jump_boost",
-      "item_number_id": "8"
-    },
-    {
-      "item_image": "effects/nausea",
-      "item_name": {
-        "ru": "Тошнота",
-        "en": "Nausea"
-      },
-      "item_string_id": "minecraft:nausea",
-      "item_number_id": "9"
-    },
-    {
-      "item_image": "effects/regeneration",
-      "item_name": {
-        "ru": "Регенерация",
-        "en": "Regeneration"
-      },
-      "item_string_id": "minecraft:regeneration",
-      "item_number_id": "10"
-    },
-    {
-      "item_image": "effects/resistance",
-      "item_name": {
-        "ru": "Сопротивление",
-        "en": "Resistance"
-      },
-      "item_string_id": "minecraft:resistance",
-      "item_number_id": "11"
-    },
-    {
-      "item_image": "effects/fire_resistance",
-      "item_name": {
-        "ru": "Огнестройкость",
-        "en": "Fire Resistance"
-      },
-      "item_string_id": "minecraft:fire_resistance",
-      "item_number_id": "12"
-    },
-    {
-      "item_image": "effects/water_breathing",
-      "item_name": {
-        "ru": "Подводное Дыхание",
-        "en": "Water Breathing"
-      },
-      "item_string_id": "minecraft:water_breathing",
-      "item_number_id": "13"
-    },
-    {
-      "item_image": "effects/invisibility",
-      "item_name": {
-        "ru": "Невидимость",
-        "en": "Invisibility"
-      },
-      "item_string_id": "minecraft:invisibility",
-      "item_number_id": "14"
-    },
-    {
-      "item_image": "effects/blindness",
-      "item_name": {
-        "ru": "Слепота",
-        "en": "Blindness"
-      },
-      "item_string_id": "minecraft:blindness",
-      "item_number_id": "15"
-    },
-    {
-      "item_image": "effects/night_vision",
-      "item_name": {
-        "ru": "Ночное Виденье",
-        "en": "Night Vision"
-      },
-      "item_string_id": "minecraft:night_vision",
-      "item_number_id": "16"
-    },
-    {
-      "item_image": "effects/hunger",
-      "item_name": {
-        "ru": "Голод",
-        "en": "Hunger"
-      },
-      "item_string_id": "minecraft:hunger",
-      "item_number_id": "17"
-    },
-    {
-      "item_image": "effects/weakness",
-      "item_name": {
-        "ru": "Слабость",
-        "en": "Weakness"
-      },
-      "item_string_id": "minecraft:weakness",
-      "item_number_id": "18"
-    },
-    {
-      "item_image": "effects/poison",
-      "item_name": {
-        "ru": "Отравление",
-        "en": "Poison"
-      },
-      "item_string_id": "minecraft:poison",
-      "item_number_id": "19"
-    },
-    {
-      "item_image": "effects/wither",
-      "item_name": {
-        "ru": "Иссушение",
-        "en": "Wither"
-      },
-      "item_string_id": "minecraft:wither",
-      "item_number_id": "20"
-    },
-    {
-      "item_image": "effects/health_boost",
-      "item_name": {
-        "ru": "Прилив Здоровья",
-        "en": "Health Boost"
-      },
-      "item_string_id": "minecraft:health_boost",
-      "item_number_id": "21"
-    },
-    {
-      "item_image": "effects/absorption",
-      "item_name": {
-        "ru": "Поглощение",
-        "en": "Absorption"
-      },
-      "item_string_id": "minecraft:absorption",
-      "item_number_id": "22"
-    },
-    {
-      "item_image": "effects/saturation",
-      "item_name": {
-        "ru": "Насыщение",
-        "en": "Saturation"
-      },
-      "item_string_id": "minecraft:saturation",
-      "item_number_id": "23"
-    },
-    {
-      "item_image": "effects/levitation",
-      "item_name": {
-        "ru": "Левитация",
-        "en": "Levitation"
-      },
-      "item_string_id": "minecraft:levitation",
-      "item_number_id": "25"
-    },
-    {
-      "item_image": "effects/slow_falling",
-      "item_name": {
-        "ru": "Медленное Падение",
-        "en": "Slow Falling"
-      },
-      "item_string_id": "minecraft:slow_falling",
-      "item_number_id": "28"
-    },
-    {
-      "item_image": "effects/conduit_power",
-      "item_name": {
-        "ru": "Морская Сила",
-        "en": "Conduit Power"
-      },
-      "item_string_id": "minecraft:conduit_power",
-      "item_number_id": "29"
-    },
-    {
-      "item_image": "effects/dolphins_grace",
-      "item_name": {
-        "ru": "Грация Дельфина",
-        "en": "Dolphins Grace"
-      },
-      "item_string_id": "minecraft:dolphins_grace",
-      "item_number_id": "30"
-    },
-    {
-      "item_image": "effects/dolphins_grace",
-      "item_name": {
-        "ru": "Грация Дельфина",
-        "en": "Dolphins Grace"
-      },
-      "item_string_id": "minecraft:dolphins_grace",
-      "item_number_id": "30"
-    },
-    {
-      "item_image": "effects/bad_omen",
-      "item_name": {
-        "ru": "Дурное Знамение",
-        "en": "Bad Omen"
-      },
-      "item_string_id": "minecraft:bad_omen",
-      "item_number_id": "31"
-    },
-    {
-      "item_image": "effects/hero_of_the_village",
-      "item_name": {
-        "ru": "Герой Деревни",
-        "en": "Hero Of The Village"
-      },
-      "item_string_id": "minecraft:hero_of_the_village",
-      "item_number_id": "32"
-    }
-  ],
-  "mobs": [
-    {
-      "item_image": "mobs/icons/bat_mob",
-      "item_name": {
-        "ru": "Летучая Мышь",
-        "en": "Bat"
-      },
-      "item_string_id": "minecraft:bat",
-      "item_number_id": "null"
-    },
-    {
-      "item_image": "mobs/icons/cat_mob",
-      "item_name": {
-        "ru": "Кошка",
-        "en": "Cat"
-      },
-      "item_string_id": "minecraft:cat",
-      "item_number_id": "null"
-    },
-    {
-      "item_image": "mobs/icons/chicken_mob",
-      "item_name": {
-        "ru": "Курица",
-        "en": "Chicken"
-      },
-      "item_string_id": "minecraft:chicken",
-      "item_number_id": "null"
-    },
-    {
-      "item_image": "mobs/icons/cod_mob",
-      "item_name": {
-        "ru": "Треска",
-        "en": "Cod"
-      },
-      "item_string_id": "minecraft:cod",
-      "item_number_id": "null"
-    },{
-      "item_image": "mobs/icons/cow_mob",
-      "item_name": {
-        "ru": "Корова",
-        "en": "Cow"
-      },
-      "item_string_id": "minecraft:cow",
-      "item_number_id": "null"
-    },{
-      "item_image": "mobs/icons/donkey_mob",
-      "item_name": {
-        "ru": "Осел",
-        "en": "Donkey"
-      },
-      "item_string_id": "minecraft:donkey",
-      "item_number_id": "null"
-    },{
-      "item_image": "mobs/icons/fox_mob",
-      "item_name": {
-        "ru": "Лиса",
-        "en": "Fox"
-      },
-      "item_string_id": "minecraft:fox",
-      "item_number_id": "null"
-    },{
-      "item_image": "mobs/icons/horse_mob",
-      "item_name": {
-        "ru": "Лошадь",
-        "en": "Horse"
-      },
-      "item_string_id": "minecraft:horse",
-      "item_number_id": "null"
-    },{
-      "item_image": "mobs/icons/mooshroom_mob",
-      "item_name": {
-        "ru": "Грибная Корова",
-        "en": "Mooshroom"
-      },
-      "item_string_id": "minecraftmooshroom:",
-      "item_number_id": "null"
-    },{
-      "item_image": "mobs/icons/mule_mob",
-      "item_name": {
-        "ru": "Мул",
-        "en": "Mule"
-      },
-      "item_string_id": "minecraft:mule",
-      "item_number_id": "null"
-    },{
-      "item_image": "mobs/icons/ocelot_mob",
-      "item_name": {
-        "ru": "Оцелот",
-        "en": "Ocelot"
-      },
-      "item_string_id": "minecraft:ocelot",
-      "item_number_id": "null"
-    },{
-      "item_image": "mobs/icons/parrot_mob",
-      "item_name": {
-        "ru": "Попугай",
-        "en": "Parrot"
-      },
-      "item_string_id": "minecraft:parrot",
-      "item_number_id": "null"
-    },{
-      "item_image": "mobs/icons/pig_mob",
-      "item_name": {
-        "ru": "Свинья",
-        "en": "Pig"
-      },
-      "item_string_id": "minecraft:pig",
-      "item_number_id": "null"
-    },{
-      "item_image": "mobs/icons/rabbit_mob",
-      "item_name": {
-        "ru": "Кролик",
-        "en": "Rabbit"
-      },
-      "item_string_id": "minecraft:rabbit",
-      "item_number_id": "null"
-    },{
-      "item_image": "mobs/icons/salmon_mob",
-      "item_name": {
-        "ru": "Лосось",
-        "en": "Salmon"
-      },
-      "item_string_id": "minecraft:salmon",
-      "item_number_id": "null"
-    },{
-      "item_image": "mobs/icons/sheep_mob",
-      "item_name": {
-        "ru": "Овца",
-        "en": "Sheep"
-      },
-      "item_string_id": "minecraft:sheep",
-      "item_number_id": "null"
-    },{
-      "item_image": "mobs/icons/squid_mob",
-      "item_name": {
-        "ru": "Спрут",
-        "en": "Squid"
-      },
-      "item_string_id": "minecraft:squid",
-      "item_number_id": "null"
-    },{
-      "item_image": "mobs/icons/tropical_fish_mob",
-      "item_name": {
-        "ru": "Тропическая Рыба",
-        "en": "Tropical Fish"
-      },
-      "item_string_id": "minecraft:tropical_fish",
-      "item_number_id": "null"
-    },{
-      "item_image": "mobs/icons/turtle_mob",
-      "item_name": {
-        "ru": "Черепаха",
-        "en": "Turtle"
-      },
-      "item_string_id": "minecraft:turtle",
-      "item_number_id": "null"
-    },{
-      "item_image": "mobs/icons/villager_mob",
-      "item_name": {
-        "ru": "Житель",
-        "en": "Villager"
-      },
-      "item_string_id": "minecraft:villager",
-      "item_number_id": "null"
-    },{
-      "item_image": "mobs/icons/wandering_trader_mob",
-      "item_name": {
-        "ru": "Странствующий Торговец",
-        "en": "Wandering Trader"
-      },
-      "item_string_id": "minecraft:wandering_trader",
-      "item_number_id": "null"
-    },{
-      "item_image": "mobs/icons/pufferfish_mob",
-      "item_name": {
-        "ru": "Иглобрюх",
-        "en": "Pufferfish"
-      },
-      "item_string_id": "minecraft:pufferfish",
-      "item_number_id": "null"
-    },{
-      "item_image": "mobs/icons/dolphin_mob",
-      "item_name": {
-        "ru": "Дельфин",
-        "en": "Dolphin"
-      },
-      "item_string_id": "minecraft:dolphin",
-      "item_number_id": "null"
-    },{
-      "item_image": "mobs/icons/llama_mob",
-      "item_name": {
-        "ru": "Лама",
-        "en": "Llama"
-      },
-      "item_string_id": "minecraft:llama",
-      "item_number_id": "null"
-    },{
-      "item_image": "mobs/icons/panda_mob",
-      "item_name": {
-        "ru": "Панда",
-        "en": "Panda"
-      },
-      "item_string_id": "minecraft:panda",
-      "item_number_id": "null"
-    },{
-      "item_image": "mobs/icons/polar_bear_mob",
-      "item_name": {
-        "ru": "Белый Медведь",
-        "en": "Polar Bear"
-      },
-      "item_string_id": "minecraft:polar_bear",
-      "item_number_id": "null"
-    },{
-      "item_image": "mobs/icons/wolf_mob",
-      "item_name": {
-        "ru": "Волк",
-        "en": "Wolf"
-      },
-      "item_string_id": "minecraft:wolf",
-      "item_number_id": "null"
-    },{
-      "item_image": "mobs/icons/bee_mob",
-      "item_name": {
-        "ru": "Пчела",
-        "en": "Bee"
-      },
-      "item_string_id": "minecraft:bee",
-      "item_number_id": "null"
-    },{
-      "item_image": "mobs/icons/cafe_spider_mob",
-      "item_name": {
-        "ru": "Пещерный Паук",
-        "en": "Cave Spider"
-      },
-      "item_string_id": "minecraft:cave_spider",
-      "item_number_id": "null"
-    },{
-      "item_image": "mobs/icons/enderman_mob",
-      "item_name": {
-        "ru": "Эндермен",
-        "en": "Enderman"
-      },
-      "item_string_id": "minecraft:enderman",
-      "item_number_id": "null"
-    },{
-      "item_image": "mobs/icons/spider_mob",
-      "item_name": {
-        "ru": "Паук",
-        "en": "Spider"
-      },
-      "item_string_id": "minecraft:spider",
-      "item_number_id": "null"
-    },{
-      "item_image": "mobs/icons/blaze_mob",
-      "item_name": {
-        "ru": "Ифрит",
-        "en": "Blaze"
-      },
-      "item_string_id": "minecraft:blaze",
-      "item_number_id": "null"
-    },{
-      "item_image": "mobs/icons/creeper_mob",
-      "item_name": {
-        "ru": "Крипер",
-        "en": "Creeper"
-      },
-      "item_string_id": "minecraft:creeper",
-      "item_number_id": "null"
-    },{
-      "item_image": "mobs/icons/drowned_mob",
-      "item_name": {
-        "ru": "Утопленник",
-        "en": "Drowned"
-      },
-      "item_string_id": "minecraft:drowned",
-      "item_number_id": "null"
-    },{
-      "item_image": "mobs/icons/elder_guardian_mob",
-      "item_name": {
-        "ru": "Древний Страж",
-        "en": "Elder Guardian"
-      },
-      "item_string_id": "minecraft:elder_guardian",
-      "item_number_id": "null"
-    },{
-      "item_image": "mobs/icons/endermite_mob",
-      "item_name": {
-        "ru": "Чешуйница Энда",
-        "en": "Endermite"
-      },
-      "item_string_id": "minecraft:endermite",
-      "item_number_id": "null"
-    },{
-      "item_image": "mobs/icons/evoker_mob",
-      "item_name": {
-        "ru": "Вызыватель",
-        "en": "Evoker"
-      },
-      "item_string_id": "minecraft:evoker",
-      "item_number_id": "null"
-    },{
-      "item_image": "mobs/icons/ghast_mob",
-      "item_name": {
-        "ru": "Гаст",
-        "en": "Ghast"
-      },
-      "item_string_id": "minecraft:ghast",
-      "item_number_id": "null"
-    },{
-      "item_image": "mobs/icons/guardian_mob",
-      "item_name": {
-        "ru": "Страж",
-        "en": "Guardian"
-      },
-      "item_string_id": "minecraft:guardian",
-      "item_number_id": "null"
-    },{
-      "item_image": "mobs/icons/husk_mob",
-      "item_name": {
-        "ru": "Кадавр",
-        "en": "Husk"
-      },
-      "item_string_id": "minecraft:husk",
-      "item_number_id": "null"
-    },{
-      "item_image": "mobs/icons/magma_cube_mob",
-      "item_name": {
-        "ru": "Лавовый Куб",
-        "en": "Magma Cube"
-      },
-      "item_string_id": "minecraft:magma_cube",
-      "item_number_id": "null"
-    },{
-      "item_image": "mobs/icons/phantom_mob",
-      "item_name": {
-        "ru": "Фантом",
-        "en": "Phantom"
-      },
-      "item_string_id": "minecraft:phantom",
-      "item_number_id": "null"
-    },{
-      "item_image": "mobs/icons/pillager_mob",
-      "item_name": {
-        "ru": "Разбойник",
-        "en": "Pillager"
-      },
-      "item_string_id": "minecraft:pillager",
-      "item_number_id": "null"
-    },{
-      "item_image": "mobs/icons/ravager_mob",
-      "item_name": {
-        "ru": "Разоритель",
-        "en": "Ravager"
-      },
-      "item_string_id": "minecraft:ravager",
-      "item_number_id": "null"
-    },{
-      "item_image": "mobs/icons/shulker_mob",
-      "item_name": {
-        "ru": "Шалкер",
-        "en": "Shulker"
-      },
-      "item_string_id": "minecraft:shulker",
-      "item_number_id": "null"
-    },{
-      "item_image": "mobs/icons/silverfish_mob",
-      "item_name": {
-        "ru": "Чешуйница",
-        "en": "Silverfish"
-      },
-      "item_string_id": "minecraft:silverfish",
-      "item_number_id": "null"
-    },{
-      "item_image": "mobs/icons/skeleton_mob",
-      "item_name": {
-        "ru": "Скелет",
-        "en": "Skeleton"
-      },
-      "item_string_id": "minecraft:skeleton",
-      "item_number_id": "null"
-    },{
-      "item_image": "mobs/icons/slime_mob",
-      "item_name": {
-        "ru": "Слизень",
-        "en": "Slime"
-      },
-      "item_string_id": "minecraft:slime",
-      "item_number_id": "null"
-    },{
-      "item_image": "mobs/icons/stray_mob",
-      "item_name": {
-        "ru": "Зимогор",
-        "en": "Stray"
-      },
-      "item_string_id": "minecraft:stray",
-      "item_number_id": "null"
-    },{
-      "item_image": "mobs/icons/vex_mob",
-      "item_name": {
-        "ru": "Досаждатель",
-        "en": "Vex"
-      },
-      "item_string_id": "minecraft:vex",
-      "item_number_id": "null"
-    },{
-      "item_image": "mobs/icons/vindicator_mob",
-      "item_name": {
-        "ru": "Поборник",
-        "en": "Vindicator"
-      },
-      "item_string_id": "minecraft:vindicator",
-      "item_number_id": "null"
-    },{
-      "item_image": "mobs/icons/witch_mob",
-      "item_name": {
-        "ru": "Ведьма",
-        "en": "Witch"
-      },
-      "item_string_id": "minecraft:witch",
-      "item_number_id": "null"
-    },{
-      "item_image": "mobs/icons/wither_skeleton_mob",
-      "item_name": {
-        "ru": "Скелет-Иссушитель",
-        "en": "Wither-Skeleton"
-      },
-      "item_string_id": "minecraft:wither_skeleton",
-      "item_number_id": "null"
-    },{
-      "item_image": "mobs/icons/zombie_mob",
-      "item_name": {
-        "ru": "Зомби",
-        "en": "Zombie"
-      },
-      "item_string_id": "minecraft:zombie",
-      "item_number_id": "null"
-    },{
-      "item_image": "mobs/icons/zombie_villager_mob",
-      "item_name": {
-        "ru": "Зомби-Житель",
-        "en": "Zombie-Villager"
-      },
-      "item_string_id": "minecraft:zombie_villager",
-      "item_number_id": "null"
-    },{
-      "item_image": "mobs/icons/snow_golem_mob",
-      "item_name": {
-        "ru": "Снежный Голем",
-        "en": "Snow Golem"
-      },
-      "item_string_id": "minecraft:snow_golem",
-      "item_number_id": "null"
-    },{
-      "item_image": "mobs/icons/iron_golem_mob",
-      "item_name": {
-        "ru": "Железный Голем",
-        "en": "Iron Golem"
-      },
-      "item_string_id": "minecraft:iron_golem",
-      "item_number_id": "null"
-    },{
-      "item_image": "mobs/icons/ender_dragon_mob",
-      "item_name": {
-        "ru": "Дракон Края",
-        "en": "Ender Dragon"
-      },
-      "item_string_id": "minecraft:ender_dragon",
-      "item_number_id": "null"
-    },{
-      "item_image": "mobs/icons/wither_mob",
-      "item_name": {
-        "ru": "Иссушитель",
-        "en": "Wither"
-      },
-      "item_string_id": "minecraft:wither",
-      "item_number_id": "null"
-    },{
-      "item_image": "mobs/icons/zoglin_mob",
-      "item_name": {
-        "ru": "Зоглин",
-        "en": "Zoglin"
-      },
-      "item_string_id": "minecraft:zoglin",
-      "item_number_id": "null"
-    },{
-      "item_image": "mobs/icons/hoglin_mob",
-      "item_name": {
-        "ru": "Хоглин",
-        "en": "Hoglin"
-      },
-      "item_string_id": "minecraft:hoglin",
-      "item_number_id": "null"
-    },{
-      "item_image": "mobs/icons/strider_mob",
-      "item_name": {
-        "ru": "Страйдер",
-        "en": "Strider"
-      },
-      "item_string_id": "minecraft:strider",
-      "item_number_id": "null"
-    },{
-      "item_image": "mobs/icons/piglin_mob",
-      "item_name": {
-        "ru": "Пиглин",
-        "en": "Piglin"
-      },
-      "item_string_id": "minecraft:piglin",
-      "item_number_id": "null"
-    },{
-      "item_image": "mobs/icons/zombified_piglin_mob",
-      "item_name": {
-        "ru": "Зомбированный Пиглин",
-        "en": "Zombified Piglin"
-      },
-      "item_string_id": "minecraft:zombified_piglin",
-      "item_number_id": "null"
-    },{
-      "item_image": "mobs/icons/piglin_brute_mob",
-      "item_name": {
-        "ru": "Брутальный Пиглин",
-        "en": "Piglin Brute"
-      },
-      "item_string_id": "minecraft:piglin_brute",
-      "item_number_id": "null"
-    },{
-      "item_image": "mobs/icons/goat_mob",
-      "item_name": {
-        "ru": "Козел",
-        "en": "Goat"
-      },
-      "item_string_id": "minecraft:goat",
-      "item_number_id": "null"
-    },{
-      "item_image": "mobs/icons/axolotl_mob",
-      "item_name": {
-        "ru": "Аксолотль",
-        "en": "Axolotl"
-      },
-      "item_string_id": "minecraft:axolotl",
-      "item_number_id": "null"
-    },{
-      "item_image": "mobs/icons/glow_squid_mob",
-      "item_name": {
-        "ru": "Светящийся Спрут",
-        "en": "Glow Squid"
-      },
-      "item_string_id": "minecraft:glow_squid",
-      "item_number_id": "null"
-    }
-  ]
+  "name": "Minecraft IDs",
+  "author_name": "InfinityByte",
+  "version": "1.18",
+  "web_site": "vk.com/infinitybyte",
+  "description": {
+    "ru": "Это ID для Майнкрафт",
+    "en": "This is IDs for Minecraft"
+  },
+  "content": {
+    "items": [
+      {
+        "item_image": "stone/stone",
+        "item_name": {
+          "ru": "Камень",
+          "en": "Stone"
+        },
+        "item_string_id": "minecraft:stone",
+        "item_number_id": "1"
+      },
+      {
+        "item_image": "stone/granite",
+        "item_name": {
+          "ru": "Гранит",
+          "en": "Stone"
+        },
+        "item_string_id": "minecraft:granite",
+        "item_number_id": "1:1"
+      },
+      {
+        "item_image": "stone/polished_granite",
+        "item_name": {
+          "ru": "Полированный Гранит",
+          "en": "Polished Granite"
+        },
+        "item_string_id": "minecraft:polished_granite",
+        "item_number_id": "1:2"
+      },
+      {
+        "item_image": "stone/diorite",
+        "item_name": {
+          "ru": "Диорит",
+          "en": "Diorite"
+        },
+        "item_string_id": "minecraft:diorite",
+        "item_number_id": "1:3"
+      },
+      {
+        "item_image": "stone/polished_diorite",
+        "item_name": {
+          "ru": "Полированный Диорит",
+          "en": "Polished Diorite"
+        },
+        "item_string_id": "minecraft:polished_diorite",
+        "item_number_id": "1:4"
+      },
+      {
+        "item_image": "stone/andesite",
+        "item_name": {
+          "ru": "Андезит",
+          "en": "Andesite"
+        },
+        "item_string_id": "minecraft:andesite",
+        "item_number_id": "1:5"
+      },
+      {
+        "item_image": "stone/polished_andesite",
+        "item_name": {
+          "ru": "Полированный Андезит",
+          "en": "Polished Andesite"
+        },
+        "item_string_id": "minecraft:polished_andesite",
+        "item_number_id": "1:6"
+      },
+      {
+        "item_image": "grass_block",
+        "item_name": {
+          "ru": "Дерн",
+          "en": "Grass Block"
+        },
+        "item_string_id": "minecraft:grass_block",
+        "item_number_id": "2"
+      },
+      {
+        "item_image": "dirt",
+        "item_name": {
+          "ru": "Земля",
+          "en": "Dirt"
+        },
+        "item_string_id": "minecraft:dirt",
+        "item_number_id": "3"
+      },
+      {
+        "item_image": "coarse_dirt",
+        "item_name": {
+          "ru": "Каменистая Земля",
+          "en": "Coarse Dirt"
+        },
+        "item_string_id": "minecraft:coarse_dirt",
+        "item_number_id": "3:1"
+      },
+      {
+        "item_image": "podzol",
+        "item_name": {
+          "ru": "Подзол",
+          "en": "Podzol"
+        },
+        "item_string_id": "minecraft:podzol",
+        "item_number_id": "3:2 | 243"
+      },
+      {
+        "item_image": "stone/cobblestone",
+        "item_name": {
+          "ru": "Булыжник",
+          "en": "Cobblestone"
+        },
+        "item_string_id": "minecraft:cobblestone",
+        "item_number_id": "4"
+      },
+      {
+        "item_image": "wood/oak/oak_planks",
+        "item_name": {
+          "ru": "Дубовые Доски",
+          "en": "Oak Planks"
+        },
+        "item_string_id": "minecraft:oak_planks",
+        "item_number_id": "5"
+      },
+      {
+        "item_image": "wood/spruce/spruce_planks",
+        "item_name": {
+          "ru": "Еловые Доски",
+          "en": "Spruce Planks"
+        },
+        "item_string_id": "minecraft:spruce_planks",
+        "item_number_id": "5:1"
+      },
+      {
+        "item_image": "wood/birch/birch_planks",
+        "item_name": {
+          "ru": "Березовые Доски",
+          "en": "Birch Planks"
+        },
+        "item_string_id": "minecraft:birch_planks",
+        "item_number_id": "5:2"
+      },
+      {
+        "item_image": "wood/jungle/jungle_planks",
+        "item_name": {
+          "ru": "Доски из Тропического Дерева",
+          "en": "Jungle Planks"
+        },
+        "item_string_id": "minecraft:jungle_planks",
+        "item_number_id": "5:3"
+      },
+      {
+        "item_image": "wood/acacia/acacia_planks",
+        "item_name": {
+          "ru": "Акациевые Доски",
+          "en": "Acacia Planks"
+        },
+        "item_string_id": "minecraft:acacia_planks",
+        "item_number_id": "5:4"
+      },
+      {
+        "item_image": "wood/dark_oak/dark_oak_planks",
+        "item_name": {
+          "ru": "Доски из Темного Дуба",
+          "en": "Dark Oak Planks"
+        },
+        "item_string_id": "minecraft:dark_oak_planks",
+        "item_number_id": "5:5"
+      },
+      {
+        "item_image": "wood/oak/oak_sapling",
+        "item_name": {
+          "ru": "Саженец Дуба",
+          "en": "Oak Sapling"
+        },
+        "item_string_id": "minecraft:oak_sapling",
+        "item_number_id": "6"
+      },
+      {
+        "item_image": "wood/spruce/spruce_sapling",
+        "item_name": {
+          "ru": "Еловый Саженец",
+          "en": "Spruce Sapling"
+        },
+        "item_string_id": "minecraft:spruce_sapling",
+        "item_number_id": "6:1"
+      },
+      {
+        "item_image": "wood/birch/birch_sapling",
+        "item_name": {
+          "ru": "Саженец Березы",
+          "en": "Birch Sapling"
+        },
+        "item_string_id": "minecraft:birch_sapling",
+        "item_number_id": "6:2"
+      },
+      {
+        "item_image": "wood/oak/oak_sapling",
+        "item_name": {
+          "ru": "Саженец Тропического Дерева",
+          "en": "Jungle Sapling"
+        },
+        "item_string_id": "minecraft:jungle_sapling",
+        "item_number_id": "6:3"
+      },
+      {
+        "item_image": "wood/acacia/acacia_sapling",
+        "item_name": {
+          "ru": "Саженец Акации",
+          "en": "Acacia Sapling"
+        },
+        "item_string_id": "minecraft:acacia_sapling",
+        "item_number_id": "6:4"
+      },
+      {
+        "item_image": "wood/dark_oak/dark_oak_sapling",
+        "item_name": {
+          "ru": "Сажанец Темного Дуба",
+          "en": "Dark Oak Sapling"
+        },
+        "item_string_id": "minecraft:dark_oak_sapling",
+        "item_number_id": "6:5"
+      },
+      {
+        "item_image": "stone/bedrock",
+        "item_name": {
+          "ru": "Бедрок",
+          "en": "Bedrock"
+        },
+        "item_string_id": "minecraft:bedrock",
+        "item_number_id": "7"
+      },
+      {
+        "item_image": "water",
+        "item_name": {
+          "ru": "Вода",
+          "en": "Water"
+        },
+        "item_string_id": "minecraft:water",
+        "item_number_id": "8|9"
+      },
+      {
+        "item_image": "lava",
+        "item_name": {
+          "ru": "Лава",
+          "en": "Lava"
+        },
+        "item_string_id": "minecraft:lava",
+        "item_number_id": "10|11"
+      },
+      {
+        "item_image": "sand",
+        "item_name": {
+          "ru": "Песок",
+          "en": "Sand"
+        },
+        "item_string_id": "minecraft:sand",
+        "item_number_id": "12"
+      },
+      {
+        "item_image": "red_sand",
+        "item_name": {
+          "ru": "Красный Песок",
+          "en": "Red Sand"
+        },
+        "item_string_id": "minecraft:red_sand",
+        "item_number_id": "12:1"
+      },
+      {
+        "item_image": "gravel",
+        "item_name": {
+          "ru": "Гравий",
+          "en": "Gravel"
+        },
+        "item_string_id": "minecraft:gravel",
+        "item_number_id": "13"
+      },
+      {
+        "item_image": "ores/gold_ore",
+        "item_name": {
+          "ru": "Золотая Руда",
+          "en": "Gold Ore"
+        },
+        "item_string_id": "minecraft:gold_ore",
+        "item_number_id": "14"
+      },
+      {
+        "item_image": "ores/iron_ore",
+        "item_name": {
+          "ru": "Железная Руда",
+          "en": "Iron Ore"
+        },
+        "item_string_id": "minecraft:iron_ore",
+        "item_number_id": "15"
+      },
+      {
+        "item_image": "ores/coal_ore",
+        "item_name": {
+          "ru": "Угольная Руда",
+          "en": "Coal Ore"
+        },
+        "item_string_id": "minecraft:coal_ore",
+        "item_number_id": "16"
+      },
+      {
+        "item_image": "wood/oak/oak_log",
+        "item_name": {
+          "ru": "Дубовое Бревно",
+          "en": "Oak Log"
+        },
+        "item_string_id": "minecraft:oak_log",
+        "item_number_id": "17"
+      },
+      {
+        "item_image": "wood/spruce/spruce_log",
+        "item_name": {
+          "ru": "Еловое Бревно",
+          "en": "Spruce Log"
+        },
+        "item_string_id": "minecraft:spruce_log",
+        "item_number_id": "17:1"
+      },
+      {
+        "item_image": "wood/birch/birch_log",
+        "item_name": {
+          "ru": "Березовое Бревно",
+          "en": "Birch Log"
+        },
+        "item_string_id": "minecraft:birch_log",
+        "item_number_id": "17:2"
+      },
+      {
+        "item_image": "wood/jungle/jungle_log",
+        "item_name": {
+          "ru": "Бревно Тропического Дерева",
+          "en": "Jungle Log"
+        },
+        "item_string_id": "minecraft:jungle_log",
+        "item_number_id": "17:3"
+      },
+      {
+        "item_image": "wood/acacia/acacia_log",
+        "item_name": {
+          "ru": "Акациевое Бревно",
+          "en": "Acacia Log"
+        },
+        "item_string_id": "minecraft:acacia_log",
+        "item_number_id": "17:4"
+      },
+      {
+        "item_image": "wood/dark_oak/dark_oak_log",
+        "item_name": {
+          "ru": "Бревно Темного Дуба",
+          "en": "Dark Oak Log"
+        },
+        "item_string_id": "minecraft:dark_oak_log",
+        "item_number_id": "17:5"
+      },
+      {
+        "item_image": "wood/oak/oak_leaves",
+        "item_name": {
+          "ru": "Дубовые Листья",
+          "en": "Oak Leaves"
+        },
+        "item_string_id": "minecraft:oak_leaves",
+        "item_number_id": "18"
+      },
+      {
+        "item_image": "wood/spruce/spruce_leaves",
+        "item_name": {
+          "ru": "Хвоя",
+          "en": "Spruce Leaves"
+        },
+        "item_string_id": "minecraft:spruce_leaves",
+        "item_number_id": "18:1"
+      },
+      {
+        "item_image": "wood/birch/birch_leaves",
+        "item_name": {
+          "ru": "Березовые Листья",
+          "en": "Birch Leaves"
+        },
+        "item_string_id": "minecraft:birch_leaves",
+        "item_number_id": "18:2"
+      },
+      {
+        "item_image": "wood/jungle/jungle_leaves",
+        "item_name": {
+          "ru": "Листья Тропического Дерева",
+          "en": "Jungle Leaves"
+        },
+        "item_string_id": "minecraft:jungle_leaves",
+        "item_number_id": "18:3"
+      },
+      {
+        "item_image": "wood/acacia/acacia_leaves",
+        "item_name": {
+          "ru": "Акациевые Листья",
+          "en": "Acacia Leaves"
+        },
+        "item_string_id": "minecraft:acacia_leaves",
+        "item_number_id": "18:4"
+      },
+      {
+        "item_image": "wood/dark_oak/dark_oak_leaves",
+        "item_name": {
+          "ru": "Листья Темного Дуба",
+          "en": "Dark Oak Leaves"
+        },
+        "item_string_id": "minecraft:dark_oak_leaves",
+        "item_number_id": "18:5"
+      },
+      {
+        "item_image": "sponge",
+        "item_name": {
+          "ru": "Губка",
+          "en": "Sponge"
+        },
+        "item_string_id": "minecraft:sponge",
+        "item_number_id": "19"
+      },
+      {
+        "item_image": "wet_sponge",
+        "item_name": {
+          "ru": "Мокрая Губка",
+          "en": "Wet Sponge"
+        },
+        "item_string_id": "minecraft:wet_sponge",
+        "item_number_id": "19:1"
+      },
+      {
+        "item_image": "glass/glass",
+        "item_name": {
+          "ru": "Стекло",
+          "en": "Glass"
+        },
+        "item_string_id": "minecraft:glass",
+        "item_number_id": "20"
+      },
+      {
+        "item_image": "ores/lapis_ore",
+        "item_name": {
+          "ru": "Лазуритовая Руда",
+          "en": "Lapis Ore"
+        },
+        "item_string_id": "minecraft:lapis_ore",
+        "item_number_id": "21"
+      },
+      {
+        "item_image": "ores/lapis_block",
+        "item_name": {
+          "ru": "Лазуритовый Блок",
+          "en": "Lapis Block"
+        },
+        "item_string_id": "minecraft:lapis_block",
+        "item_number_id": "22"
+      },
+      {
+        "item_image": "dispenser",
+        "item_name": {
+          "ru": "Раздатчик",
+          "en": "Dispenser"
+        },
+        "item_string_id": "minecraft:dispenser",
+        "item_number_id": "23"
+      },
+      {
+        "item_image": "sandstone",
+        "item_name": {
+          "ru": "Песчаник",
+          "en": "Sandstone"
+        },
+        "item_string_id": "minecraft:sandstone",
+        "item_number_id": "24"
+      },
+      {
+        "item_image": "chiseled_sandstone",
+        "item_name": {
+          "ru": "Резной Песчаник",
+          "en": "Chiseled Sandstone"
+        },
+        "item_string_id": "minecraft:chiseled_sandstone",
+        "item_number_id": "24:1"
+      },
+      {
+        "item_image": "cut_sandstone",
+        "item_name": {
+          "ru": "Пиленый Песчаник",
+          "en": "Cut Sandstone"
+        },
+        "item_string_id": "minecraft:sandstone",
+        "item_number_id": "24:2"
+      },
+      {
+        "item_image": "note_block",
+        "item_name": {
+          "ru": "Нотный Блок",
+          "en": "Note Block"
+        },
+        "item_string_id": "minecraft:note_block",
+        "item_number_id": "25"
+      },
+      {
+        "item_image": "powered_rail",
+        "item_name": {
+          "ru": "Энергорельсы",
+          "en": "Powered Rail"
+        },
+        "item_string_id": "minecraft:powered_rail",
+        "item_number_id": "27"
+      },
+      {
+        "item_image": "detector_rail",
+        "item_name": {
+          "ru": "Рельсы с Датчиком",
+          "en": "Detector Rail"
+        },
+        "item_string_id": "minecraft:detector_rail",
+        "item_number_id": "28"
+      },
+      {
+        "item_image": "sticky_piston",
+        "item_name": {
+          "ru": "Липкий Поршень",
+          "en": "Sticky Piston"
+        },
+        "item_string_id": "minecraft:",
+        "item_number_id": "29"
+      },
+      {
+        "item_image": "cobweb",
+        "item_name": {
+          "ru": "Паутина",
+          "en": "Cobweb"
+        },
+        "item_string_id": "minecraft:cobweb",
+        "item_number_id": "30"
+      },
+      {
+        "item_image": "grass",
+        "item_name": {
+          "ru": "Трава",
+          "en": "Grass"
+        },
+        "item_string_id": "minecraft:grass",
+        "item_number_id": "31:1"
+      },
+      {
+        "item_image": "fern",
+        "item_name": {
+          "ru": "Папоротник",
+          "en": "Fern"
+        },
+        "item_string_id": "minecraft:fern",
+        "item_number_id": "31:2"
+      },
+      {
+        "item_image": "dead_bush",
+        "item_name": {
+          "ru": "Сухой Куст",
+          "en": "Dead Bush"
+        },
+        "item_string_id": "minecraft:dead_bush",
+        "item_number_id": "32"
+      },
+      {
+        "item_image": "piston",
+        "item_name": {
+          "ru": "Поршень",
+          "en": "piston"
+        },
+        "item_string_id": "minecraft:piston",
+        "item_number_id": "33"
+      },
+      {
+        "item_image": "white_wool",
+        "item_name": {
+          "ru": "Белая Шерсть",
+          "en": "White Wool"
+        },
+        "item_string_id": "minecraft:white_wool",
+        "item_number_id": "35"
+      },
+      {
+        "item_image": "orange_wool",
+        "item_name": {
+          "ru": "Оранжевая Шерсть",
+          "en": "Orange Wool"
+        },
+        "item_string_id": "minecraft:orange_wool",
+        "item_number_id": "35:1"
+      },
+      {
+        "item_image": "magenta_wool",
+        "item_name": {
+          "ru": "Пурпурная Шерсть",
+          "en": "Magenta Wool"
+        },
+        "item_string_id": "minecraft:magenta_wool",
+        "item_number_id": "35:2"
+      },
+      {
+        "item_image": "light_blue_wool",
+        "item_name": {
+          "ru": "Голубая Шерсть",
+          "en": "Light Blue Wool"
+        },
+        "item_string_id": "minecraft:light_blue_wool",
+        "item_number_id": "35:3"
+      },
+      {
+        "item_image": "yellow_wool",
+        "item_name": {
+          "ru": "Желтая Шерсть",
+          "en": "Yellow Wool"
+        },
+        "item_string_id": "minecraft:yellow_wool",
+        "item_number_id": "35:4"
+      },
+      {
+        "item_image": "lime_wool",
+        "item_name": {
+          "ru": "Лаймовая Шерсть",
+          "en": "Lime Wool"
+        },
+        "item_string_id": "minecraft:lime_wool",
+        "item_number_id": "35:5"
+      },
+      {
+        "item_image": "pink_wool",
+        "item_name": {
+          "ru": "Розовая Шерсть",
+          "en": "Pink Wool"
+        },
+        "item_string_id": "minecraft:pink_wool",
+        "item_number_id": "35:6"
+      },
+      {
+        "item_image": "gray_wool",
+        "item_name": {
+          "ru": "Серая Шерсть",
+          "en": "Gray Wool"
+        },
+        "item_string_id": "minecraft:gray_wool",
+        "item_number_id": "35:7"
+      },
+      {
+        "item_image": "light_gray_wool",
+        "item_name": {
+          "ru": "Светло-Серая Шерсть",
+          "en": "Light Gray Wool"
+        },
+        "item_string_id": "minecraft:light_gray_wool",
+        "item_number_id": "35:8"
+      },
+      {
+        "item_image": "cyan_wool",
+        "item_name": {
+          "ru": "Бирюзовая Шерсть",
+          "en": "Cyan Wool"
+        },
+        "item_string_id": "minecraft:cyan_wool",
+        "item_number_id": "35:9"
+      },
+      {
+        "item_image": "purple_wool",
+        "item_name": {
+          "ru": "Фиолетовая Шерсть",
+          "en": "Purple Wool"
+        },
+        "item_string_id": "minecraft:purple_wool",
+        "item_number_id": "35:10"
+      },
+      {
+        "item_image": "blue_wool",
+        "item_name": {
+          "ru": "Синяя Шерсть",
+          "en": "Blue Wool"
+        },
+        "item_string_id": "minecraft:blue_wool",
+        "item_number_id": "35:11"
+      },
+      {
+        "item_image": "brown_wool",
+        "item_name": {
+          "ru": "Коричневая Шерсть",
+          "en": "Brown Wool"
+        },
+        "item_string_id": "minecraft:brown_wool",
+        "item_number_id": "35:12"
+      },
+      {
+        "item_image": "green_wool",
+        "item_name": {
+          "ru": "Зеленая Шерсть",
+          "en": "Green Wool"
+        },
+        "item_string_id": "minecraft:green_wool",
+        "item_number_id": "35:13"
+      },
+      {
+        "item_image": "red_wool",
+        "item_name": {
+          "ru": "Красная Шерсть",
+          "en": "Red Wool"
+        },
+        "item_string_id": "minecraft:red_wool",
+        "item_number_id": "35:14"
+      },
+      {
+        "item_image": "black_wool",
+        "item_name": {
+          "ru": "Черная Шерсть",
+          "en": "Black Wool"
+        },
+        "item_string_id": "minecraft:black_wool",
+        "item_number_id": "35:15"
+      },
+      {
+        "item_image": "dandelion",
+        "item_name": {
+          "ru": "Одуванчик",
+          "en": "Dandelion"
+        },
+        "item_string_id": "minecraft:dandelion",
+        "item_number_id": "37"
+      },
+      {
+        "item_image": "poppy",
+        "item_name": {
+          "ru": "Мак",
+          "en": "Poppy"
+        },
+        "item_string_id": "minecraft:poppy",
+        "item_number_id": "38"
+      },
+      {
+        "item_image": "blue_orchid",
+        "item_name": {
+          "ru": "Синяя Орхидея",
+          "en": "Blue Orchid"
+        },
+        "item_string_id": "minecraft:blue_orchid",
+        "item_number_id": "38:1"
+      },
+      {
+        "item_image": "allium",
+        "item_name": {
+          "ru": "Лук-Батун",
+          "en": "Allium"
+        },
+        "item_string_id": "minecraft:allium",
+        "item_number_id": "38:2"
+      },
+      {
+        "item_image": "azure_bluet",
+        "item_name": {
+          "ru": "Хаустония Серая",
+          "en": "Azure Bluet"
+        },
+        "item_string_id": "minecraft:azure_bluet",
+        "item_number_id": "38:3"
+      },
+      {
+        "item_image": "red_tulip",
+        "item_name": {
+          "ru": "Красный Тюльпан",
+          "en": "Red Tulip"
+        },
+        "item_string_id": "minecraft:red_tulip",
+        "item_number_id": "38:4"
+      },
+      {
+        "item_image": "orange_tulip",
+        "item_name": {
+          "ru": "Оранжевый Тюльпан",
+          "en": "Orange Tulip"
+        },
+        "item_string_id": "minecraft:orange_tulip",
+        "item_number_id": "38:5"
+      },
+      {
+        "item_image": "white_tulip",
+        "item_name": {
+          "ru": "Белый Тюльпан",
+          "en": "White Tulip"
+        },
+        "item_string_id": "minecraft:white_tulip",
+        "item_number_id": "38:6"
+      },
+      {
+        "item_image": "pink_tulip",
+        "item_name": {
+          "ru": "Розовый Тюльпан",
+          "en": "Pink Tulip"
+        },
+        "item_string_id": "minecraft:pink_tulip",
+        "item_number_id": "38:7"
+      },
+      {
+        "item_image": "oxeye_daisy",
+        "item_name": {
+          "ru": "Ромашка",
+          "en": "Oxeye Daisy"
+        },
+        "item_string_id": "minecraft:oxeye_daisy",
+        "item_number_id": "38:8"
+      },
+      {
+        "item_image": "food/brown_mushroom",
+        "item_name": {
+          "ru": "Коричневый Гриб",
+          "en": "Brown Mushroom"
+        },
+        "item_string_id": "minecraft:brown_mushroom",
+        "item_number_id": "39"
+      },
+      {
+        "item_image": "food/red_mushroom",
+        "item_name": {
+          "ru": "Красный Гриб",
+          "en": "Red Mushroom"
+        },
+        "item_string_id": "minecraft:red_mushroom",
+        "item_number_id": "40"
+      },
+      {
+        "item_image": "ores/gold_block",
+        "item_name": {
+          "ru": "Золотой Блок",
+          "en": "Gold Block"
+        },
+        "item_string_id": "minecraft:gold_block",
+        "item_number_id": "41"
+      },
+      {
+        "item_image": "ores/iron_block",
+        "item_name": {
+          "ru": "Железный Блок",
+          "en": "Iron Block"
+        },
+        "item_string_id": "minecraft:iron_block",
+        "item_number_id": "42"
+      },
+      {
+        "item_image": "bricks",
+        "item_name": {
+          "ru": "Кирпичи",
+          "en": "Bricks"
+        },
+        "item_string_id": "minecraft:bricks",
+        "item_number_id": "45"
+      },
+      {
+        "item_image": "bookshelf",
+        "item_name": {
+          "ru": "Книжная Полка",
+          "en": "Bookshelf"
+        },
+        "item_string_id": "minecraft:bookshelf",
+        "item_number_id": "47"
+      },
+      {
+        "item_image": "stone/mossy_cobblestone",
+        "item_name": {
+          "ru": "Замшелый Булыжник",
+          "en": "Mossy Cobblestone"
+        },
+        "item_string_id": "minecraft:mossy_cobblestone",
+        "item_number_id": "48"
+      },
+      {
+        "item_image": "obsidian",
+        "item_name": {
+          "ru": "Обсидиан",
+          "en": "Obsidian"
+        },
+        "item_string_id": "minecraft:obsidian",
+        "item_number_id": "49"
+      },
+      {
+        "item_image": "torch",
+        "item_name": {
+          "ru": "Факел",
+          "en": "Torch"
+        },
+        "item_string_id": "minecraft:torch",
+        "item_number_id": "50"
+      },
+      {
+        "item_image": "fire",
+        "item_name": {
+          "ru": "Огонь",
+          "en": "Fire"
+        },
+        "item_string_id": "minecraft:fire",
+        "item_number_id": "51"
+      },
+      {
+        "item_image": "spawner",
+        "item_name": {
+          "ru": "Спавнер Мобов",
+          "en": "Spawner"
+        },
+        "item_string_id": "minecraft:spawner",
+        "item_number_id": "52"
+      },
+      {
+        "item_image": "chest",
+        "item_name": {
+          "ru": "Сундук",
+          "en": "Chest"
+        },
+        "item_string_id": "minecraft:chest",
+        "item_number_id": "54"
+      },
+      {
+        "item_image": "redstone_wire",
+        "item_name": {
+          "ru": "Редстоуновый Провод",
+          "en": "Redstone Wire"
+        },
+        "item_string_id": "minecraft:redstone_wire",
+        "item_number_id": "55"
+      }
+    ],
+    "effects": [
+      {
+        "item_image": "effects/speed",
+        "item_name": {
+          "ru": "Скорость",
+          "en": "Speed"
+        },
+        "item_string_id": "minecraft:speed",
+        "item_number_id": "1"
+      },
+      {
+        "item_image": "effects/slowness",
+        "item_name": {
+          "ru": "Замедление",
+          "en": "Slowness"
+        },
+        "item_string_id": "minecraft:slowness",
+        "item_number_id": "2"
+      },
+      {
+        "item_image": "effects/haste",
+        "item_name": {
+          "ru": "Проворность",
+          "en": "Haste"
+        },
+        "item_string_id": "minecraft:haste",
+        "item_number_id": "3"
+      },
+      {
+        "item_image": "effects/mining_fatigue",
+        "item_name": {
+          "ru": "Усталость",
+          "en": "Mining Fatigue"
+        },
+        "item_string_id": "minecraft:mining_fatigue",
+        "item_number_id": "4"
+      },
+      {
+        "item_image": "effects/strength",
+        "item_name": {
+          "ru": "Сила",
+          "en": "Strength"
+        },
+        "item_string_id": "minecraft:strength",
+        "item_number_id": "5"
+      },
+      {
+        "item_image": "effects/instant_health",
+        "item_name": {
+          "ru": "Исцеление",
+          "en": "Instant Health"
+        },
+        "item_string_id": "minecraft:instant_health",
+        "item_number_id": "6"
+      },
+      {
+        "item_image": "effects/instant_damage",
+        "item_name": {
+          "ru": "Моментальный Урон",
+          "en": "Instant Damage"
+        },
+        "item_string_id": "minecraft:instant_damage",
+        "item_number_id": "7"
+      },
+      {
+        "item_image": "effects/jump_boost",
+        "item_name": {
+          "ru": "Прыгучесть",
+          "en": "Jump Boost"
+        },
+        "item_string_id": "minecraft:jump_boost",
+        "item_number_id": "8"
+      },
+      {
+        "item_image": "effects/nausea",
+        "item_name": {
+          "ru": "Тошнота",
+          "en": "Nausea"
+        },
+        "item_string_id": "minecraft:nausea",
+        "item_number_id": "9"
+      },
+      {
+        "item_image": "effects/regeneration",
+        "item_name": {
+          "ru": "Регенерация",
+          "en": "Regeneration"
+        },
+        "item_string_id": "minecraft:regeneration",
+        "item_number_id": "10"
+      },
+      {
+        "item_image": "effects/resistance",
+        "item_name": {
+          "ru": "Сопротивление",
+          "en": "Resistance"
+        },
+        "item_string_id": "minecraft:resistance",
+        "item_number_id": "11"
+      },
+      {
+        "item_image": "effects/fire_resistance",
+        "item_name": {
+          "ru": "Огнестройкость",
+          "en": "Fire Resistance"
+        },
+        "item_string_id": "minecraft:fire_resistance",
+        "item_number_id": "12"
+      },
+      {
+        "item_image": "effects/water_breathing",
+        "item_name": {
+          "ru": "Подводное Дыхание",
+          "en": "Water Breathing"
+        },
+        "item_string_id": "minecraft:water_breathing",
+        "item_number_id": "13"
+      },
+      {
+        "item_image": "effects/invisibility",
+        "item_name": {
+          "ru": "Невидимость",
+          "en": "Invisibility"
+        },
+        "item_string_id": "minecraft:invisibility",
+        "item_number_id": "14"
+      },
+      {
+        "item_image": "effects/blindness",
+        "item_name": {
+          "ru": "Слепота",
+          "en": "Blindness"
+        },
+        "item_string_id": "minecraft:blindness",
+        "item_number_id": "15"
+      },
+      {
+        "item_image": "effects/night_vision",
+        "item_name": {
+          "ru": "Ночное Виденье",
+          "en": "Night Vision"
+        },
+        "item_string_id": "minecraft:night_vision",
+        "item_number_id": "16"
+      },
+      {
+        "item_image": "effects/hunger",
+        "item_name": {
+          "ru": "Голод",
+          "en": "Hunger"
+        },
+        "item_string_id": "minecraft:hunger",
+        "item_number_id": "17"
+      },
+      {
+        "item_image": "effects/weakness",
+        "item_name": {
+          "ru": "Слабость",
+          "en": "Weakness"
+        },
+        "item_string_id": "minecraft:weakness",
+        "item_number_id": "18"
+      },
+      {
+        "item_image": "effects/poison",
+        "item_name": {
+          "ru": "Отравление",
+          "en": "Poison"
+        },
+        "item_string_id": "minecraft:poison",
+        "item_number_id": "19"
+      },
+      {
+        "item_image": "effects/wither",
+        "item_name": {
+          "ru": "Иссушение",
+          "en": "Wither"
+        },
+        "item_string_id": "minecraft:wither",
+        "item_number_id": "20"
+      },
+      {
+        "item_image": "effects/health_boost",
+        "item_name": {
+          "ru": "Прилив Здоровья",
+          "en": "Health Boost"
+        },
+        "item_string_id": "minecraft:health_boost",
+        "item_number_id": "21"
+      },
+      {
+        "item_image": "effects/absorption",
+        "item_name": {
+          "ru": "Поглощение",
+          "en": "Absorption"
+        },
+        "item_string_id": "minecraft:absorption",
+        "item_number_id": "22"
+      },
+      {
+        "item_image": "effects/saturation",
+        "item_name": {
+          "ru": "Насыщение",
+          "en": "Saturation"
+        },
+        "item_string_id": "minecraft:saturation",
+        "item_number_id": "23"
+      },
+      {
+        "item_image": "effects/levitation",
+        "item_name": {
+          "ru": "Левитация",
+          "en": "Levitation"
+        },
+        "item_string_id": "minecraft:levitation",
+        "item_number_id": "25"
+      },
+      {
+        "item_image": "effects/slow_falling",
+        "item_name": {
+          "ru": "Медленное Падение",
+          "en": "Slow Falling"
+        },
+        "item_string_id": "minecraft:slow_falling",
+        "item_number_id": "28"
+      },
+      {
+        "item_image": "effects/conduit_power",
+        "item_name": {
+          "ru": "Морская Сила",
+          "en": "Conduit Power"
+        },
+        "item_string_id": "minecraft:conduit_power",
+        "item_number_id": "29"
+      },
+      {
+        "item_image": "effects/dolphins_grace",
+        "item_name": {
+          "ru": "Грация Дельфина",
+          "en": "Dolphins Grace"
+        },
+        "item_string_id": "minecraft:dolphins_grace",
+        "item_number_id": "30"
+      },
+      {
+        "item_image": "effects/dolphins_grace",
+        "item_name": {
+          "ru": "Грация Дельфина",
+          "en": "Dolphins Grace"
+        },
+        "item_string_id": "minecraft:dolphins_grace",
+        "item_number_id": "30"
+      },
+      {
+        "item_image": "effects/bad_omen",
+        "item_name": {
+          "ru": "Дурное Знамение",
+          "en": "Bad Omen"
+        },
+        "item_string_id": "minecraft:bad_omen",
+        "item_number_id": "31"
+      },
+      {
+        "item_image": "effects/hero_of_the_village",
+        "item_name": {
+          "ru": "Герой Деревни",
+          "en": "Hero Of The Village"
+        },
+        "item_string_id": "minecraft:hero_of_the_village",
+        "item_number_id": "32"
+      }
+    ],
+    "mobs": [
+      {
+        "item_image": "mobs/icons/bat_mob",
+        "item_name": {
+          "ru": "Летучая Мышь",
+          "en": "Bat"
+        },
+        "item_string_id": "minecraft:bat",
+        "item_number_id": "null"
+      },
+      {
+        "item_image": "mobs/icons/cat_mob",
+        "item_name": {
+          "ru": "Кошка",
+          "en": "Cat"
+        },
+        "item_string_id": "minecraft:cat",
+        "item_number_id": "null"
+      },
+      {
+        "item_image": "mobs/icons/chicken_mob",
+        "item_name": {
+          "ru": "Курица",
+          "en": "Chicken"
+        },
+        "item_string_id": "minecraft:chicken",
+        "item_number_id": "null"
+      },
+      {
+        "item_image": "mobs/icons/cod_mob",
+        "item_name": {
+          "ru": "Треска",
+          "en": "Cod"
+        },
+        "item_string_id": "minecraft:cod",
+        "item_number_id": "null"
+      },{
+        "item_image": "mobs/icons/cow_mob",
+        "item_name": {
+          "ru": "Корова",
+          "en": "Cow"
+        },
+        "item_string_id": "minecraft:cow",
+        "item_number_id": "null"
+      },{
+        "item_image": "mobs/icons/donkey_mob",
+        "item_name": {
+          "ru": "Осел",
+          "en": "Donkey"
+        },
+        "item_string_id": "minecraft:donkey",
+        "item_number_id": "null"
+      },{
+        "item_image": "mobs/icons/fox_mob",
+        "item_name": {
+          "ru": "Лиса",
+          "en": "Fox"
+        },
+        "item_string_id": "minecraft:fox",
+        "item_number_id": "null"
+      },{
+        "item_image": "mobs/icons/horse_mob",
+        "item_name": {
+          "ru": "Лошадь",
+          "en": "Horse"
+        },
+        "item_string_id": "minecraft:horse",
+        "item_number_id": "null"
+      },{
+        "item_image": "mobs/icons/mooshroom_mob",
+        "item_name": {
+          "ru": "Грибная Корова",
+          "en": "Mooshroom"
+        },
+        "item_string_id": "minecraftmooshroom:",
+        "item_number_id": "null"
+      },{
+        "item_image": "mobs/icons/mule_mob",
+        "item_name": {
+          "ru": "Мул",
+          "en": "Mule"
+        },
+        "item_string_id": "minecraft:mule",
+        "item_number_id": "null"
+      },{
+        "item_image": "mobs/icons/ocelot_mob",
+        "item_name": {
+          "ru": "Оцелот",
+          "en": "Ocelot"
+        },
+        "item_string_id": "minecraft:ocelot",
+        "item_number_id": "null"
+      },{
+        "item_image": "mobs/icons/parrot_mob",
+        "item_name": {
+          "ru": "Попугай",
+          "en": "Parrot"
+        },
+        "item_string_id": "minecraft:parrot",
+        "item_number_id": "null"
+      },{
+        "item_image": "mobs/icons/pig_mob",
+        "item_name": {
+          "ru": "Свинья",
+          "en": "Pig"
+        },
+        "item_string_id": "minecraft:pig",
+        "item_number_id": "null"
+      },{
+        "item_image": "mobs/icons/rabbit_mob",
+        "item_name": {
+          "ru": "Кролик",
+          "en": "Rabbit"
+        },
+        "item_string_id": "minecraft:rabbit",
+        "item_number_id": "null"
+      },{
+        "item_image": "mobs/icons/salmon_mob",
+        "item_name": {
+          "ru": "Лосось",
+          "en": "Salmon"
+        },
+        "item_string_id": "minecraft:salmon",
+        "item_number_id": "null"
+      },{
+        "item_image": "mobs/icons/sheep_mob",
+        "item_name": {
+          "ru": "Овца",
+          "en": "Sheep"
+        },
+        "item_string_id": "minecraft:sheep",
+        "item_number_id": "null"
+      },{
+        "item_image": "mobs/icons/squid_mob",
+        "item_name": {
+          "ru": "Спрут",
+          "en": "Squid"
+        },
+        "item_string_id": "minecraft:squid",
+        "item_number_id": "null"
+      },{
+        "item_image": "mobs/icons/tropical_fish_mob",
+        "item_name": {
+          "ru": "Тропическая Рыба",
+          "en": "Tropical Fish"
+        },
+        "item_string_id": "minecraft:tropical_fish",
+        "item_number_id": "null"
+      },{
+        "item_image": "mobs/icons/turtle_mob",
+        "item_name": {
+          "ru": "Черепаха",
+          "en": "Turtle"
+        },
+        "item_string_id": "minecraft:turtle",
+        "item_number_id": "null"
+      },{
+        "item_image": "mobs/icons/villager_mob",
+        "item_name": {
+          "ru": "Житель",
+          "en": "Villager"
+        },
+        "item_string_id": "minecraft:villager",
+        "item_number_id": "null"
+      },{
+        "item_image": "mobs/icons/wandering_trader_mob",
+        "item_name": {
+          "ru": "Странствующий Торговец",
+          "en": "Wandering Trader"
+        },
+        "item_string_id": "minecraft:wandering_trader",
+        "item_number_id": "null"
+      },{
+        "item_image": "mobs/icons/pufferfish_mob",
+        "item_name": {
+          "ru": "Иглобрюх",
+          "en": "Pufferfish"
+        },
+        "item_string_id": "minecraft:pufferfish",
+        "item_number_id": "null"
+      },{
+        "item_image": "mobs/icons/dolphin_mob",
+        "item_name": {
+          "ru": "Дельфин",
+          "en": "Dolphin"
+        },
+        "item_string_id": "minecraft:dolphin",
+        "item_number_id": "null"
+      },{
+        "item_image": "mobs/icons/llama_mob",
+        "item_name": {
+          "ru": "Лама",
+          "en": "Llama"
+        },
+        "item_string_id": "minecraft:llama",
+        "item_number_id": "null"
+      },{
+        "item_image": "mobs/icons/panda_mob",
+        "item_name": {
+          "ru": "Панда",
+          "en": "Panda"
+        },
+        "item_string_id": "minecraft:panda",
+        "item_number_id": "null"
+      },{
+        "item_image": "mobs/icons/polar_bear_mob",
+        "item_name": {
+          "ru": "Белый Медведь",
+          "en": "Polar Bear"
+        },
+        "item_string_id": "minecraft:polar_bear",
+        "item_number_id": "null"
+      },{
+        "item_image": "mobs/icons/wolf_mob",
+        "item_name": {
+          "ru": "Волк",
+          "en": "Wolf"
+        },
+        "item_string_id": "minecraft:wolf",
+        "item_number_id": "null"
+      },{
+        "item_image": "mobs/icons/bee_mob",
+        "item_name": {
+          "ru": "Пчела",
+          "en": "Bee"
+        },
+        "item_string_id": "minecraft:bee",
+        "item_number_id": "null"
+      },{
+        "item_image": "mobs/icons/cafe_spider_mob",
+        "item_name": {
+          "ru": "Пещерный Паук",
+          "en": "Cave Spider"
+        },
+        "item_string_id": "minecraft:cave_spider",
+        "item_number_id": "null"
+      },{
+        "item_image": "mobs/icons/enderman_mob",
+        "item_name": {
+          "ru": "Эндермен",
+          "en": "Enderman"
+        },
+        "item_string_id": "minecraft:enderman",
+        "item_number_id": "null"
+      },{
+        "item_image": "mobs/icons/spider_mob",
+        "item_name": {
+          "ru": "Паук",
+          "en": "Spider"
+        },
+        "item_string_id": "minecraft:spider",
+        "item_number_id": "null"
+      },{
+        "item_image": "mobs/icons/blaze_mob",
+        "item_name": {
+          "ru": "Ифрит",
+          "en": "Blaze"
+        },
+        "item_string_id": "minecraft:blaze",
+        "item_number_id": "null"
+      },{
+        "item_image": "mobs/icons/creeper_mob",
+        "item_name": {
+          "ru": "Крипер",
+          "en": "Creeper"
+        },
+        "item_string_id": "minecraft:creeper",
+        "item_number_id": "null"
+      },{
+        "item_image": "mobs/icons/drowned_mob",
+        "item_name": {
+          "ru": "Утопленник",
+          "en": "Drowned"
+        },
+        "item_string_id": "minecraft:drowned",
+        "item_number_id": "null"
+      },{
+        "item_image": "mobs/icons/elder_guardian_mob",
+        "item_name": {
+          "ru": "Древний Страж",
+          "en": "Elder Guardian"
+        },
+        "item_string_id": "minecraft:elder_guardian",
+        "item_number_id": "null"
+      },{
+        "item_image": "mobs/icons/endermite_mob",
+        "item_name": {
+          "ru": "Чешуйница Энда",
+          "en": "Endermite"
+        },
+        "item_string_id": "minecraft:endermite",
+        "item_number_id": "null"
+      },{
+        "item_image": "mobs/icons/evoker_mob",
+        "item_name": {
+          "ru": "Вызыватель",
+          "en": "Evoker"
+        },
+        "item_string_id": "minecraft:evoker",
+        "item_number_id": "null"
+      },{
+        "item_image": "mobs/icons/ghast_mob",
+        "item_name": {
+          "ru": "Гаст",
+          "en": "Ghast"
+        },
+        "item_string_id": "minecraft:ghast",
+        "item_number_id": "null"
+      },{
+        "item_image": "mobs/icons/guardian_mob",
+        "item_name": {
+          "ru": "Страж",
+          "en": "Guardian"
+        },
+        "item_string_id": "minecraft:guardian",
+        "item_number_id": "null"
+      },{
+        "item_image": "mobs/icons/husk_mob",
+        "item_name": {
+          "ru": "Кадавр",
+          "en": "Husk"
+        },
+        "item_string_id": "minecraft:husk",
+        "item_number_id": "null"
+      },{
+        "item_image": "mobs/icons/magma_cube_mob",
+        "item_name": {
+          "ru": "Лавовый Куб",
+          "en": "Magma Cube"
+        },
+        "item_string_id": "minecraft:magma_cube",
+        "item_number_id": "null"
+      },{
+        "item_image": "mobs/icons/phantom_mob",
+        "item_name": {
+          "ru": "Фантом",
+          "en": "Phantom"
+        },
+        "item_string_id": "minecraft:phantom",
+        "item_number_id": "null"
+      },{
+        "item_image": "mobs/icons/pillager_mob",
+        "item_name": {
+          "ru": "Разбойник",
+          "en": "Pillager"
+        },
+        "item_string_id": "minecraft:pillager",
+        "item_number_id": "null"
+      },{
+        "item_image": "mobs/icons/ravager_mob",
+        "item_name": {
+          "ru": "Разоритель",
+          "en": "Ravager"
+        },
+        "item_string_id": "minecraft:ravager",
+        "item_number_id": "null"
+      },{
+        "item_image": "mobs/icons/shulker_mob",
+        "item_name": {
+          "ru": "Шалкер",
+          "en": "Shulker"
+        },
+        "item_string_id": "minecraft:shulker",
+        "item_number_id": "null"
+      },{
+        "item_image": "mobs/icons/silverfish_mob",
+        "item_name": {
+          "ru": "Чешуйница",
+          "en": "Silverfish"
+        },
+        "item_string_id": "minecraft:silverfish",
+        "item_number_id": "null"
+      },{
+        "item_image": "mobs/icons/skeleton_mob",
+        "item_name": {
+          "ru": "Скелет",
+          "en": "Skeleton"
+        },
+        "item_string_id": "minecraft:skeleton",
+        "item_number_id": "null"
+      },{
+        "item_image": "mobs/icons/slime_mob",
+        "item_name": {
+          "ru": "Слизень",
+          "en": "Slime"
+        },
+        "item_string_id": "minecraft:slime",
+        "item_number_id": "null"
+      },{
+        "item_image": "mobs/icons/stray_mob",
+        "item_name": {
+          "ru": "Зимогор",
+          "en": "Stray"
+        },
+        "item_string_id": "minecraft:stray",
+        "item_number_id": "null"
+      },{
+        "item_image": "mobs/icons/vex_mob",
+        "item_name": {
+          "ru": "Досаждатель",
+          "en": "Vex"
+        },
+        "item_string_id": "minecraft:vex",
+        "item_number_id": "null"
+      },{
+        "item_image": "mobs/icons/vindicator_mob",
+        "item_name": {
+          "ru": "Поборник",
+          "en": "Vindicator"
+        },
+        "item_string_id": "minecraft:vindicator",
+        "item_number_id": "null"
+      },{
+        "item_image": "mobs/icons/witch_mob",
+        "item_name": {
+          "ru": "Ведьма",
+          "en": "Witch"
+        },
+        "item_string_id": "minecraft:witch",
+        "item_number_id": "null"
+      },{
+        "item_image": "mobs/icons/wither_skeleton_mob",
+        "item_name": {
+          "ru": "Скелет-Иссушитель",
+          "en": "Wither-Skeleton"
+        },
+        "item_string_id": "minecraft:wither_skeleton",
+        "item_number_id": "null"
+      },{
+        "item_image": "mobs/icons/zombie_mob",
+        "item_name": {
+          "ru": "Зомби",
+          "en": "Zombie"
+        },
+        "item_string_id": "minecraft:zombie",
+        "item_number_id": "null"
+      },{
+        "item_image": "mobs/icons/zombie_villager_mob",
+        "item_name": {
+          "ru": "Зомби-Житель",
+          "en": "Zombie-Villager"
+        },
+        "item_string_id": "minecraft:zombie_villager",
+        "item_number_id": "null"
+      },{
+        "item_image": "mobs/icons/snow_golem_mob",
+        "item_name": {
+          "ru": "Снежный Голем",
+          "en": "Snow Golem"
+        },
+        "item_string_id": "minecraft:snow_golem",
+        "item_number_id": "null"
+      },{
+        "item_image": "mobs/icons/iron_golem_mob",
+        "item_name": {
+          "ru": "Железный Голем",
+          "en": "Iron Golem"
+        },
+        "item_string_id": "minecraft:iron_golem",
+        "item_number_id": "null"
+      },{
+        "item_image": "mobs/icons/ender_dragon_mob",
+        "item_name": {
+          "ru": "Дракон Края",
+          "en": "Ender Dragon"
+        },
+        "item_string_id": "minecraft:ender_dragon",
+        "item_number_id": "null"
+      },{
+        "item_image": "mobs/icons/wither_mob",
+        "item_name": {
+          "ru": "Иссушитель",
+          "en": "Wither"
+        },
+        "item_string_id": "minecraft:wither",
+        "item_number_id": "null"
+      },{
+        "item_image": "mobs/icons/zoglin_mob",
+        "item_name": {
+          "ru": "Зоглин",
+          "en": "Zoglin"
+        },
+        "item_string_id": "minecraft:zoglin",
+        "item_number_id": "null"
+      },{
+        "item_image": "mobs/icons/hoglin_mob",
+        "item_name": {
+          "ru": "Хоглин",
+          "en": "Hoglin"
+        },
+        "item_string_id": "minecraft:hoglin",
+        "item_number_id": "null"
+      },{
+        "item_image": "mobs/icons/strider_mob",
+        "item_name": {
+          "ru": "Страйдер",
+          "en": "Strider"
+        },
+        "item_string_id": "minecraft:strider",
+        "item_number_id": "null"
+      },{
+        "item_image": "mobs/icons/piglin_mob",
+        "item_name": {
+          "ru": "Пиглин",
+          "en": "Piglin"
+        },
+        "item_string_id": "minecraft:piglin",
+        "item_number_id": "null"
+      },{
+        "item_image": "mobs/icons/zombified_piglin_mob",
+        "item_name": {
+          "ru": "Зомбированный Пиглин",
+          "en": "Zombified Piglin"
+        },
+        "item_string_id": "minecraft:zombified_piglin",
+        "item_number_id": "null"
+      },{
+        "item_image": "mobs/icons/piglin_brute_mob",
+        "item_name": {
+          "ru": "Брутальный Пиглин",
+          "en": "Piglin Brute"
+        },
+        "item_string_id": "minecraft:piglin_brute",
+        "item_number_id": "null"
+      },{
+        "item_image": "mobs/icons/goat_mob",
+        "item_name": {
+          "ru": "Козел",
+          "en": "Goat"
+        },
+        "item_string_id": "minecraft:goat",
+        "item_number_id": "null"
+      },{
+        "item_image": "mobs/icons/axolotl_mob",
+        "item_name": {
+          "ru": "Аксолотль",
+          "en": "Axolotl"
+        },
+        "item_string_id": "minecraft:axolotl",
+        "item_number_id": "null"
+      },{
+        "item_image": "mobs/icons/glow_squid_mob",
+        "item_name": {
+          "ru": "Светящийся Спрут",
+          "en": "Glow Squid"
+        },
+        "item_string_id": "minecraft:glow_squid",
+        "item_number_id": "null"
+      }
+    ]
+  }
 }

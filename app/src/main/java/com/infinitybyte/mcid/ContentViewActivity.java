@@ -182,7 +182,7 @@ public class ContentViewActivity extends AppCompatActivity implements InAppUpdat
             viewItems.clear();
             String bedrock_ids = readJSONDataFromFile();
             JSONObject jsonObject = new JSONObject(bedrock_ids);
-            JSONArray jsonArray = jsonObject.getJSONArray(Settings.idCategory);
+            JSONArray jsonArray = jsonObject.getJSONObject("content").getJSONArray(Settings.idCategory);
 
             for (int i = 0; i < jsonArray.length(); ++i) {
 

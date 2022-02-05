@@ -2,22 +2,29 @@
   "UpdateHistory": [
     {
       "changelog": {
-        "ru": "1. Добавлен парс через URL как временное решение пока не будут добавлены все ID\n- Если ничего нету то примените фильтр :)",
-        "en": "1. As a temporary solution, a parse was added using the URL"
+        "ru": "Дамы и Господа, я с большой радостью хочу сообщить вам что, НОВЫЕ НАСТРОЙКИ РАБОТАЮТ!\n* Звуки хлопающих людей *\n\n- Совершенно новые и усовершенственные настройки, благодаря @KirboGames\n- Сделан возврат на оффлайн работу приложения\n- Обновлена структура файла с контентом\n- Исправлен баг когда переключатели в окне фильтрации и сортировки не соотвествовали установленным значениям\n- Удалены старые настройки\n\nРекомендую очистить данные приложения чтобы потом не возникали ошибки.",
+        "en": "Ladies and Gentlemen, it is with great pleasure that I want to inform you that, THE SETTINGS WORK!\n* Sounds of people clapping *\n\n- Brand new and improved settings, thanks to @KirboGames\n- Made a return to the offline work of the application\n- Updated content file structure\n- Fixed a bug when the switches in the filtering and sorting window did not correspond to the set values\n- Removed old settings\n\nI recommend clearing the application data so that errors do not occur later."
+      },
+      "version": "1.0.6 Beta (8)"
+    },
+    {
+      "changelog": {
+        "ru": "- Добавлен парс через URL как временное решение пока не будут добавлены все ID\n- Если ничего нету то примените фильтр :)",
+        "en": "- As a temporary solution, a parse was added using the URL"
       },
       "version": "1.0.5 Beta (7)"
     },
     {
       "changelog": {
-        "ru": "1. Добавлено внутренное обновление\n2. Добавлены ID предметов и блоков от 31 до 42",
-        "en": "1. Added In App Update\n2. Added IDs of items and blocks from 31 to 42"
+        "ru": "- Добавлено внутри-програмное обновление\n- Добавлены ID предметов и блоков от 31 до 42",
+        "en": "- Added In App Update\n- Added IDs of items and blocks from 31 to 42"
       },
       "version": "1.0.4 Beta (6)"
     },
     {
       "changelog": {
-        "ru": "1. Добавлены все ID мобов\n2. Добавлены ID предметов и блоков от 1 до 30",
-        "en": "1. Added all IDs of Mobs\n2. Added IDs of items and blocks from 1 to 30"
+        "ru": "- Добавлены все ID мобов\n- Добавлены ID предметов и блоков от 1 до 30",
+        "en": "- Added all IDs of Mobs\n- Added IDs of items and blocks from 1 to 30"
       },
       "version": "1.0.3 Beta (5)"
     },
