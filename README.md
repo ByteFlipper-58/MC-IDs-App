@@ -26,7 +26,7 @@ ___
 * [x] JSON Parse and View
 * [x] Choose between IDs of blocks, items, effects, and mobs to display
 * [x] Sort in ascending and descending order
-* [ ] In App Update and Review
+* [x] In App Update and Review
 * [ ] Switch between list layout and grid layout
 * [ ] Advanced sorting by letters and numbers
 * [ ] Search
